@@ -38,15 +38,17 @@
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
-\author[Buder and Buck]{
+\author[S. Buder, Z. Hackshaw and T. Buck]{
 S. Buder,$^{1,2}$\thanks{E-mail: sven.buder@anu.edu.au}
-T. Buck,$^{3,4}$
+Z. Hackshaw,$^{3}$ and
+T. Buck,$^{4,5}$
 \\
 % List of institutions
 $^{1}$Research School of Astronomy \& Astrophysics, Australian National University, ACT 2611, Australia\\
 $^{2}$Center of Excellence for Astrophysics in Three Dimensions (ASTRO-3D), Australia\\
-$^{3}$Universit{\"a}t Heidelberg, Interdisziplin{\"a}res Zentrum f{\"u}r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany\\
-$^{4}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany
+$^{3}$Department of Astronomy, The University of Texas at Austin, 2515 Speedway Boulevard Austin, TX 78712, USA\\
+$^{4}$Universit{\"a}t Heidelberg, Interdisziplin{\"a}res Zentrum f{\"u}r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany\\
+$^{5}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany
 }
 
 % These dates will be filled out by the publisher
@@ -78,7 +80,16 @@ cosmology: observations -- Galaxy: formation -- Galaxy: evolution -- Galaxy: abu
 \section{Introduction}
 \label{sec:intro}
 
-\textbf{LOOK INTO} \citep{Graf2024} \citep{Carrillo2023} \textbf{Bellardini?} \textbf{Metha?}
+Bellardini?
+\begin{itemize}
+    \item \cite{Bellardini2021}
+    \item \citet{Bellardini2022}
+    \item \cite{Carrillo2023} did not exactly look into this, but had Fig. 13 showing radial metallicity gradient (for 5 Gyr old stars)
+    \item \citep{Graf2024}  
+\end{itemize}
+
+ 
+ \textbf{Metha?} \cite{Metha2021} \cite{Metha2022} \cite{Metha2023} \cite{Metha2024} \cite{Metha2024b}
 
 \textbf{FINE STRUCTURE OF THE METALLICITY GRADIENT} \citep{Genovali2014}
 
@@ -94,6 +105,8 @@ cosmology: observations -- Galaxy: formation -- Galaxy: evolution -- Galaxy: abu
 "Over the past decade, different authors using different observational tools often came to contradictory views on both the shape, the magnitude and the evolution of the abundance gradients along the disk" \citep{Chiappini2002}.
 
 Other galaxies: \citet[][see their Figs. 5 and 11]{Sanchez2014} with CALIFA galaxies 12 + log(O/H) vs. R/Re
+
+\citet{Poggio2022} super important, especially Fig. 2!
 
 \begin{itemize}
     \item \textbf{Galactic Chemical Evolution}
@@ -115,15 +128,16 @@ Other galaxies: \citet[][see their Figs. 5 and 11]{Sanchez2014} with CALIFA gala
     \item Problems with Observations:
     \begin{itemize}
         \item "One of the most difficult but fundamental tasks is to assess the completeness of the observed dataset." \citep{Bergemann2014}
-        \item different samples find different gradients. Compare e.g. steeper gradients by \citet{Bergemann2014, Boeche2013} with \citet{AllendePrieto2006, Hayden2013, Anders2014, Katz2011}.
+        \item different samples find different gradients. Compare e.g. steeper gradients by \citet{Bergemann2014, Boeche2013} with \citet{AllendePrieto2006, Hayden2014, Anders2014, Katz2011}.
         \item "but this could reflect our small dataset or the fact that the studies probe much larger $\vert Z \vert$." \citep{Bergemann2014}.
-        \item Spiral arms \citep{Poggio2021}
+        \item Spiral arms \citet{Poggio2022}: Galactic spiral structure revealed by Gaia EDR3
+        \item Spiral arms \citet{Poggio2021}: The chemical signature of the Galactic spiral arms revealed by Gaia DR3
         \item Galactic warp \citep[e.g.][]{Lemasle2022}
     \end{itemize}
     \item Which tracers do you use?
     \begin{itemize}
         \item Open clusters?
-        \item Cepheids? \citep{Andrievsky2002a, Andrievsky2002b, Lemasle2007, Lemasle2013}
+        \item Cepheids? \citep{Andrievsky2002, Andrievsky2002b, Lemasle2007, Lemasle2013}
         \item OB stars?
         \item H II regions?
     \end{itemize}
@@ -141,7 +155,7 @@ Other galaxies: \citet[][see their Figs. 5 and 11]{Sanchez2014} with CALIFA gala
 
 ...
 
-The paper is structured as follows: Sec.~\ref{sec:data} describes the data of GALAH observations and NIHAO simulations. Sec.~\ref{sec:comparison} performs an initial comparison of diagnostic plots, using different abundance planes. Sec.~\ref{sec:Age-abundance} considers how stellar abundances of accreted and in-situ stars change over time, and quantifies the results. Sec.~\ref{sec:discussion} discusses our findings and their implications. Sec.~\ref{sec:conc} concludes the paper.
+The paper is structured as follows: Sec.~\ref{sec:data} describes the data of GALAH observations and NIHAO simulations. Sec.~\ref{sec:radial_metallicity_gradients} analyses the radial metallicity gradients of the simulations. Sec.~\ref{sec:discussion} discusses to which extend these gradients are linear and what we can learn from the residuals. Sec.~\ref{sec:conc} concludes the paper.
 
 \section{Data: Observations and simulations} \label{sec:data}
 
