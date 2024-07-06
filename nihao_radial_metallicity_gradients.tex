@@ -34,7 +34,7 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[NIHAO vs. Milky Way: Beyond linear radial metallicity gradients]{NIHAO simulations vs. Milky Way observations: Beyond the linear radial metallicity gradient}
+\title[NIHAO vs. Milky Way: Radial metallicity gradients]{More than just a line: Shining light on the radial metallicity gradient with NIHAO simulations}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -208,6 +208,7 @@ The model perspective on accretion is provided through a cosmological zoom-in si
 %     \label{tab:shift_4to5gyr}
 % \end{table}
 
+\SB{Show the X-Y and R-z distribution -> This will be important when we select stars to make sure we select close to the galactic plane! Also compare with \citet{Poggio2022} on how they did it (if they applied a cut in $\vert z \vert$, maybe they only did an age cut?)!}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -218,9 +219,8 @@ The model perspective on accretion is provided through a cosmological zoom-in si
     \centering
     \includegraphics[width=\textwidth]{figures/radial_metallicity_gradients_mw_vs_nihao.png}
     \caption{Caption}
-    \label{fig:enter-label}
+    \label{fig:radial_metallicity_gradients_mw_vs_nihao}
 \end{figure*}
-
 
 
 \subsection{Linear radial metallicity gradients}
@@ -233,7 +233,7 @@ The model perspective on accretion is provided through a cosmological zoom-in si
     \centering
     \includegraphics[width=\textwidth]{figures/overdensities_mw_vs_nihao.png}
     \caption{Caption}
-    \label{fig:enter-label}
+    \label{fig:overdensities_mw_vs_nihao}
 \end{figure*}
 
 \section{Radial metallicity gradients in comparison}
@@ -242,10 +242,23 @@ The model perspective on accretion is provided through a cosmological zoom-in si
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/radial_metallicity_gradients_mw_in_angles.png}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{Density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across 8 different sectors. A rotating lighthouse-like GIF animation of the median age and median density of the $R-\mathrm{[Fe/H]}$-relation is freely available on the \href{https://github.com/svenbuder/nihao_radial_metallicity_gradients/blob/main/figures/xyz_rfeh.gif}{github repository}.}
+    \label{fig:radial_metallicity_gradients_mw_in_angles}
 \end{figure*}
 
+\SB{Do the same as Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}, but with bins colored by median age.}
+
+\SB{Calculate global $R-\mathrm{[Fe/H]}$, then local for the 8 sectors of Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}, plot both in 2x4 subpanels, and color-code the density plots by median deviation from this line with a seismic map.}
+
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{figures/radial_metallicity_gradients_mw_in_angles.png}
+    \caption{Density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across full stellar disk and 8 different sectors (same panel order as for Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}). Linear radial metallicity gradients have been fit globally (red dashed line) and for each sector with colors following the same color code as in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}}.
+    \label{fig:linear_radial_metallicity_gradients_mw_in_angles}
+\end{figure*}
+
+Fig.~\ref{fig:linear_radial_metallicity_gradients_mw_in_angles}f shows impressively, that if you look at a rather narrow range of $R_\mathrm{gal}$, such as $5 < R_\mathrm{gal} < 15\,\mathrm{kpc}$, the radial metallicity gradient could actually look like it is damping towards larger radii. \SB{Is this possibly what is happening in local studies of our galaxy, where many researchers are actually fitting 2 linear gradients with a break radius?}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion} \label{sec:discussion}
