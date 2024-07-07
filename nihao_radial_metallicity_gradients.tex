@@ -34,7 +34,7 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[NIHAO vs. Milky Way: Radial metallicity gradients]{More than just a line: Shining light on the radial metallicity gradient with NIHAO simulations}
+\title[NIHAO vs. Milky Way: Radial metallicity gradients]{More than just a line? Shining light on the radial metallicity gradient with a NIHAO Milky-Way analogue simulation}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -60,12 +60,12 @@ $^{2}$Center of Excellence for Astrophysics in Three Dimensions (ASTRO-3D), Aust
 
 % Abstract of the paper
 \begin{abstract} % XXX words
-ABSTRACT HERE
+Radial metallicity gradients in galaxies are crucial for understanding the processes of galactic formation and evolution. This study uses a high-resolution simulation of a NIHA Milky Way analogue galaxy to investigate the radial metallicity gradient and analyse four properties of the radial metallicity gradient, namely the linearity and scatter of the gradient as well as the coherence of the gradient with position and age. The research aims to enhance our comprehension of the gradient's characteristics and its implications for galactic dynamics and chemical evolution.
 \end{abstract}
 % Select between one and six entries from the list of approved keywords.
 % Don't make up new ones.
 \begin{keywords}
-cosmology: observations -- Galaxy: formation -- Galaxy: evolution -- Galaxy: abundances
+cosmology: observations -- Galaxy: structure -- Galaxy: abundances  -- galaxies: structure -- galaxies: abundances
 \end{keywords}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,88 +75,41 @@ cosmology: observations -- Galaxy: formation -- Galaxy: evolution -- Galaxy: abu
 \section{Introduction}
 \label{sec:intro}
 
-\textbf{Great insight thanks to \textit{Gaia} into the radial metallicity gradient}. Specifically point out:
+Radial metallicity gradients in galaxies, defined as the change in metal abundance with galactocentric radius, offer vital insights into the processes that shape the chemical and dynamical evolution of galaxies. While the decrease of metallicity with increasing Galactic center distance can be generally understood theoretically \citep{Larson1976, Tinsley1980, Chiosi1980} and is established observationally for our Milky Way as a barred spiral galaxy \citep{Searle1971, Janes1979, Twarog1997}, the specific shape still somewhat unclear. Regarding our Milky Way as the only galaxy for which we can resolve millions of stars, \citet{Chiappini2002} noted more than two decades ago: ``Over the past decade, different authors using different observational tools often came to contradictory views on both the shape, the magnitude and the evolution of the abundance gradients along the disk.'' In more recent years, both Galactic and extragalactic observations have vastly expanded our observational data - while theoretical work, such as cosmological simulations, have reached the resolution and ability to explore detailed spatial gradients in chemical space.
+
+In particular, the \textit{Gaia} mission \citep{Gaia-Collaboration2016} has extended our observable horizon and thus provided new insights into the radial metallicity gradient. While \citet[][see their Fig. 6]{Hogg2019} created a first $20\,\mathrm{kpc}$-spanning metallicity map of the galaxy with APOGEE and \textit{Gaia} data. \citet{Zari2018, Zari2021, Poggio2021, Poggio2022} have mapped young stars in the extended Solar region, with \citet{Poggio2022} finding excess metallicity around spiral arms (see their Fig. 2) and \citet{Hackshaw2024} finding similar variations with APOGEE data. \citet{Imig2023} used the hundreds of thousands of stars observed by both \textit{Gaia} and APOGEE to trace gradients across different stellar populations and stellar ages. The latter is especially important, as we have understood that radial migration in the Milky Way can significantly shift the position of older stars with respect to their birth radii \citet{Binney2008, Frankel2018, Frankel2020}
+
+Even before \textit{Gaia}, extensive observational efforts over the last decades have measured radial metallicity gradients using various stellar populations and gas tracers. In particular, \citet{Janes1979} delivered first evidence for a radial metallicity gradient in the Milky Way's disk of
+\begin{equation}
+    \frac{\mathrm{d{[Fe/H]}}}{\mathrm{d}R} = -0.05 \pm 0.01\,\mathrm{dex\,kpc^{-1}},
+\end{equation}
+a value that is surprisingly close the the latest measurements\citep{Anders2017, Hayden2015}. With a larger sample, \citet{Twarog1980} noted that this relation is accompanied by a dispersion of $0.1-0.15\,\mathrm{dex}$ in [Fe/H]. Additional studies include references in Table 1 by \citet{Chiappini2001}, data from the RAVE and Geneva-Copenhagen Survey \citep{Boeche2013}, and results from APOGEE \citep{Anders2014, Cunha2016}. Studies using \textit{Gaia-ESO} \citep{Bergemann2014} found a gradient of $\Delta \mathrm{[Fe/H]} / \Delta R = -0.068 \pm 0.014 \mathrm{dex kpc^{-1}}$ close to the plane ($\vert Z \vert < 300\,\mathrm{pc}$). In addition to field stars, multiple studies use young open clusters as tracers \citep[e.g.][]{Cunha2016, Magrini2017, Casamiquela2019, Donor2020, Spina2021,Myers2022}, while others use young OB-type stars \citep{Zari2018, Zari2021, Poggio2021, Poggio2022} or Cepheids \citep{Andrievsky2002, Andrievsky2002b, Lemasle2007, Lemasle2013}. Using the latter Cepheids, \citet{Genovali2014} highlighted a large intrinsic dispersion and fine structure of the metallicity gradient, where ``residuals of the metallicity gradient are tightly correlated with candidate Cepheid groups''.
+
+Several other challenges have been faced in the study of the Milky Way's metallicity gradients:
 \begin{itemize}
-    \item \citet{Eilers2019}
-    \item \citet{Poggio2021}
-    \item \citet{Poggio2022} especially Fig. 2!
-    \item \citet{Imig2023}
-    \item \citet{Chen2023} - see their Figs. 4-6 with lots of (expected?) scatter
-    \item \citet{Hackshaw2024}
+    \item Assessing the completeness of the observed dataset remains a difficult but fundamental task \citep{Bergemann2014}.
+    \item Different samples often find different gradients, with steeper gradients reported by \citet{Bergemann2014, Boeche2013} compared to \citet{AllendePrieto2006, Hayden2014, Anders2014, Katz2011}. The observed gradients may reflect the limitations of small datasets or the larger vertical distances probed in some studies \citep{Bergemann2014}.
+    \item We are not yet fully understanding spiral arm structures and their impacts on metallicity gradients \citep{Poggio2021, Poggio2022}.
+    \item Similarly, we other effects like the Galactic warp may influence our measurements in complex ways \citep[e.g.][]{Lemasle2022}.
+    \item On a more general note, the methodology of fitting a line to incomplete and scattered data should also be questioned. See e.g. \citet{Metha2021} for new ways to go beyond fitting basic linear regressions.
 \end{itemize}
 
-\textbf{FINE STRUCTURE OF THE METALLICITY GRADIENT} \citep{Genovali2014}
+Understanding radial metallicity gradients across our Galaxy is equally essential for extragalactic studies. Observations of external galaxies, though often limited by spatial resolution and sensitivity, have employed techniques such as spectroscopy of HII regions, planetary nebulae, and integrated light to infer metallicity distributions \citep{Shaver1983, Vilchez1996, Rolleston2000, Bresolin2012, Sanchez2014}. Among the plethora of studies, recent examples include \citet{Sanchez2014} with CALIFA galaxies (see their Figs. 5 and 11), \citet{Mun2024} and \citet{Chen2024} with MAGPI on the effects of spiral arms. Notable is especially the scatter that \citet{Chen2023} found for the gas metallicity across galactic radius with TYPHOON observations (see their. Figs. 4-6).
 
-"Over the past decade, different authors using different observational tools often came to contradictory views on both the shape, the magnitude and the evolution of the abundance gradients along the disk" \citep{Chiappini2002}.
+From a modelling perspective, galactic chemical evolution models can both test understanding of radial metallicity gradients and make predictions beyond the limited volumes and tracers tested by Milky Way and extragalactic studies. Such galactic chemical evolution models include \citet{Chiappini2001, Minchev2014b, Kubryk2015, Stanghellini2015, Matteucci2001b}.
 
-\begin{itemize}
-    \item \textbf{Galactic Chemical Evolution}
-    \begin{itemize}
-        \item It matters if/how linear the radial abundance gradient is to test galactic chemical evolution models \citep[see e.g.][]{Chiappini2001}, especially in the outer regions of our Galaxy \citep{Chiappini2002}.
-        \item \citet{Minchev2014b}
-        \item \citet{Kubryk2015}
-        \item \citet{Stanghellini2015}
-        \item \citet{Matteucci2001b}
-    \end{itemize}
-    \item \textbf{Observations in the Milky Way}
-    \begin{itemize}
-        \item see references in Table 1 by \citet{Chiappini2001}
-        \item with RAVE and Geneva-Copenhagen Survey \citep{Boeche2013}
-        \item with APOGEE \citep{Anders2014, Cunha2016} 
-        \item with \textit{Gaia-ESO} \citep{Bergemann2014}. \citet{Bergemann2014} find $\Delta \mathrm{[Fe/H]} / \Delta R = -0.068 \pm 0.014 \mathrm{dex kpc^{-1}}$ close to the plane ($\vert Z \vert < 300\,\mathrm{pc}$).
-        \item \citet{Willett2023}
-    \end{itemize}
-    \item \textbf{Observations outside the Milky Way}
-    \begin{itemize}
-        \item \citet[][see their Figs. 5 and 11]{Sanchez2014} with CALIFA galaxies 12 + log(O/H) vs. R/Re
-        \item \citet{Mun2024} not explicitely radius vs. [Fe/H], but MAGPI
-        \item \citet{Chen2024} (see their Fig. 6) on the effects of spiral arms on different tracers of the interstellar medium and stellar populations
-        \item \citet{Chen2023} see their Figs. 4-6.
-    \end{itemize}
-    \item Problems with Observations:
-    \begin{itemize}
-        \item "One of the most difficult but fundamental tasks is to assess the completeness of the observed dataset." \citep{Bergemann2014}
-        \item different samples find different gradients. Compare e.g. steeper gradients by \citet{Bergemann2014, Boeche2013} with \citet{AllendePrieto2006, Hayden2014, Anders2014, Katz2011}.
-        \item "but this could reflect our small dataset or the fact that the studies probe much larger $\vert Z \vert$." \citep{Bergemann2014}.
-        \item Spiral arms \citet{Poggio2021}: Galactic spiral structure revealed by Gaia EDR3
-        \item Spiral arms \citet{Poggio2022}: The chemical signature of the Galactic spiral arms revealed by Gaia DR3
-        \item Galactic warp \citep[e.g.][]{Lemasle2022}
-    \end{itemize}
-    \item Which tracers do you use?
-    \begin{itemize}
-        \item Open clusters?
-        \item Cepheids? \citep{Andrievsky2002, Andrievsky2002b, Lemasle2007, Lemasle2013}
-        \item OB stars?
-        \item H II regions?
-    \end{itemize}
-    \item Simulations
-    \begin{itemize}
-        \item \citet{Minchev2014b}
-        \item \citep[Figs. 7 and 9 from][]{Agertz2021}
-        \item \citep[Figs. 6 and 9 from][]{Ma2017} % The structure and dynamical evolution of the stellar disc of a simulated Milky Way-mass galaxy
-        \item \citep[Fig. 1 from][]{Pilkington2012} % Metallicity gradients in disks. Do galaxies form inside-out?
-        \item Fig. 4 from \citet{Tissera2019} % The oxygen abundance gradients in the gas discs of galaxies in the EAGLE simulation
-        \item \cite{Brook2012} % Thin disc, thick disc and halo in a simulated galaxy
-        \item Bellardini
-        \begin{itemize}
-            \item \cite{Bellardini2021}
-            \item \citet{Bellardini2022}
-            \item \cite{Carrillo2023} did not exactly look into this, but had Fig. 13 showing radial metallicity gradient (for 5 Gyr old stars)
-            \item \citep{Graf2024}  
-        \end{itemize}
-        \item Metha
-        \begin{itemize}
-            \item \cite{Metha2021}
-            \item \cite{Metha2022}
-            \item \cite{Metha2023}
-            \item \cite{Metha2024}
-            \item \cite{Metha2024b}
-        \end{itemize}
-    \end{itemize}
-\end{itemize}
+On an even larger scale, new suites of simulations now allow to test gradients across a larger range of simulated galaxies - including Milky Way analogues. While \citet{Pilkington2012} found that such gradients are established by inside-out formation in RaDES simulations, whereas \citet{Tissera2019} used EAGLE simulations to study gradients across different galaxy characteristics, such as mergers and stellar mass. \citet{Bellardini2021} and \citet{Bellardini2022, Graf2024} compared the radial metallicity gradient and its azimuthal scatter for different simulations of the FIRE suite for gas and stars, respectively. Focusing on the change of the radial metallicity gradient over time, \citet{Grand2015} assessed the scatter of radial metallicity distribution for different stellar ages. Both \citet[][see their Fig. 6]{Ma2017} with FIRE and \citet[see their Fig. 9][]{Agertz2021} with VINTERGATAN further assessed the evolution of the radial metallicity gradient for gas and stars. \citet{Khoperskov2023e} again focused on the gas and found the scatter of the gas metallicity of $\approx 0.04-0.06\,\mathrm{dex}$ at a given galactocentric distance.
 
+Despite significant observational and theoretical advancements, several fundamental questions about radial metallicity gradients remain unanswered. This study aims to address four critical scientific hypotheses using a high-resolution simulation of a Milky Way analogue galaxy:
 
-...
+\begin{enumerate}
+    \item \textit{Linearity of the gradient:} To what extent is the radial metallicity gradient linear? Alternatively, would it be better described by two linear relations, with a break radius at corotation radius \citep[][and references therein]{Bresolin2012} or further out \citep{Donor2020} or a more sophisticated function \citep[see e.g.][]{Chiappini2001, Kubryk2015}? Investigating the gradient's form helps in understanding the galactic processes influencing metallicity at different radii \citep{Minchev2014b}.
+    \item \textit{Scatter in the gradient:} How much scatter in the radial metallicity gradient is expected based on simulations? Quantifying the scatter can provide insights into the effects of transient events like mergers, star formation bursts, and gas accretion.
+    \item \textit{Coherence of the gradient with position:} How significant is the change in the radial metallicity gradient as a function of position, both in terms of radial coverage and azimuth? Understanding these variations can reveal the underlying processes affecting metallicity distribution, such as spiral arm dynamics and bar-driven mixing \citep[see their Figs. 5-8][]{DiMatteo2013}.
+    \item \textit{Coherence of the gradient with age:} Until what stellar age can stars be used as reliable tracers of the gas disk in simulations, in terms of both chemical composition and position? This question is pivotal for interpreting observed gradients across different ages \citep[e.g.][]{Willett2023} and comparing them with model predictions, particularly concerning the migration and heating of stellar populations \citep{Binney2008, Frankel2018}.
+\end{enumerate}
+
+By addressing these hypotheses, we aim to deepen our understanding of the processes governing the distribution of metals in galaxies and their evolution over time. This study not only provides new insights into the Milky Way but also offers comparative perspectives for extragalactic research, contributing to a unified framework for studying galactic metallicity gradients.
 
 The paper is structured as follows: Sec.~\ref{sec:data} describes the data of GALAH observations and NIHAO simulations. Sec.~\ref{sec:radial_metallicity_gradients} analyses the radial metallicity gradients of the simulations. Sec.~\ref{sec:discussion} discusses to which extend these gradients are linear and what we can learn from the residuals. Sec.~\ref{sec:conc} concludes the paper.
 
@@ -210,6 +163,10 @@ The model perspective on accretion is provided through a cosmological zoom-in si
 
 \SB{Show the X-Y and R-z distribution -> This will be important when we select stars to make sure we select close to the galactic plane! Also compare with \citet{Poggio2022} on how they did it (if they applied a cut in $\vert z \vert$, maybe they only did an age cut?)!}
 
+\subsection{Data selection}
+
+Need to limit ourselves to young stars ($< 1\,\mathrm{Gyr}$), to avoid too strong effects of radial migration \citep{Binney2008, Frankel2018}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Radial metallicity gradients in NIHAO}
@@ -259,6 +216,8 @@ The model perspective on accretion is provided through a cosmological zoom-in si
 \end{figure*}
 
 Fig.~\ref{fig:linear_radial_metallicity_gradients_mw_in_angles}f shows impressively, that if you look at a rather narrow range of $R_\mathrm{gal}$, such as $7 < R_\mathrm{gal} < 13\,\mathrm{kpc}$, the radial metallicity gradient could actually look like it is damping towards larger radii. \SB{Is this possibly what is happening in local studies of our galaxy, where many researchers are actually fitting 2 linear gradients with a break radius?}
+
+\SB{Actually one can see this effect even better in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}b,d,e,f,h and i!}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion} \label{sec:discussion}
