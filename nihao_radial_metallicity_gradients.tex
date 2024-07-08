@@ -135,9 +135,14 @@ The simulation records galactocentric Cartesian positions $(X,Y,Z)$ and velociti
 \end{align}
 while using the \textsc{numpy} \textsc{arctan2} package.
 
-To achieve a roughly similar selection as the observational data of the Milky Way and avoid too strong effects of radial migration \citep{Binney2008, Frankel2018}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{GC} \leq 20\,\mathrm{kpc}$ and further enforce stars to be younger than $1\,\mathrm{Gyr}$. This selection de-facto also limits the vertical range of 99\% of stars to \include{tex_text/abs_z_young_within_r_max_99perc}.
+To achieve a roughly similar selection as the observational data of the Milky Way, we restrict the simulation data to a galactocentric radius of $R_\mathrm{GC} \leq 20\,\mathrm{kpc}$. To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018} we further enforce stars to be younger than $1\,\mathrm{Gyr}$. This selection de-facto also limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The influence on this age cut can best be appreciated from the difference of spatial density distributions in the upper (stellar) panels of Fig.~\ref{fig:stars_and_gas_overview}.
 
-\SB{Show the X-Y and R-z distribution -> This will be important when we select stars to make sure we select close to the galactic plane! Also compare with \citet{Poggio2022} on how they did it (if they applied a cut in $\vert z \vert$, maybe they only did an age cut?)!}
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{figures/stars_and_gas_overview.png}
+    \caption{Logarithmic spatial density distribution of stars (upper panels) and gass (lower panels) within $R < 20\,\mathrm{kpc}$ of the NIHAO Milky Way analogue \texttt{g8.26e11} galactocentric cartesian and cylindric coordinates. Panel c) shows the influence of selecting only young stars ($<1\,\mathrm{Gyr}$).}
+    \label{fig:stars_and_gas_overview}
+\end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
