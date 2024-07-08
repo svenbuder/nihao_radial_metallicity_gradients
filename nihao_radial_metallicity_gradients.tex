@@ -24,9 +24,8 @@
 
 %%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
 \newcommand{\ToDo}[1]{\textbf{\textcolor{blue}{ToDo: #1}}}
-\newcommand{\SB}[1]{{\textcolor{orange}{SB: #1}}}
-\newcommand{\LM}[1]{{\textcolor{purple}{LM: #1}}}
-\newcommand{\TB}[1]{{\textcolor{green}{TB: #1}}}
+\newcommand{\SB}[1]{{\textcolor{purple}{SB: #1}}}
+\newcommand{\TB}[1]{{\textcolor{blue}{TB: #1}}}
 \newcommand{\Gaia}{\textit{Gaia}\xspace} % \Gaia
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,25 +118,15 @@ This study aims to advance these theoretical insight by addressing four critical
 
 The paper is structured as follows: Sec.~\ref{sec:data} describes the data of our Milky Way analogue NIHAO simulation. Sec.~\ref{sec:radial_metallicity_gradients} analyses the radial metallicity gradients of the simulation under the four aforementioned questions. Sec.~\ref{sec:discussion} discusses them individually and Sec.~\ref{sec:conc} bundles them into an overarching conclusion.
 
-\section{Data: NIHAO simulations} \label{sec:data}
+\section{Data: A NIHAO Milky Way analogue simulation} \label{sec:data}
 
-For this project, we use a cosmological zoom-in simulation of a Milky Way analogue (\texttt{g8.26e11}) from the \textit{Numerical Investigation of a Hundred Astronomical Objects} \citep[NIHAO,][]{Wang2015}. The model galaxy has a total mass (gas, stars and dark matter) of $8.26 \cdot 10^{11}\,\mathrm{M_\odot}$ and contains $4 \cdot 10^{10}\,\mathrm{M_\odot}$ stellar mass with a stellar mass resolution of $1.06 \cdot 10^{5}\,\mathrm{M_\odot}$ \citep{Buck2021} and was calculated as part of the NIHAO-UHD project \citep{Buck2020b}.
+For this project, we use a cosmological zoom-in simulation of a Milky Way analogue (\texttt{g8.26e11}) from the \textit{Numerical Investigation of a Hundred Astronomical Objects} \citep[NIHAO,][]{Wang2015}. The model volume has a total mass (gas, stars and dark matter) of $8.26 \cdot 10^{11}\,\mathrm{M_\odot}$ and contains $4 \cdot 10^{10}\,\mathrm{M_\odot}$ stellar mass with a stellar mass resolution of $1.06 \cdot 10^{5}\,\mathrm{M_\odot}$ \citep{Buck2021} and was calculated as part of the NIHAO-UHD project \citep{Buck2020b}.
 
 Simulations were carried out with the smoothed particle hydrodynamics code \texttt{Gasoline2} \citep{Wadsley2017} using cosmological parameters from \citet{Planck2014} with initial conditions and energetic feedback descriptions from the NIHAO project \citep{Wang2015}. Zoom-in simulations were then performed as described in detail by \citet{Buck2021} with star formation following \citet{Stinson2006} and energetic feedback following \citet{Stinson2013}.
 
-Because computational resources still limit the mass resolution of simulations, we are relying on tracer particles that represent simple stellar populations (SSPs) with the same age, overall metallicity and discrete initial mass function (IMF). \citet{Buck2021} have implemented the flexible chemical evolution code \textsc{chempy} \citep{Rybizki2017} to calculate the chemical yields for the SSPs. In particular, we use the alternative (\texttt{alt}) setup of \textsc{chempy} that assumes a \citet{Chabrier2003} IMF with high-mass slope of $\alpha_\text{IMF} = -2.3$ over a mass range of $0.1-100\,\mathrm{M_\odot}$ for SSPs across a metallicity range of $Z/Z_\odot \in [10^{-5},2]$. The code calculates the contribution from asymptotic giant branch (AGB) stars, CCSN across a mass range of $8-40\,\mathrm{M_\odot}$, and SNIa with a an exponential function with exponent $-1.12$, a delay time of $40\,\mathrm{Myr}$, and a normalization of the SNI rate of -2.9. For each of these nucleosynthetic channels, yields from the following studies are used: \citet{Limongi2018} for CCSN, \citet{Seitenzahl2013} for SNIa, and \citet{Karakas2016} for AGB stars.
+Because computational resources still limit the mass resolution of simulations, we are relying on tracer particles that represent simple stellar populations (SSPs) with the same age, overall metallicity and discrete initial mass function (IMF). \citet{Buck2021} have implemented the flexible chemical evolution code \textsc{chempy} \citep{Rybizki2017} to calculate the chemical yields for the SSPs. In particular, we use the alternative (\texttt{alt}) setup of \textsc{chempy} that assumes a \citet{Chabrier2003} IMF with high-mass slope of $\alpha_\text{IMF} = -2.3$ over a mass range of $0.1-100\,\mathrm{M_\odot}$ for SSPs across a metallicity range of $Z/Z_\odot \in [10^{-5},2]$. The code calculates the contribution from asymptotic giant branch (AGB) stars, CCSN across a mass range of $8-40\,\mathrm{M_\odot}$, and SNIa with a an exponential function with exponent $-1.12$, a delay time of $40\,\mathrm{Myr}$, and a normalization of the SNI rate of -2.9. For each of these nucleosynthetic channels, yields from the following studies are used: \citet{Limongi2018} for CCSN, \citet{Seitenzahl2013} for SNIa, and \citet{Karakas2016} for AGB stars. Contrary to a previous study by \citet{Buder2024}, we take the elemental abundances at face value and do not apply any shifts.
 
-For this project, we have limited the simulation data to the main halo by applying \textsc{pynbody}'s implementation of the Amiga Halo Finder \citep{Knollman2009} and then reposition and rotated this main halo to be face-on based on the angular momentum with \textsc{pynbody}'s \textsc{analysis.angmom.faceon} module \citep{pynbody}. We then further transformed the resulting galactocentric cartesian coordinate $(X,Y,Z)$ and velocities $(V_X,V_Y,V_Z)$ to Cylindrical ones for each particle via
-\begin{align}
-    R = \sqrt{X^2 + Y^2} \qquad &\& \qquad V_R = \frac{X*V_X + Y*V_Y}{R} \\
-    \phi = \arctan(X/Y) \qquad &\& \qquad V_\phi = \frac{-Y*V_X + X*V_Y}{R} \\
-    z = Z  \qquad &\& \qquad V_z = V_Z,
-\end{align}
-while using the \textsc{numpy} \textsc{arctan2} package.
-
-The main halo is the same realisation as the one used for accretion studies by \citet{Buder2024} and has a total half mass radius of $66.0\,\mathrm{kpc}$ for all matter and a stellar half mass radius $2.4\,\mathrm{kpc}$.
-
-To achieve a roughly similar selection as the observational data of the Milky Way \citep{Genovali2014} and other galaxies \citep[e.g.][]{Chen2023}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{GC} \leq 20\,\mathrm{kpc}$. To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018} we further enforce stars to be younger than $1\,\mathrm{Gyr}$. This selection de-facto also limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The influence on this age cut can best be appreciated from the difference of spatial density distributions in the upper (stellar) panels of Fig.~\ref{fig:stars_and_gas_overview}.
+For this project, we limit the simulation data to the main halo by applying \textsc{pynbody}'s implementation of the Amiga Halo Finder \citep{Knollman2009} and then reposition and rotate this main halo to be face-on based on the angular momentum with \textsc{pynbody}'s \textsc{analysis.angmom.faceon} module \citep{pynbody}. The main halo has a total half mass radius of $66.0\,\mathrm{kpc}$ for all matter and a stellar half mass radius $2.4\,\mathrm{kpc}$. We then further transform the resulting galactocentric Cartesian coordinate $(X,Y,Z)$ and velocities $(V_X,V_Y,V_Z)$ to Cylindrical ones as done in a previous study of this main halo by \citet{Buder2024}.
 
 \begin{figure*}
     \centering
@@ -146,19 +135,37 @@ To achieve a roughly similar selection as the observational data of the Milky Wa
     \label{fig:stars_and_gas_overview}
 \end{figure*}
 
+To achieve a roughly similar selection as the observational data of the Milky Way \citep{Genovali2014} and other galaxies \citep[e.g.][]{Chen2023}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{Gal} \leq 20\,\mathrm{kpc}$, as shown in Fig.~\ref{fig:stars_and_gas_overview}. Similar to the Milky Way \citep{Poggio2018, Lemasle2022}, we note a warp of the stellar and gaseous disk (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e, respectively).
+
+To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018} we further enforce stars to be younger than $1\,\mathrm{Gyr}$. This selection de-facto limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The strong influence of this age cut on the vertical distribution of stars in the Milky Way analogue can best be appreciated from the difference of vertical density distributions of stars in Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}c. We are applying these cuts for all following analyses of the radial metallicity gradient in Sec.~\ref{sec:radial_metallicity_gradients}.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Radial metallicity gradients in NIHAO}
 \label{sec:radial_metallicity_gradients}
 
+In our analysis, we follow the structure laid out with the scientific questions in Sec.~\ref{sec:intro}. In Sec.~\ref{sec:linear_radial_metallicity_gradients} we assess the linearity of the radial metallicity gradient on a global scale. In Sec.~\ref{sec:scatter_radial_metallicity_gradients} we quantify the scatter of the gradient. In Secs.~\ref{sec:coherence_position_radial_metallicity_gradients} and \ref{sec:coherence_age_radial_metallicity_gradients} we analyse the coherence of the gradient with position and stellar age, respectively.
 
 \subsection{Linearity of the gradient}
 \label{sec:linear_radial_metallicity_gradients}
+
+\SB{How are the linear metallicity gradients usually measured? Any binning? If so, can we study what effect that has? How are uncertainties treated?}
+
+Here (Fig.~\ref{fig:global_r_feh_fit}), we are using the \textsc{LinearRegression} module of \textsc{sklearn.linear_model} \citep{scikit-learn}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/global_r_feh_fit.png}
+    \caption{Global fit and deviation to the radial metallicity gradient $R-\mathrm{[Fe/H]}$. Panel a) shows the underlying data of all data points as grey logarithmic density and the global fit to them as red dashed line. Panel b) shows the deviation of data as logarithmic density plot, whereas panel c) shows the 16th and 84th percentile around the median deviation as error bars in $\Delta R_\mathrm{Gal} = 1\,\mathrm{kpc}$ bins.}
+    \label{fig:global_r_feh_fit}
+\end{figure}
+
 
 \subsection{Scatter in the gradient}
 \label{sec:scatter_radial_metallicity_gradients}
 
 \subsection{Coherence of the gradient with position}
+\label{sec:coherence_position_radial_metallicity_gradients}
 
 \begin{figure*}
     \centering
@@ -175,6 +182,7 @@ To achieve a roughly similar selection as the observational data of the Milky Wa
 \end{figure*}
 
 \subsection{Coherence of the gradient with age}
+\label{sec:age_position_radial_metallicity_gradients}
 
 \SB{Do the same as Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}, but with bins colored by median age.}
 
