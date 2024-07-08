@@ -135,7 +135,7 @@ The simulation records galactocentric Cartesian positions $(X,Y,Z)$ and velociti
 \end{align}
 while using the \textsc{numpy} \textsc{arctan2} package.
 
-To achieve a roughly similar selection as the observational data of the Milky Way and avoid too strong effects of radial migration \citep{Binney2008, Frankel2018}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{GC} \leq 20\,\mathrm{kpc}$ and further enforce stars to be younger than $1\,\mathrm{Gyr}$.
+To achieve a roughly similar selection as the observational data of the Milky Way and avoid too strong effects of radial migration \citep{Binney2008, Frankel2018}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{GC} \leq 20\,\mathrm{kpc}$ and further enforce stars to be younger than $1\,\mathrm{Gyr}$. This selection de-facto also limits the vertical range of 99\% of stars to \include{tex_text/abs_z_young_within_r_max_99perc}.
 
 \SB{Show the X-Y and R-z distribution -> This will be important when we select stars to make sure we select close to the galactic plane! Also compare with \citet{Poggio2022} on how they did it (if they applied a cut in $\vert z \vert$, maybe they only did an age cut?)!}
 
