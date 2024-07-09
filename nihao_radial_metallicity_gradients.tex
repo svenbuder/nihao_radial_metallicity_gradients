@@ -35,7 +35,7 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[NIHAO vs. Milky Way: Radial metallicity gradients]{More than just a line? Shining light on the radial metallicity gradient with a NIHAO Milky-Way analogue simulation}
+\title[Radial metallicity gradients in NIHAO]{More than just a line: Shining light on the radial metallicity gradient with a NIHAO Milky-Way analogue simulation}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -187,6 +187,26 @@ In this section, we are
     \caption{Impact of different coverage in galactocentric radius when fitting a linear radial metallicity gradient to young stars. For better contrast, the global fit is subtracted from the local gradient estimates and each line is colored by the gradient slope with a color scale centered around the global fit slope.}
     \label{fig:radial_range_impact}
 \end{figure}
+
+\subsubsection{Higher-order gradients}
+
+From the previous section, and especially the changing deviation of local gradients from a global fit in Fig.~\ref{fig:radial_range_impact}, we acknowledge that a linear fit is - not unexpected - not able to capture the more intricate details of the radial abundance gradient. In particular, we realise that the abundance gradient is indeed flattening - even for stars with young ages ($< 1\,\mathrm{Gyr}$). When looking at linear gradient fits across radial coverages of  $\Delta R_\mathrm{Gal.} = 5-15\,\mathrm{kpc}$ in Fig.~\ref{fig:radial_range_impact}, the gradient was steeper (bluer color) for smaller radii and flatter (redder) for larger radii.
+
+While such effects have seen before for the Milky Way, previous studies how mostly suggested to fit piecewise linear gradients with a break radius \citep[e.g.][]{Andrievsky2002, Boeche2013, Hayden2014, Anders2017, Donor2020}.
+
+Our results from Fig.~\ref{fig:radial_range_impact} suggest, however, not one break radius, but rather an smoothly evolving flattening, in better agreement with a quadratic function rather than two linear ones. In this section, we are therefore trying to expand the gradient function by a higher order, that is second order, one.
+
+\SB{Guess we better test if the quadratic function is indeed a better fit than the 2 linear functions?}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/radial_range_impact_quadratic.png}
+    \caption{Quadratic Fit.}
+    \label{fig:radial_range_impact_quadratic}
+\end{figure}
+
+\SB{How significant is the difference of linear to quadratic when looking at 5-19 kpc, like MW studies \citep{Genovali2014}?}
 
 \subsection{Scatter in the gradient}
 \label{sec:scatter_radial_metallicity_gradients}
