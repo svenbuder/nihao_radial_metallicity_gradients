@@ -21,12 +21,14 @@
 \usepackage{multirow}
 \usepackage{mathtools}
 \usepackage{newtxtext,newtxmath}
+\usepackage{tabularx}
 
 %%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
 \newcommand{\ToDo}[1]{\textbf{\textcolor{blue}{ToDo: #1}}}
 \newcommand{\SB}[1]{{\textcolor{purple}{SB: #1}}}
 \newcommand{\TB}[1]{{\textcolor{blue}{TB: #1}}}
 \newcommand{\Gaia}{\textit{Gaia}\xspace} % \Gaia
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
@@ -149,9 +151,13 @@ In our analysis, we follow the structure laid out with the scientific questions 
 \subsection{Linearity of the gradient}
 \label{sec:linear_radial_metallicity_gradients}
 
-\SB{How are the linear metallicity gradients usually measured? Any binning? If so, can we study what effect that has? How are uncertainties treated?}
+\subsubsection{A first look with a global fit}
 
-Here (Fig.~\ref{fig:global_r_feh_fit}), we are using the \textsc{LinearRegression} module of \textsc{sklearn.linear_model} \citep{scikit-learn}.
+In this section, we are
+\begin{itemize}
+    \item Fitting a global linear radial metallicity gradient (see Fig.~\ref{fig:global_r_feh_fit}). Here (Fig.~\ref{fig:global_r_feh_fit}), we are using the \textsc{LinearRegression} module of \textsc{sklearn.linear\_model} \citep{scikit-learn}.
+    \item Test different fitting methods for consistency (see Tab.\~ref{tab:global_fit_results_per_method})
+\end{itemize}
 
 \begin{figure}
     \centering
@@ -160,6 +166,26 @@ Here (Fig.~\ref{fig:global_r_feh_fit}), we are using the \textsc{LinearRegressio
     \label{fig:global_r_feh_fit}
 \end{figure}
 
+\input{tables/global_fit_results_per_method.tex}
+
+
+\SB{How are the linear metallicity gradients usually measured? Any binning? If so, can we study what effect that has? How are uncertainties treated?}
+
+\subsubsection{The impact of radial coverage on linear fits}
+
+In this section, we are
+\begin{itemize}
+    \item Fitting and comparing linear radial metallicity gradients to subsets in galactocentric radius. The radial ranges will be tested for scales of 0.25, 0.5, 1, 2, 5, 8, 10, 15, and $20\,\mathrm{kpc}$, see Fig.~\ref{fig:radial_range_impact}
+    \item We see a clear difference to a linear gradient across $0-20\,\mathrm{kpc}$.
+    \item In particular, we note that when fitting piecewise linear gradients, we identify quite a significant curvature. As an example, we highlight the difference in the linear radial metallicity gradient estimate when measuring between $R_\mathrm{Gal.} = 5-10\,\mathrm{kpc}$ (orange line in Fig.~\ref{fig:radial_range_impact}) or $R_\mathrm{Gal.} = 10-15\,\mathrm{kpc}$ (red line in Fig.~\ref{fig:radial_range_impact}).
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/radial_range_impact.png}
+    \caption{Impact of different coverage in galactocentric radius when fitting a linear radial metallicity gradient to young stars. For better contrast, the global fit is subtracted from the local gradient estimates.}
+    \label{fig:radial_range_impact}
+\end{figure}
 
 \subsection{Scatter in the gradient}
 \label{sec:scatter_radial_metallicity_gradients}
@@ -182,7 +208,7 @@ Here (Fig.~\ref{fig:global_r_feh_fit}), we are using the \textsc{LinearRegressio
 \end{figure*}
 
 \subsection{Coherence of the gradient with age}
-\label{sec:age_position_radial_metallicity_gradients}
+\label{sec:coherence_age_radial_metallicity_gradients}
 
 \SB{Do the same as Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}, but with bins colored by median age.}
 
@@ -202,6 +228,12 @@ Comparison to \citet[][see their Fig. 10]{Minchev2014b}: They see significant de
 \subsection{Linearity of the gradient} \label{sec:discussion_linearity}
 
 To what extent is the radial metallicity gradient of young stars linear? Alternatively, would it be better described by two linear relations, with a break radius at corotation radius \citep[][and references therein]{Bresolin2012} or further out \citep{Donor2020} or a more sophisticated function \citep[see e.g.][]{Chiappini2001, Kubryk2015}? Investigating the gradient's form helps in understanding the galactic processes influencing metallicity at different radii \citep{Minchev2014b}.
+
+\SB{"However, a simple, linear gradient may not be the better way to describe the distribution of the elements in the Galactic disk. From Cepheids, Andrievsky et al. (2002b), Pedicelli et al. (2009, 2010), and Genovali et al. (2013) found a steeper gradient in the very inner disk ($\leq 7\,\mathrm{kpc}$)." from \citet{Lemasle2013}}
+
+\SB{"There are numerous abundance studies of open clusters from different groups: [...] They all reach the same conclusion: a linear gradient of approximately $-0.06\,\mathrm{dex/kpc}$ extending quite far into the outer disk, and a flattening at a level of $\mathrm{[Fe/H]} \approx -0.3\,\mathrm{dex}$, somewhere between 10 and 14 kpc." from \citet{Lemasle2013}.}
+
+\SB{\citet{Lemasle2008} find $\mathrm{d[Fe/H]}/\mathrm{d}R = -0.050 \pm 0.008\,\mathrm{dex\,kpc^{-1}}$ in the 5-17 kpc range, but $\mathrm{d[Fe/H]}/\mathrm{d}R = -0.012 \pm 0.014\,\mathrm{dex\,kpc^{-1}}$ in a smaller 10-15 kpc range.}
 
 \SB{Put some of these results into context of the Milky Way in Fig.~\ref{fig:radial_metallicity_gradients_mw_vs_nihao}.}
 
