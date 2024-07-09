@@ -156,7 +156,7 @@ In our analysis, we follow the structure laid out with the scientific questions 
 In this section, we are
 \begin{itemize}
     \item Fitting a global linear radial metallicity gradient (see Fig.~\ref{fig:global_r_feh_fit}). Here (Fig.~\ref{fig:global_r_feh_fit}), we are using the \textsc{LinearRegression} module of \textsc{sklearn.linear\_model} \citep{scikit-learn}.
-    \item Test different fitting methods for consistency (see Tab.\~ref{tab:global_fit_results_per_method})
+    \item Test different fitting methods for consistency (see Tab.~\ref{tab:global_fit_results_per_method})
 \end{itemize}
 
 \begin{figure}
@@ -177,13 +177,14 @@ In this section, we are
 \begin{itemize}
     \item Fitting and comparing linear radial metallicity gradients to subsets in galactocentric radius. The radial ranges will be tested for scales of 0.25, 0.5, 1, 2, 5, 8, 10, 15, and $20\,\mathrm{kpc}$, see Fig.~\ref{fig:radial_range_impact}
     \item We see a clear difference to a linear gradient across $0-20\,\mathrm{kpc}$.
-    \item In particular, we note that when fitting piecewise linear gradients, we identify quite a significant curvature. As an example, we highlight the difference in the linear radial metallicity gradient estimate when measuring between $R_\mathrm{Gal.} = 5-10\,\mathrm{kpc}$ (orange line in Fig.~\ref{fig:radial_range_impact}) or $R_\mathrm{Gal.} = 10-15\,\mathrm{kpc}$ (red line in Fig.~\ref{fig:radial_range_impact}).
+    \item In particular, we note that when fitting piece-wise linear gradients, we identify quite a significant curvature when going to smaller radial scales.
+    \item When directly comparing an inner and outer radius fit, such as between $R_\mathrm{Gal.} = 5-10\,\mathrm{kpc}$ (thick grey line in Fig.~\ref{fig:radial_range_impact}) and $R_\mathrm{Gal.} = 10-15\,\mathrm{kpc}$ (thick black line in Fig.~\ref{fig:radial_range_impact}), we note a significant change, similar to previous estimates of the Milky Way \citep[e.g.][]{Lemasle2008}. In our case the gradient estimate changes from \input{tex_text/linear_gradient_5_10_kpc.tex} to \input{tex_text/linear_gradient_10_15_kpc.tex}.
 \end{itemize}
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figures/radial_range_impact.png}
-    \caption{Impact of different coverage in galactocentric radius when fitting a linear radial metallicity gradient to young stars. For better contrast, the global fit is subtracted from the local gradient estimates.}
+    \caption{Impact of different coverage in galactocentric radius when fitting a linear radial metallicity gradient to young stars. For better contrast, the global fit is subtracted from the local gradient estimates and each line is colored by the gradient slope with a color scale centered around the global fit slope.}
     \label{fig:radial_range_impact}
 \end{figure}
 
