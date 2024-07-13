@@ -96,12 +96,12 @@ Historically, radial metallicity gradients have been measured using various stel
 \begin{equation}
 \frac{\mathrm{d{[Fe/H]}}}{\mathrm{d}R} = -0.05 \pm 0.01,\mathrm{dex,kpc^{-1}}
 \end{equation}
-for the Milky Way which aligns with more recent measurements \citep{Anders2017, Hayden2015}. Estimated gradients also seem to be broadly consistent across different stellar tracers, such as young open clusters \citep[e.g.][]{Cunha2016, Magrini2017, Casamiquela2019, Donor2020, Spina2021,Myers2022}, young hot (OB-type) stars \citep{Zari2018, Zari2021, Poggio2021, Poggio2022}, field stars close to the Galactic plane \citep[e.g.][]{Bergemann2014} or Cepheids \citep{Andrievsky2002, Andrievsky2002b, Lemasle2007, Lemasle2013}. However, these gradients are accompanied by significant spread in [Fe/H] of $0.1-0.15\,\mathrm{dex}$, as noted by \citet{Twarog1980}, which may imply a fine structure of the metallicity gradient \citep[see][]{Genovali2014}.
+for the Milky Way which aligns with more recent measurements \citep{Anders2017, Hayden2015}. Estimated gradients also seem to be broadly consistent across different stellar tracers, such as young open clusters \citep[e.g.][]{Yong2012, Cunha2016, Magrini2017, Casamiquela2019, Donor2020, Spina2021,Myers2022}, young hot (OB-type) stars \citep{Zari2018, Zari2021, Poggio2021, Poggio2022}, field stars close to the Galactic plane \citep[e.g.][]{Bergemann2014} or Cepheids \citep{Andrievsky2002, Andrievsky2002b, Lemasle2007, Lemasle2013}. However, these gradients are accompanied by significant spread in [Fe/H] of $0.1-0.15\,\mathrm{dex}$, as noted by \citet{Twarog1980}, which may imply a fine structure of the metallicity gradient \citep[see][]{Genovali2014}.
 
 Despite extensive observational efforts, several challenges persist:
 \begin{itemize}
     \item The completeness (or patchiness) of observed datasets remains a fundamental issue \citep{Bergemann2014}.
-    \item How robustly can we use the incomplete data to predict substructure in the gradients, such as the need to actually fit two linear gradients with a break radius at corotation radius \citep[][and references therein]{Bresolin2012} or further out \citep{Donor2020} - or even more complicated functions \citep[see e.g.][]{Chiappini2001, Kubryk2015}?
+    \item How robustly can we use the incomplete data to predict substructure in the gradients, such as the need to actually fit two linear gradients with a break radius at corotation radius \citep[][and references therein]{Bresolin2012} or further out \citep{Yong2012, Donor2020} - or even more complicated functions \citep[see e.g.][]{Chiappini2001, Kubryk2015}?
     \item Different samples yield varying gradients, potentially due to biases in data or the inclusion of older stars \citep[e.g.][]{Boeche2013, AllendePrieto2006, Katz2011, Hayden2014, Anders2014, Vickers2021, Willett2023}.
     \item The impact of spiral arm structures \citep{Poggio2021}, the Galactic warp \citep{Lemasle2022} or bar-driven mixing \citep{DiMatteo2013} on metallicity gradients is not fully understood.
     \item Methodologies for fitting linear models to scattered data need re-evaluation \citep{Metha2021}.
@@ -175,7 +175,7 @@ We show the fit residuals in Fig.~\ref{fig:global_r_feh_fit}b as density distrib
 
 \subsubsection{The impact of radial coverage on linear fits}
 
-While we have gained a useful insight into the global function, observational data will rarely cover the full extend of the stellar disk. Using smaller ranges, observational studies have found hints of piece-wise linear gradients with a break radius in them based on a limited radial coverage \citep[e.g.][]{Donor2020, Chen2023}.
+While we have gained a useful insight into the global function, observational data will rarely cover the full extend of the stellar disk. Using smaller ranges, observational studies have found hints of piece-wise linear gradients with a break radius in them based on a limited radial coverage \citep[e.g.][]{Yong2012, Donor2020, Chen2023}.
 
 These results are intriguing, since a quadratic function can to first order be approximated by two linear functions with a break radius. We therefore want to use this simulation to test if the radial coverage may indeed delude us into identifying broken linear gradients.
 
@@ -344,9 +344,16 @@ Until what stellar age can stars be used as reliable tracers of the gas disk in 
 \subsection{Application of quadratic gradient function onto observations}
 
 \begin{itemize}
-    \item Can we apply our functional form onto MW data? e.g. \citet{Genovali2014}?
-    \item Can we apply our functional form onto extragalactic data? e.g. \citet{Chen2023}?
+    \item Can we apply our functional form onto MW data? e.g. \citet{Yong2012, Andrievsky2004, Genovali2014}?
+    \item Can we apply our functional form onto extragalactic data? e.g. \citet{Chen2023, Bresolin2012}?
 \end{itemize}
+
+\citet{Sanchez2014} analysed a sample of 306 galaxies and found that breaks in metallicity gradients are common in both spiral and barred galaxies, often occurring at radii between 1 and 2 effective radii (Re): "Beyond $\sim 2$ disk effective radii our data show evidence of a flattening in the abundance"
+
+Using data from the MaNGA survey, \citet{Belfiore2017} found that many galaxies exhibit breaks in their metallicity gradients: "At large radii, a flattening of the metallicity gradient with respect to the value $0.5 < R/R_e < 2.0$ is detected for $\log10(M_\star/M_\odot) > 9.5$, although with varying degrees of significance. " \SB{look into their text on the shape and description of the flattening!}
+
+\citet{Bresolin2012} break in gradient for M83, NGC 1512, NGC3621, and NGC4625.
+\citet{Vlajic2009} maybe most reasonable fit with 2 lines and a break radius for NGC 300.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
