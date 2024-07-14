@@ -156,13 +156,13 @@ In our analysis, we follow the structure laid out with the scientific questions 
 
 We show the logarithmic densitry distribution of star particle iron abundances [Fe/H] across different galactocentric radii $R_\mathrm{Gal.}$ in Fig.~\ref{fig:global_r_feh_fit}a. This distribution strongly suggests that gradient is predominantly linear, similar to findings of the Milky Way.
 
-The completeness and amount of data points on a global scale allows us, however, to probe this linearity (or more complex behaviour) in more details.
+The completeness and amount of simulated data points on a global scale allows us, however, to probe this linearity (or more complex behaviour) in more detail with observations.
 
 \subsubsection{Global gradient fits}
 
 \input{tables/global_fit_results_per_method.tex}
 
-Based on our visual inspection of Fig.~\ref{fig:global_r_feh_fit}a, we first fit a global linear radial metallicity gradient to the data. We report the gradient when using using the \textsc{LinearRegression} module of \textsc{sklearn.linear\_model} \citep{scikit-learn} in Fig.~\ref{fig:global_r_feh_fit}a as red dashed line, but have confirmed this result within the fitting uncertainties with other fitting methods (see Table~\ref{tab:global_fit_results_per_method}).
+Based on our visual impression of the gradient from Fig.~\ref{fig:global_r_feh_fit}a, we first fit a global linear radial metallicity gradient to the data. We report the gradient when using using the \textsc{LinearRegression} module of \textsc{sklearn.linear\_model} \citep{scikit-learn} in Fig.~\ref{fig:global_r_feh_fit}a as red dashed line, but have confirmed this result within the fitting uncertainties with other fitting methods (see Table~\ref{tab:global_fit_results_per_method}).
 
 \begin{figure}
     \centering
@@ -171,7 +171,7 @@ Based on our visual inspection of Fig.~\ref{fig:global_r_feh_fit}a, we first fit
     \label{fig:global_r_feh_fit}
 \end{figure}
 
-We show the fit residuals in Fig.~\ref{fig:global_r_feh_fit}b as density distribution as well as in Fig.~\ref{fig:global_r_feh_fit}c as percentile distributions in radial bins of $\Delta R_\mathrm{Gal} = 0.5\,\mathrm{kpc}$. While the density distribution shows a lot of substructure, that we will investigate later, we note increase of the median residuals in Fig.~\ref{fig:global_r_feh_fit}c towards inner and outer radii, especially for $R_\mathrm{Gal.} > 17\,\mathrm{kpc}$, suggesting a non-linear component to the gradient, which we will follow up in Section~\ref{sec:non-linear_component}.
+We show the fit residuals in Fig.~\ref{fig:global_r_feh_fit}b as density distribution as well as in Fig.~\ref{fig:global_r_feh_fit}c as percentile distributions in radial bins of $\Delta R_\mathrm{Gal} = 0.5\,\mathrm{kpc}$. While the density distribution shows a lot of substructure, that we are investigating later in Section~\ref{sec:scatter_radial_metallicity_gradients}, we note an increase of the median residuals in Fig.~\ref{fig:global_r_feh_fit}c towards inner and outer radii, especially for $R_\mathrm{Gal.} > 17\,\mathrm{kpc}$. This suggests a non-linear, that is, quadratic component to the gradient, which we will follow up in Section~\ref{sec:non-linear_component}.
 
 \subsubsection{The impact of radial coverage on linear fits}
 
@@ -186,19 +186,19 @@ These results are intriguing, since a quadratic function can to first order be a
     \label{fig:radial_range_impact}
 \end{figure}
 
-For this purpose, we are fitting and comparing linear radial metallicity gradients to subsets in galactocentric radius. We test fits across piecewise linear radial ranges of 0.25, 0.5, 1, 2, 5, 8, 10, 15, and $20\,\mathrm{kpc}$ and show their difference with respect to a global linear fit in Fig.~\ref{fig:radial_range_impact}, with color-coding and indicating the local gradient slope. In this figure, a horizontal line indicates the same slope as the global fit, whereas the offset of a line from the horizontal dashed line indicates the local deviation from the global gradient. We see that all ranges do suggest more or less significant deviations from a global linear fit, with the innermost fit suggesting a significantly different gradient than the outermost fit. We also note increasingly more slope differences towards the smallest scales, hinting at local deviations from a global pattern. We follow these up in Section~\ref{sec:scatter_radial_metallicity_gradients}, but for now focus on the larger-scale trends.
+For this purpose, we are fitting and comparing linear radial metallicity gradients to subsets in galactocentric radius. We test fits across piece-wise linear radial ranges of 0.25, 0.5, 1, 2, 5, 8, 10, 15, and $20\,\mathrm{kpc}$. We show their difference with respect to a global linear fit in Fig.~\ref{fig:radial_range_impact}, with color-coding and indicating the local gradient slope. In this figure, a horizontal dashed line indicates the same slope as the global fit, whereas the offset of a line from said horizontal dashed line indicates the local deviation from the global gradient. Differences in line slopes are visualising the difference in gradient slopes. We see that all ranges are suggesting more or less significant deviations from a global linear fit. The innermost fit is suggesting a significantly different gradient than the outermost fit. We also note increasing slope differences towards the smallest scales, hinting at local deviations from a global pattern. We follow these up in Section~\ref{sec:scatter_radial_metallicity_gradients}, but for now focus on the larger-scale trends.
 
-When directly comparing an inner and outer radius fit, such as between $R_\mathrm{Gal.} = 5-10\,\mathrm{kpc}$ (thick grey line in Fig.~\ref{fig:radial_range_impact}) and $R_\mathrm{Gal.} = 10-15\,\mathrm{kpc}$ (thick black line in Fig.~\ref{fig:radial_range_impact}), we note a significant change, similar to previous estimates of the Milky Way \citep[e.g.][]{Lemasle2008}. In our case the gradient estimate changes from \input{tex_text/linear_gradient_5_10_kpc.tex} to \input{tex_text/linear_gradient_10_15_kpc.tex}.
+When directly comparing an inner and outer radius fit, such as between $R_\mathrm{Gal.} = 5-10\,\mathrm{kpc}$ (thick grey line in Fig.~\ref{fig:radial_range_impact}) and $R_\mathrm{Gal.} = 10-15\,\mathrm{kpc}$ (thick black line in Fig.~\ref{fig:radial_range_impact}), we note a significant change, similar to previous estimates of the Milky Way \citep[e.g.][]{Yong2012, Lemasle2008}. In our case the gradient estimate changes from \input{tex_text/linear_gradient_5_10_kpc.tex} to \input{tex_text/linear_gradient_10_15_kpc.tex}.
 
 \subsubsection{Higher-order gradients} \label{sec:non-linear_component}
 
-From the previous section, and especially the changing deviation of local gradients from a global fit in Fig.~\ref{fig:radial_range_impact}, we acknowledge that a linear fit is - not unexpected - not able to capture the more intricate details of the radial abundance gradient. In particular, we realise that the abundance gradient is indeed flattening - even for stars with young ages ($< 1\,\mathrm{Gyr}$). When looking at linear gradient fits across radial coverages of  $\Delta R_\mathrm{Gal.} = 5-15\,\mathrm{kpc}$ in Fig.~\ref{fig:radial_range_impact}, the gradient was steeper (bluer color) for smaller radii and flatter (redder) for larger radii.
+From the previous section, and especially the changing deviation of local gradients from a global fit in Fig.~\ref{fig:radial_range_impact}, we acknowledge that a linear fit is - not unexpected - not able to properly capture the more intricate details of the radial abundance gradient. In particular, we realise that the abundance gradient is indeed flattening - even for simulated stars with young ages ($< 1\,\mathrm{Gyr}$). When looking at linear gradient fits across radial coverage of $\Delta R_\mathrm{Gal.} = 5-15\,\mathrm{kpc}$ in Fig.~\ref{fig:radial_range_impact}, the gradient was steeper (bluer color) for smaller radii and flatter (redder) for larger radii.
 
-While such effects have seen before for the Milky Way, previous studies how mostly suggested to fit piecewise linear gradients with a break radius \citep[e.g.][]{Andrievsky2002, Boeche2013, Hayden2014, Anders2017, Donor2020}.
+While such effects have been seen before for the Milky Way, previous studies have mostly suggested to fit piece-wise linear gradients with a break radius \citep[e.g.][]{Andrievsky2002, Yong2012, Boeche2013, Hayden2014, Anders2017, Donor2020}.
 
-Our results from Fig.~\ref{fig:radial_range_impact} suggest, however, not one break radius, but rather an smoothly evolving flattening, in better agreement with a quadratic function rather than two linear ones. In this section, we are therefore trying to expand the gradient function by a higher order, that is second order, one.
+Our results from Fig.~\ref{fig:radial_range_impact} suggest, however, not a gradient with a break radius, but rather a smoothly evolving flattening gradient, in better agreement with a quadratic function rather than two linear ones. In this section, we are therefore trying to expand the gradient function by a higher order, that is, a second order one.
 
-A quadratic fit (see orange lines in Fig.~\ref{fig:global_r_feh_fit}) results in a slightly steeper linear component of the gradient (from $-0.0411$ to $-0.0497\,\mathrm{dex\,kpc^{-1}}$), which is counteracted by the quadratic flattening term of $+0.0005\,\mathrm{dex\,kpc^{-2}}$. The latter leads to an effective flattening of $0.2\,\mathrm{dex}$ at $R_\mathrm{Gal.} = 20\,\mathrm{dex}$. While seemingly only a nuisance correction across the large extend of [Fe/H] and $R_\mathrm{Gal.}$, this quadratic function is in fact superior to the linear fit. This can be best appreciated in Fig.~\ref{fig:global_r_feh_fit}c, where the orange line is tracing the median residuals from the linear function much better across the all radii.
+A quadratic fit (see orange lines in Fig.~\ref{fig:global_r_feh_fit}) results in a slightly steeper linear component of the gradient (from $-0.0411$ to $-0.0497\,\mathrm{dex\,kpc^{-1}}$), which is counteracted by the quadratic flattening term of $+0.0005\,\mathrm{dex\,kpc^{-2}}$. The latter leads to an effective flattening of $-0.172 + 0.200 = 0.028\,\mathrm{dex}$ (linear vs. quadratic terms) at $R_\mathrm{Gal.} = 20\,\mathrm{dex}$. While seemingly only a nuisance correction across the large extend of [Fe/H] and $R_\mathrm{Gal.}$, this quadratic function is in evidently superior to the linear fit. This can be best appreciated in Fig.~\ref{fig:global_r_feh_fit}c, where the orange line is tracing the median residuals from the linear function much better across the all radii.
 
 \begin{figure}
     \centering
@@ -212,42 +212,43 @@ When reproducing the local deviations from the linear global fit (Fig.~\ref{fig:
 \subsection{Scatter and local deviations from the gradient}
 \label{sec:scatter_radial_metallicity_gradients}
 
-Now that we are sufficiently satisfied that our flattening linear gradient reproduces the overall shape of the radial metallicity gradient, we \SB{CONTINUE}
+Now that we are sufficiently satisfied that our flattening gradient function reproduces the overall shape of the radial metallicity gradient, we are concerned with both the scatter and local slope deviations across the galactocentric radii.
 
-see Fig.~\ref{fig:overlap_local_variation_gas} -> maybe something to do with gas density and or logal variations of gas? should we maybe also plot the star positions here to check for differences or $R-z$ for stars? YES!
+When investigating the change of scatter from the innermost radii to the outermost (see Fig.~\ref{fig:global_r_feh_fit}c), we see a steady increase in $1-\sigma$ spread. This spread increases from \input{tex_text/fe_h_spread_at_R_0kpc} at $R_\mathrm{Gal.} = 0.25 \pm 0.25\,\mathrm{kpc}$ to \input{tex_text/fe_h_spread_at_R_8kpc} at $R_\mathrm{Gal.} = 8.25 \pm 0.25\,\mathrm{kpc}$ and finally reaches \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$ at the outermost tested radius.
+
+When reminding ourselves of the observed significant spread in metallicities of young open cluster at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<1\,\mathrm{Gyr}$) old stars from the simulation, a strong correlation of this scatter with stellar age (introducing the possibility of significant radial migration) should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
+
+\subsection{Coherence of the gradient with position}
+\label{sec:coherence_position_radial_metallicity_gradients}
+
+To further investigate the increase of scatter and local deviation from a global gradient, we are now looking into deviations with respect to the vertical and azimuthal dimensions.
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figures/overlap_local_variation_gas.png}
-    \caption{Local gradient deviations from bottom row of Fig.~\ref{fig:radial_range_impact_quadratic} overlapped on the logarithmic density distribution of gas in $R-z$.}
+    \caption{Local gradient deviations from bottom row of Fig.~\ref{fig:radial_range_impact_quadratic} overlapped on the logarithmic density distribution of gas (panel a) and stars (panel b) in $R-z$ between $-3 < z < 3\,\mathrm{kpc}$.}
     \label{fig:overlap_local_variation_gas}
 \end{figure}
 
+In Fig.~\ref{fig:overlap_local_variation_gas} we are looking at the previously identified gradient deviations (lines following the left axis label) on top of the vertical density distribution ($R-z$) of gas (Fig.~\ref{fig:overlap_local_variation_gas}a) and young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) between $-3 < z < 3\,\mathrm{kpc}$. While the quickly decreasing amount of young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) at outer radii does not show substructure in the density plots for reasonable bin sizes, we see more substructure for the gaseous component in Fig.~\ref{fig:overlap_local_variation_gas}a). In particular, we see rather minor deviations at small radii (where most stars and gas are close to the plane). At increasing radii, we notice an increase in both the vertical distribution of stars, as well as increasing local gradient deviations. In particular, we note a significant deviation of the slope around $R_\mathrm{Gal.} \sim 15\,\mathrm{kpc}$, where the gradient deviation line is steep and blue (indicating a much steeper gradient at this radius), and we notice a significant overdensity of gas around $z \sim 1\,\mathrm{kpc}$.
 
-\SB{How significant is the difference of linear to quadratic when looking at 5-19 kpc, like MW studies \citep{Genovali2014}?}
-
-
-Motivated by the significant spread of open cluster metallicities at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021}, we are now turning to the scatter of the radial metallicity gradient.
-
-In this section, we investigate
-\begin{itemize}
-    \item the change of scatter from the innermost radii to the outermost (see Fig.~\ref{fig:global_r_feh_fit}c). We see a steady increase in $1-\sigma$ spread of \input{tex_text/fe_h_spread_at_R_0kpc} at $R_\mathrm{Gal.} = 0.25 \pm 0.25\,\mathrm{kpc}$, \input{tex_text/fe_h_spread_at_R_8kpc} at $R_\mathrm{Gal.} = 8.25 \pm 0.25\,\mathrm{kpc}$, to \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.5 \pm 0.25\,\mathrm{kpc}$.
-\end{itemize}
-
-Do the young stars actually trace the gas? See Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles}
+While such an edge-on view of the galaxy may indeed be the only observable one for extra-galactic targets, for example of the GECKOS survey of edge-on galaxies \citep{GECKOS2023}, we have the luxury of being able to analyse the azimuthal direction of our simulated galaxy, too. This seems especially important, as we have seen a significant warping of the gaseous and stellar disk of our simulated galaxy (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e). While the warp of the stellar disk in Fig.~\ref{fig:stars_and_gas_overview}b is not as clear, we confirm that both the gas disk and the youngest stars below $1\,\mathrm{Gyr}$ are tracing each other across the simulation in both galactocentric radius $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ for different sectors in azimuthal direction (see Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles}).
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figures/tracing_young_stars_and_gas_in_angles.png}
-    \caption{Tracing young stars and gas across the galaxy (panel a) and different azimuthal ranges (panels b-i).}
+    \caption{Tracing young stars and gas across galactocentric radii $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ across the whole galaxy (panel a) and different azimuthal ranges/sectors (panels b-i).}
     \label{fig:tracing_young_stars_and_gas_in_angles}
 \end{figure}
 
 
+\SB{CONTINUE}
+
+Do the young stars actually trace the gas? See Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles}
 
 
-\subsection{Coherence of the gradient with position}
-\label{sec:coherence_position_radial_metallicity_gradients}
+
+
 
 \begin{itemize}
     \item Density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across 8 different sectors in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}
@@ -306,6 +307,8 @@ To what extent is the radial metallicity gradient of young stars linear? Alterna
 \SB{"There are numerous abundance studies of open clusters from different groups: [...] They all reach the same conclusion: a linear gradient of approximately $-0.06\,\mathrm{dex/kpc}$ extending quite far into the outer disk, and a flattening at a level of $\mathrm{[Fe/H]} \approx -0.3\,\mathrm{dex}$, somewhere between 10 and 14 kpc." from \citet{Lemasle2013}.}
 
 \SB{\citet{Lemasle2008} find $\mathrm{d[Fe/H]}/\mathrm{d}R = -0.050 \pm 0.008\,\mathrm{dex\,kpc^{-1}}$ in the 5-17 kpc range, but $\mathrm{d[Fe/H]}/\mathrm{d}R = -0.012 \pm 0.014\,\mathrm{dex\,kpc^{-1}}$ in a smaller 10-15 kpc range.}
+
+\SB{How significant is the difference of linear to quadratic when looking at 5-19 kpc, like MW studies \citep{Genovali2014}?}
 
 \SB{Put some of these results into context of the Milky Way in Fig.~\ref{fig:radial_metallicity_gradients_mw_vs_nihao}.}
 
