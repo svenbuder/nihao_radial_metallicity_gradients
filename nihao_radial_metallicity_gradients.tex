@@ -214,7 +214,12 @@ When reproducing the local deviations from the linear global fit (Fig.~\ref{fig:
 
 Now that we are sufficiently satisfied that our flattening gradient function reproduces the overall shape of the radial metallicity gradient, we are concerned with both the scatter and local slope deviations across the galactocentric radii.
 
-When investigating the change of scatter from the innermost radii to the outermost (see Fig.~\ref{fig:global_r_feh_fit}c), we see a steady increase in $1-\sigma$ spread. This spread increases from \input{tex_text/fe_h_spread_at_R_0kpc} at $R_\mathrm{Gal.} = 0.25 \pm 0.25\,\mathrm{kpc}$ to \input{tex_text/fe_h_spread_at_R_8kpc} at $R_\mathrm{Gal.} = 8.25 \pm 0.25\,\mathrm{kpc}$ and finally reaches \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$ at the outermost tested radius.
+When investigating the change of scatter from the innermost radii to the outermost (see Fig.~\ref{fig:global_r_feh_fit}c), we see a steady increase in $1-\sigma$ spread. This spread increases from
+\begin{description}
+    \item \input{tex_text/fe_h_spread_at_R_0kpc} at $R_\mathrm{Gal.} = 0.25 \pm 0.25\,\mathrm{kpc}$ to
+    \item \input{tex_text/fe_h_spread_at_R_8kpc} at $R_\mathrm{Gal.} = 8.25 \pm 0.25\,\mathrm{kpc}$ and finally reaches 
+     \item \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$, the largest $R_\mathrm{Gal.}$.
+\end{description}
 
 When reminding ourselves of the observed significant spread in metallicities of young open cluster at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<1\,\mathrm{Gyr}$) old stars from the simulation, a strong correlation of this scatter with stellar age (introducing the possibility of significant radial migration) should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
 
@@ -244,11 +249,6 @@ While such an edge-on view of the galaxy may indeed be the only observable one f
 
 \SB{CONTINUE}
 
-Do the young stars actually trace the gas? See Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles}
-
-
-
-
 
 \begin{itemize}
     \item Density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across 8 different sectors in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}
@@ -256,18 +256,18 @@ Do the young stars actually trace the gas? See Fig.~\ref{fig:tracing_young_stars
     \item Compute gradient over a radius R and then plot this one in color in the xy direction (like hogg/eilers). Maybe 2kpc is the best radius to do that? Can also try 5kpc.
 \end{itemize}
 
-\begin{figure*}
+\begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{figures/radial_metallicity_gradients_mw_in_angles.png}
+    \includegraphics[width=\columnwidth]{figures/radial_metallicity_gradients_mw_in_angles.png}
     \caption{Density variation across 8 different sectors (with color-code visualised in panel a) of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across 8 different azimuth ranges (panels b-i). A rotating lighthouse-like GIF animation of the median age and median density of the $R-\mathrm{[Fe/H]}$-relation is freely available on the \href{https://github.com/svenbuder/nihao_radial_metallicity_gradients/blob/main/figures/xyz_rfeh.gif}{github repository}.}
     \label{fig:radial_metallicity_gradients_mw_in_angles}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}
+\begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{figures/linear_radial_metallicity_gradients_mw_in_angles.png}
+    \includegraphics[width=\columnwidth]{figures/linear_radial_metallicity_gradients_mw_in_angles.png}
     \caption{Density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across full stellar disk (panel a) and 8 different sectors (same panel order as for Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}). Linear radial metallicity gradients have been fit globally (red dashed line) and for each sector with colors following the same color code as in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}.}    \label{fig:linear_radial_metallicity_gradients_mw_in_angles}
-\end{figure*}
+\end{figure}
 
 \subsection{Coherence of the gradient with age}
 \label{sec:coherence_age_radial_metallicity_gradients}
@@ -315,7 +315,7 @@ To what extent is the radial metallicity gradient of young stars linear? Alterna
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/radial_metallicity_gradients_mw_vs_nihao.png}
-    \caption{Caption}
+    \caption{Caption. \SB{Add more data points of the MW? like \citet{Yong2012}? Add Cepheids, e.g. \citet{Genovali2014}?}}
     \label{fig:radial_metallicity_gradients_mw_vs_nihao}
 \end{figure*}
 
@@ -332,7 +332,7 @@ How much scatter in the radial metallicity gradient of young stars is expected b
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/overdensities_mw_vs_nihao.png}
-    \caption{Caption}
+    \caption{Caption \SB{Create panel b, but with $\Delta\mathrm{[Fe/H]}$!}}
     \label{fig:overdensities_mw_vs_nihao}
 \end{figure*}
 
