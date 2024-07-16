@@ -125,11 +125,11 @@ The paper is structured as follows: Section~\ref{sec:data} describes the data of
 
 \section{Data: A NIHAO Milky Way analogue simulation} \label{sec:data}
 
-For this project, we use a cosmological zoom-in simulation of a Milky Way analogue (\texttt{g8.26e11}) from the \textit{Numerical Investigation of a Hundred Astronomical Objects} \citep[NIHAO,][]{Wang2015}. The model volume has a total mass (gas, stars and dark matter) of $8.26 \cdot 10^{11}\,\mathrm{M_\odot}$ and contains $4 \cdot 10^{10}\,\mathrm{M_\odot}$ stellar mass with a stellar mass resolution of $1.06 \cdot 10^{5}\,\mathrm{M_\odot}$ \citep{Buck2021} and was calculated as part of the NIHAO-UHD project \citep{Buck2020b}.
+For this project, we use a cosmological zoom-in simulation of a Milky Way analogue (\texttt{g8.26e11}) from the \textit{Numerical Investigation of a Hundred Astronomical Objects} \citep[NIHAO,][]{Wang2015}. The model volume has a total mass (gas, stars and dark matter) of $9.1 \cdot 10^{11}\,\mathrm{M_\odot}$. At redshift zero, it contains $6.4 \cdot 10^{11}\,\mathrm{M_\odot}$ gas mass and $2.3 \cdot 10^{10}\,\mathrm{M_\odot}$ stellar mass with a stellar mass resolution of around $7.5 \cdot 10^{3}\,\mathrm{M_\odot}$ and was calculated as part of the NIHAO-UHD project \citep{Buck2020b}. \SB{Tobi: Can we check the numbers here. This is what I get out of pynbody, but it's different to 8.26e11.}
 
-Simulations were carried out with the smoothed particle hydrodynamics code \texttt{Gasoline2} \citep{Wadsley2017} using cosmological parameters from \citet{Planck2014} with initial conditions and energetic feedback descriptions from the NIHAO project \citep{Wang2015}. Zoom-in simulations were then performed as described in detail by \citet{Buck2021} with star formation following \citet{Stinson2006} and energetic feedback following \citet{Stinson2013}.
+Simulations were carried out with the smoothed particle hydrodynamics code \texttt{Gasoline2} \citep{Wadsley2017} using cosmological parameters from \citet{Planck2014} with initial conditions and energetic feedback descriptions from the NIHAO project \citep{Wang2015}. Zoom-in simulations were then performed as described in detail by \citet{Buck2021} with star formation following \citet{Stinson2006} and energetic feedback following \citet{Stinson2013}. We note that this is a slightly different rerun of the same simulation than the one studied by \citet{Buder2024}.
 
-Because computational resources still limit the mass resolution of simulations, we are relying on tracer particles that represent simple stellar populations (SSPs) with the same age, overall metallicity and discrete initial mass function (IMF). \citet{Buck2021} have implemented the flexible chemical evolution code \textsc{chempy} \citep{Rybizki2017} to calculate the chemical yields for the SSPs. In particular, we use the alternative (\texttt{alt}) setup of \textsc{chempy} that assumes a \citet{Chabrier2003} IMF with high-mass slope of $\alpha_\text{IMF} = -2.3$ over a mass range of $0.1-100\,\mathrm{M_\odot}$ for SSPs across a metallicity range of $Z/Z_\odot \in [10^{-5},2]$. The code calculates the contribution from asymptotic giant branch (AGB) stars, CCSN across a mass range of $8-40\,\mathrm{M_\odot}$, and SNIa with a an exponential function with exponent $-1.12$, a delay time of $40\,\mathrm{Myr}$, and a normalization of the SNI rate of -2.9. For each of these nucleosynthetic channels, yields from the following studies are used: \citet{Limongi2018} for CCSN, \citet{Seitenzahl2013} for SNIa, and \citet{Karakas2016} for AGB stars. Contrary to a previous study by \citet{Buder2024}, we take the elemental abundances at face value and do not apply any shifts.
+Because computational resources still limit the mass resolution of simulations, we are relying on tracer particles that represent simple stellar populations (SSPs) with the same age, overall metallicity and discrete initial mass function (IMF). \citet{Buck2021} have implemented the flexible chemical evolution code \textsc{chempy} \citep{Rybizki2017} to calculate the chemical yields for the SSPs. In particular, \SB{we use the alternative (\texttt{alt}) setup of \textsc{chempy} that assumes a \citet{Chabrier2003} IMF with high-mass slope of $\alpha_\text{IMF} = -2.3$ over a mass range of $0.1-100\,\mathrm{M_\odot}$ for SSPs across a metallicity range of $Z/Z_\odot \in [10^{-5},2]$. The code calculates the contribution from asymptotic giant branch (AGB) stars, CCSN across a mass range of $8-40\,\mathrm{M_\odot}$, and SNIa with a an exponential function with exponent $-1.12$, a delay time of $40\,\mathrm{Myr}$, and a normalization of the SNI rate of -2.9. For each of these nucleosynthetic channels, yields from the following studies are used: \citet{Limongi2018} for CCSN, \citet{Seitenzahl2013} for SNIa, and \citet{Karakas2016} for AGB stars. -> CHECK, since I think we used the \texttt{new\_fit}, not \texttt{alt} setup, so \citet{Chieffi2004} not \citet{Limongi2018}!} Contrary to a previous study by \citet{Buder2024}, we take the elemental abundances at face value and do not apply any shifts.
 
 For this project, we limit the simulation data to the main halo by applying \textsc{pynbody}'s implementation of the Amiga Halo Finder \citep{Knollman2009} and then reposition and rotate this main halo to be face-on based on the angular momentum with \textsc{pynbody}'s \textsc{analysis.angmom.faceon} module \citep{pynbody}. The main halo has a total half mass radius of $66.0\,\mathrm{kpc}$ for all matter and a stellar half mass radius $2.4\,\mathrm{kpc}$. We then further transform the resulting galactocentric Cartesian coordinate $(X,Y,Z)$ and velocities $(V_X,V_Y,V_Z)$ to Cylindrical ones as done in a previous study of this main halo by \citet{Buder2024}.
 
@@ -237,8 +237,24 @@ While such an edge-on view of the galaxy may indeed be the only observable one f
     \label{fig:tracing_young_stars_and_gas_in_angles}
 \end{figure}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/tracing_fe_h_young_stars_in_angles.png}
+    \caption{Tracing young stars' iron abundance [Fe/H] across galactocentric radii $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ across the whole galaxy (panel a) and different azimuthal ranges/sectors (panels b-i).}
+    \label{fig:tracing_fe_h_young_stars_in_angles}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/tracing_fe_h_residuals_young_stars_in_angles.png}
+    \caption{Tracing young stars' iron abundance [Fe/H] residuals (relative to global gradient) across galactocentric radii $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ across the whole galaxy (panel a) and different azimuthal ranges/sectors (panels b-i).}
+    \label{fig:tracing_fe_h_residuals_young_stars_in_angles}
+\end{figure}
+
 
 \SB{CONTINUE}
+
+\SB{Follow up Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles} by looking at the stellar and gas [Fe/H] for these regions!}
 
 \SB{Talk about significant overdensities in Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles}, e.g. 7kpc for 0-45deg, 7, 11, 16 kpc for 135-180 or 9-11 for 270-315. Should we follow up the radial gas metallicity gradient as well?!}
 
@@ -330,11 +346,7 @@ To what extent is the radial metallicity gradient of young stars linear? Alterna
 
 How much scatter in the radial metallicity gradient of young stars is expected based on simulations? Quantifying the scatter can provide insights into the effects of transient events like mergers, star formation bursts, and gas accretion.
 
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\SB{Put gas and star results into context of the Milky Way in Fig.~\ref{fig:overdensities_mw_vs_nihao}, inspired by \citet{Poggio2021} and \citet{Hackshaw2024}. How well can we resolve the differences of [Fe/H] in a similar regions as for the Milky Way? Fig.~\ref{fig:global_r_feh_fit_gas} shows this for gas and stars, respectively. Interpretation?!}
+\SB{Put gas and star results into context of the Milky Way in Fig.~\ref{fig:overdensities_mw_vs_nihao}, inspired by \citet{Poggio2021} and \citet{Hackshaw2024}. We do not have enough star particles to really see substructure. But the gas shows similar substructure as the actual Milky Way.}
 
 \begin{figure*}
     \centering
@@ -343,6 +355,7 @@ How much scatter in the radial metallicity gradient of young stars is expected b
     \label{fig:overdensities_mw_vs_nihao}
 \end{figure*}
 
+\SB{How well can we resolve the differences of [Fe/H] in a similar regions as for the Milky Way? Fig.~\ref{fig:global_r_feh_fit_gas} shows this for gas and stars, respectively. Clear metallicity decrease in Fig.~\ref{fig:global_r_feh_fit_gas}a towards left (away from galactic centre). Residuals from linear gradient fit are more scattered towards left (away from galactic centre). Low number statistics (typically less than 5 particles per bin)? Gas (Fig.~\ref{fig:global_r_feh_fit_gas}c) also show lower iron abundances with increasing distance from centre. However, it is significantly more nuanced and shows step-like behaviour of [Fe/H] changes around edges of gas overdensities. Significant deviations from global gradient expectation especially in the large void around $-12 < X_\mathrm{Gal} < -10\,\mathrm{kpc}$. Follow-up would be interesting but is beyond scope of this paper.}
 
 \begin{figure*}
     \centering
@@ -350,9 +363,6 @@ How much scatter in the radial metallicity gradient of young stars is expected b
     \caption{Comparison of density distribution of young stars and gas NIHAO Milky Way analogue simulation for the same regions as Figs.~\ref{fig:overdensities_mw_vs_nihao}b and \ref{fig:overdensities_mw_vs_nihao}c. Panels a) and c) trace median gas and young star iron abundances, respectively. Panels b) and c) plot the residual [Fe/H] of gas and stars, respectively, when correcting with a radial metallicity gradient fit. Black and white contour lines in panel b) trace overdensities in the gas distribution of Fig.~\ref{fig:overdensities_mw_vs_nihao}c).}
     \label{fig:nihao_gas_stars_density_overlay}
 \end{figure*}
-
-
-
 
 \subsection{Coherence of the gradient with position} \label{sec:discussion_coherence_position}
 
