@@ -3,6 +3,8 @@ nihao_radial_metallicity_gradients.blg
 nihao_radial_metallicity_gradients.log
 nihao_radial_metallicity_gradients.out
 nihao_radial_metallicity_gradients.synctex.gz
+presentations/
 .DS_Store
 .ipynb_checkpoints/
+*.key
 *.fits
