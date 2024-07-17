@@ -54,6 +54,12 @@
   {10.1051/0004-6361:20020016}, \href
   {https://ui.adsabs.harvard.edu/abs/2002A&A...384..140A} {384, 140}
 
+\bibitem[\protect\citeauthoryear{{Andrievsky}, {Luck}, {Martin}  \&
+  {L{\'e}pine}}{{Andrievsky} et~al.}{2004}]{Andrievsky2004}
+{Andrievsky} S.~M.,  {Luck} R.~E.,  {Martin} P.,   {L{\'e}pine} J.~R.~D.,
+  2004, \mn@doi [\aap] {10.1051/0004-6361:20031528}, \href
+  {https://ui.adsabs.harvard.edu/abs/2004A&A...413..159A} {413, 159}
+
 \bibitem[\protect\citeauthoryear{{Astropy Collaboration} et~al.,}{{Astropy
   Collaboration} et~al.}{2013}]{Robitaille2013}
 {Astropy Collaboration} et~al., 2013, \mn@doi [\aap]
@@ -64,6 +70,11 @@
   Collaboration} et~al.}{2018}]{PriceWhelan2018}
 {Astropy Collaboration} et~al., 2018, \mn@doi [\aj] {10.3847/1538-3881/aabc4f},
   \href {https://ui.adsabs.harvard.edu/abs/2018AJ....156..123A} {156, 123}
+
+\bibitem[\protect\citeauthoryear{{Belfiore} et~al.,}{{Belfiore}
+  et~al.}{2017}]{Belfiore2017}
+{Belfiore} F.,  et~al., 2017, \mn@doi [\mnras] {10.1093/mnras/stx789}, \href
+  {https://ui.adsabs.harvard.edu/abs/2017MNRAS.469..151B} {469, 151}
 
 \bibitem[\protect\citeauthoryear{{Bellardini}, {Wetzel}, {Loebman},
   {Faucher-Gigu{\`e}re}, {Ma}  \& {Feldmann}}{{Bellardini}
@@ -100,6 +111,10 @@ Princeton University Press
   {10.1088/0004-637X/750/2/122}, \href
   {https://ui.adsabs.harvard.edu/abs/2012ApJ...750..122B} {750, 122}
 
+\bibitem[\protect\citeauthoryear{{Buck}}{{Buck}}{2020}]{Buck2020}
+{Buck} T.,  2020, \mn@doi [\mnras] {10.1093/mnras/stz3289}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5435B} {491, 5435}
+
 \bibitem[\protect\citeauthoryear{{Buck}, {Obreja}, {Macci{\`o}}, {Minchev},
   {Dutton}  \& {Ostriker}}{{Buck} et~al.}{2020}]{Buck2020b}
 {Buck} T.,  {Obreja} A.,  {Macci{\`o}} A.~V.,  {Minchev} I.,  {Dutton} A.~A.,
@@ -119,6 +134,12 @@ Princeton University Press
 {Buder} S.,  {Mijnarends} L.,   {Buck} T.,  2024, \mn@doi [\mnras]
   {10.1093/mnras/stae1552}, \href
   {https://ui.adsabs.harvard.edu/abs/2024MNRAS.532.1010B} {532, 1010}
+
+\bibitem[\protect\citeauthoryear{{Cantat-Gaudin} \& {Anders}}{{Cantat-Gaudin}
+  \& {Anders}}{2020}]{CantatGaudin2020}
+{Cantat-Gaudin} T.,  {Anders} F.,  2020, \mn@doi [\aap]
+  {10.1051/0004-6361/201936691}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020A&A...633A..99C} {633, A99}
 
 \bibitem[\protect\citeauthoryear{{Casamiquela} et~al.,}{{Casamiquela}
   et~al.}{2019}]{Casamiquela2019}
@@ -150,6 +171,10 @@ Princeton University Press
 {Chiappini} C.,  {Matteucci} F.,   {Romano} D.,  2001, \mn@doi [\apj]
   {10.1086/321427}, \href
   {https://ui.adsabs.harvard.edu/#abs/2001ApJ...554.1044C} {554, 1044}
+
+\bibitem[\protect\citeauthoryear{Chieffi \& Limongi}{Chieffi \&
+  Limongi}{2004}]{Chieffi2004}
+Chieffi A.,  Limongi M.,  2004, \mn@doi [\apj] {10.1086/392523}, 608, 405
 
 \bibitem[\protect\citeauthoryear{{Chiosi}}{{Chiosi}}{1980}]{Chiosi1980}
 {Chiosi} C.,  1980, \aap, \href
@@ -346,12 +371,6 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Myers} N.,  et~al., 2022, \mn@doi [\aj] {10.3847/1538-3881/ac7ce5}, \href
   {https://ui.adsabs.harvard.edu/abs/2022AJ....164...85M} {164, 85}
 
-\bibitem[\protect\citeauthoryear{{Ochsenbein}, {Bauer}  \&
-  {Marcout}}{{Ochsenbein} et~al.}{2000}]{Vizier2000}
-{Ochsenbein} F.,  {Bauer} P.,   {Marcout} J.,  2000, \mn@doi [\aaps]
-  {10.1051/aas:2000169}, \href
-  {https://ui.adsabs.harvard.edu/abs/2000A&AS..143...23O} {143, 23}
-
 \bibitem[\protect\citeauthoryear{Pedregosa et~al.,}{Pedregosa
   et~al.}{2011}]{scikit-learn}
 Pedregosa F.,  et~al., 2011, J Mach Learn Res, 12, 2825
@@ -431,10 +450,6 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
   S.~R.,  1983, \mn@doi [\mnras] {10.1093/mnras/204.1.53}, \href
   {https://ui.adsabs.harvard.edu/abs/1983MNRAS.204...53S} {204, 53}
 
-\bibitem[\protect\citeauthoryear{Skrutskie et~al.,}{Skrutskie
-  et~al.}{2006}]{Skrutskie2006}
-Skrutskie M.~F.,  et~al., 2006, \mn@doi [\aj] {10.1086/498708}, 131, 1163
-
 \bibitem[\protect\citeauthoryear{{Spina} et~al.,}{{Spina}
   et~al.}{2021}]{Spina2021}
 {Spina} L.,  et~al., 2021, \mn@doi [\mnras] {10.1093/mnras/stab471}, \href
@@ -501,6 +516,12 @@ Skrutskie M.~F.,  et~al., 2006, \mn@doi [\aj] {10.1086/498708}, 131, 1163
 Virtanen P.,  et~al., 2020, \mn@doi [Nature Methods]
   {10.1038/s41592-019-0686-2}, \href {https://rdcu.be/b08Wh} {17, 261}
 
+\bibitem[\protect\citeauthoryear{{Vlaji{\'c}}, {Bland-Hawthorn}  \&
+  {Freeman}}{{Vlaji{\'c}} et~al.}{2009}]{Vlajic2009}
+{Vlaji{\'c}} M.,  {Bland-Hawthorn} J.,   {Freeman} K.~C.,  2009, \mn@doi [\apj]
+  {10.1088/0004-637X/697/1/361}, \href
+  {https://ui.adsabs.harvard.edu/abs/2009ApJ...697..361V} {697, 361}
+
 \bibitem[\protect\citeauthoryear{{Wadsley}, {Keller}  \& {Quinn}}{{Wadsley}
   et~al.}{2017}]{Wadsley2017}
 {Wadsley} J.~W.,  {Keller} B.~W.,   {Quinn} T.~R.,  2017, \mn@doi [\mnras]
@@ -524,6 +545,12 @@ Walt S. v.~d.,  Colbert S.~C.,   Varoquaux G.,  2011, \mn@doi [Comput Sci Eng]
 {Willett} E.,  et~al., 2023, \mn@doi [\mnras] {10.1093/mnras/stad2374}, \href
   {https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.2141W} {526, 2141}
 
+\bibitem[\protect\citeauthoryear{{Yong}, {Carney}  \& {Friel}}{{Yong}
+  et~al.}{2012}]{Yong2012}
+{Yong} D.,  {Carney} B.~W.,   {Friel} E.~D.,  2012, \mn@doi [\aj]
+  {10.1088/0004-6256/144/4/95}, \href
+  {https://ui.adsabs.harvard.edu/abs/2012AJ....144...95Y} {144, 95}
+
 \bibitem[\protect\citeauthoryear{{Zari}, {Hashemi}, {Brown}, {Jardine}  \& {de
   Zeeuw}}{{Zari} et~al.}{2018}]{Zari2018}
 {Zari} E.,  {Hashemi} H.,  {Brown} A.~G.~A.,  {Jardine} K.,   {de Zeeuw} P.~T.,
@@ -535,6 +562,14 @@ Walt S. v.~d.,  Colbert S.~C.,   Varoquaux G.,  2011, \mn@doi [Comput Sci Eng]
 {Zari} E.,  {Rix} H.~W.,  {Frankel} N.,  {Xiang} M.,  {Poggio} E.,  {Drimmel}
   R.,   {Tkachenko} A.,  2021, \mn@doi [\aap] {10.1051/0004-6361/202039726},
   \href {https://ui.adsabs.harvard.edu/abs/2021A&A...650A.112Z} {650, A112}
+
+\bibitem[\protect\citeauthoryear{{van de Sande}, {Fraser-McKelvie}, {Fisher},
+  {Martig}, {Hayden}  \& {the GECKOS Survey collaboration}}{{van de Sande}
+  et~al.}{2023}]{GECKOS2023}
+{van de Sande} J.,  {Fraser-McKelvie} A.,  {Fisher} D.~B.,  {Martig} M.,
+  {Hayden} M.~R.,   {the GECKOS Survey collaboration} 2023, \mn@doi [arXiv
+  e-prints] {10.48550/arXiv.2306.00059}, \href
+  {https://ui.adsabs.harvard.edu/abs/2023arXiv230600059V} {p. arXiv:2306.00059}
 
 \makeatother
 \end{thebibliography}
