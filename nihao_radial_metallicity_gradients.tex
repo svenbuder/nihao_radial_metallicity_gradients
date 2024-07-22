@@ -197,8 +197,6 @@ A quadratic fit (see orange lines in Fig.~\ref{fig:global_r_feh_fit}) results in
     \label{fig:radial_range_impact_quadratic}
 \end{figure}
 
-% Test for Jason
-
 When reproducing the local deviations from the linear global fit (Fig.~\ref{fig:radial_range_impact}) with a quadratic global fit (Fig.~\ref{fig:radial_range_impact_quadratic}), we see that the deviations of the local fits no longer have significant offsets with respect to the horizontal lines, while still showing the increasing slope differences at the local levels (especially on scales below $1\,\mathrm{kpc}$). 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -214,12 +212,7 @@ When investigating the change of scatter from the innermost radii to the outermo
      \item \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$, the largest $R_\mathrm{Gal.}$.
 \end{description}
 
-When reminding ourselves of the observed significant spread in metallicities of young open cluster at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<1\,\mathrm{Gyr}$) old stars from the simulation, a strong correlation of this scatter with stellar age (introducing the possibility of significant radial migration) should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
-
-\subsection{Coherence of the gradient with position}
-\label{sec:coherence_position_radial_metallicity_gradients}
-
-To further investigate the increase of scatter and local deviation from a global gradient, we are now looking into deviations with respect to the vertical and azimuthal dimensions.
+When reminding ourselves of the observed significant spread in metallicities of young open cluster at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<1\,\mathrm{Gyr}$) old stars from the simulation, a strong impact of this scatter by radial migration should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
 
 \begin{figure}
     \centering
@@ -228,7 +221,10 @@ To further investigate the increase of scatter and local deviation from a global
     \label{fig:overlap_local_variation_gas}
 \end{figure}
 
-In Fig.~\ref{fig:overlap_local_variation_gas} we are looking at the previously identified gradient deviations (lines following the left axis label) on top of the vertical density distribution ($R-z$) of gas (Fig.~\ref{fig:overlap_local_variation_gas}a) and young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) between $-3 < z < 3\,\mathrm{kpc}$. While the quickly decreasing amount of young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) at outer radii does not show substructure in the density plots for reasonable bin sizes, we see more substructure for the gaseous component in Fig.~\ref{fig:overlap_local_variation_gas}a). In particular, we see rather minor deviations at small radii (where most stars and gas are close to the plane). At increasing radii, we notice an increase in both the vertical distribution of stars, as well as increasing local gradient deviations. In particular, we note a significant deviation of the slope around $R_\mathrm{Gal.} \sim 15\,\mathrm{kpc}$, where the gradient deviation line is steep and blue (indicating a much steeper gradient at this radius), and we notice a significant overdensity of gas around $z \sim 1\,\mathrm{kpc}$.
+\subsection{Gradient deviations with vertical position}
+\label{sec:coherence_vertical_radial_metallicity_gradients}
+
+In this section, we are now looking into deviations with respect to the vertical dimension. In Fig.~\ref{fig:overlap_local_variation_gas} we are showing the previously identified gradient deviations (lines following the left axis label) on top of the vertical density distribution ($R-z$) of gas (Fig.~\ref{fig:overlap_local_variation_gas}a) and young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) between $-3 < z < 3\,\mathrm{kpc}$. While the quickly decreasing amount of young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) at outer radii does not show substructure in the density plots for reasonable bin sizes, we see more substructure for the gaseous component in Fig.~\ref{fig:overlap_local_variation_gas}a). In particular, we see rather minor deviations at small radii (where most stars and gas are close to the plane). At increasing radii, we notice an increase in both the vertical distribution of stars, as well as increasing local gradient deviations. In particular, we note a significant deviation of the slope around $R_\mathrm{Gal.} \sim 15\,\mathrm{kpc}$, where the gradient deviation line is steep and blue (indicating a much steeper gradient at this radius), and we notice a significant overdensity of gas around $z \sim 1\,\mathrm{kpc}$.
 
 While such an edge-on view of the galaxy may indeed be the only observable one for extra-galactic targets, for example of the GECKOS survey of edge-on galaxies \citep{GECKOS2023}, we have the luxury of being able to analyse the azimuthal direction of our simulated galaxy, too. This seems especially important, as we have seen a significant warping of the gaseous and stellar disk of our simulated galaxy (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e). While the warp of the stellar disk in Fig.~\ref{fig:stars_and_gas_overview}b is not as clear, we confirm that both the gas disk and the youngest stars below $1\,\mathrm{Gyr}$ are tracing each other across the simulation in both galactocentric radius $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ for different sectors in azimuthal direction.
 
@@ -244,6 +240,11 @@ While such an edge-on view of the galaxy may indeed be the only observable one f
     \includegraphics[width=0.875\textwidth]{figures/linear_radial_metallicity_gradients_mw_in_angles.png}
     \caption{Density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across full stellar disk (panel a) and 8 different sectors (same panel order as for Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}). Linear radial metallicity gradients have been fit globally (red dashed line) and for each sector with colors following the same color code as in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}.}    \label{fig:linear_radial_metallicity_gradients_mw_in_angles}
 \end{figure*}
+
+\subsection{Gradient deviations with azimuthal position}
+\label{sec:coherence_azimuth_radial_metallicity_gradients}
+
+To analyse the deviations from a global gradient across different azimuthal viewing angles, we divide the galaxy into 8 sectors with $\Delta \varpi_\mathrm{Gal.} = 45\,\mathrm{deg}$ (see Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}a). This allows us to study the positions around the upturn and downturn of the galactic warp with the median azimuth of young star particles below and above the plane being $\varphi_\mathrm{Gal.} \sim 4\,\mathrm{deg}$ and $\varphi_\mathrm{Gal.} \sim 183\,\mathrm{deg}$, respectively (see Fig.~\ref{fig:stars_and_gas_overview}e).
 
 \SB{CONTINUE}
 
@@ -298,7 +299,7 @@ While such an edge-on view of the galaxy may indeed be the only observable one f
 \subsection{Young stars vs. gas}
 \label{sec:young_stars_vs_gas}
 
-After having investigated azimuthal variations of the gradient in Section~\ref{sec:coherence_position_radial_metallicity_gradients} and its change in smaller age steps in Section~\ref{sec:coherence_age_radial_metallicity_gradients}, we are now aiming to compare the gradient of the youngest stars to that of the gas in the galaxy at redshift zero.
+After having investigated vertical and azimuthal variations of the gradient in Sections~\ref{sec:coherence_vertical_radial_metallicity_gradients} and \ref{sec:coherence_azimuth_radial_metallicity_gradients} as well as its change in smaller age steps in Section~\ref{sec:coherence_age_radial_metallicity_gradients}, we are now aiming to compare the gradient of the youngest stars to that of the gas in the galaxy at redshift zero.
 
 \begin{itemize}
     \item Fig.~\ref{fig:overlap_local_variation_gas}
