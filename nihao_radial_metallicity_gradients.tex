@@ -282,12 +282,23 @@ To analyse the deviations from a global gradient across different azimuthal view
 \label{sec:coherence_age_radial_metallicity_gradients}
 
 \begin{itemize}
+    \item Fig.~\ref{fig:quadratic_fit_across_maximum_ages}: Test how much the radial metallicity gradient flattens/steepens if we consider only younger or also older stars than our current cut-off.
     \item Do the same as Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}, but with bins colored by median age: Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}
     \item We track the scatter across age in Fig.~\ref{fig:scatter_with_increasing_age}.
     \item \input{tex_text/maximum_scatter_ages.tex}
     \item Note the diagonal streaks in each of the small age bins (half a dynamic timescale) -> Could this be related to the spiral arms triggering star formation? How could we further trace this? color this by age or $\varphi_\mathrm{Gal.}$? These are the same features that are popping up in the GIF: same age, same [Fe/H], but different azimuth and slightly different radius (thus deviation from linear fit).
     \item Test gradient for different ages above 1 Gyr? Maybe not necessary. We see that in Fig.~\ref{fig:scatter_with_increasing_age}k and especially \ref{fig:scatter_with_increasing_age}l the gradient flattens for larger radii for larger ages, that is, the deviation from a line fitted with young stars becomes positive.
 \end{itemize}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/quadratic_fit_across_maximum_ages.png}
+    \caption{Radial metallicity gradients and quadratic fits for different maximum age ranges.}
+    \label{fig:quadratic_fit_across_maximum_ages}
+\end{figure}
+
+
 
 \begin{figure}
     \centering
@@ -386,6 +397,7 @@ How much scatter in the radial metallicity gradient of young stars is expected b
     \caption{Comparison of density distribution of young stars and gas NIHAO Milky Way analogue simulation for the same regions as Figs.~\ref{fig:overdensities_mw_vs_nihao}b and \ref{fig:overdensities_mw_vs_nihao}c. Panels a) and c) trace median gas and young star iron abundances, respectively. Panels b) and c) plot the residual [Fe/H] of gas and stars, respectively, when correcting with a radial metallicity gradient fit. Black and white contour lines in panel b) trace overdensities in the gas distribution of Fig.~\ref{fig:overdensities_mw_vs_nihao}c).}
     \label{fig:nihao_gas_stars_density_overlay}
 \end{figure*}
+
 
 \subsection{Coherence of the gradient with position} \label{sec:discussion_coherence_position}
 
