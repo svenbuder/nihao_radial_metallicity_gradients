@@ -30,6 +30,11 @@
 \newcommand{\Gaia}{\textit{Gaia}\xspace} % \Gaia
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
+\newcommand{\nihaoRmax}{$20\,\mathrm{kpc}$}
+\newcommand{\nihaoZmax}{$10\,\mathrm{kpc}$}
+\newcommand{\nihaoAGEmax}{$0.5\,\mathrm{Gyr}$}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
 
@@ -136,13 +141,13 @@ For this project, we limit the simulation data to the main halo by applying \tex
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/stars_and_gas_overview.png}
-    \caption{Logarithmic spatial density distribution of stars (upper panels) and gas (lower panels) within $R < 20\,\mathrm{kpc}$ of the NIHAO Milky Way analogue \texttt{g8.26e11} in galactocentric cartesian and cylindric coordinates. Panel c) shows the influence of selecting only young stars with ages below $1\,\mathrm{Gyr}$.}
+    \caption{Logarithmic spatial density distribution of stars (upper panels) and gas (lower panels) within $R < 20\,\mathrm{kpc}$ of the NIHAO Milky Way analogue \texttt{g8.26e11} in galactocentric cartesian and cylindric coordinates. Panel c) shows the influence of selecting only young stars with ages below \nihaoAGEmax.}
     \label{fig:stars_and_gas_overview}
 \end{figure*}
 
 To achieve a roughly similar selection as the observational data of the Milky Way \citep{Genovali2014} and other galaxies \citep[e.g.][]{Chen2023}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{Gal} \leq 20\,\mathrm{kpc}$, as shown in Fig.~\ref{fig:stars_and_gas_overview}. Similar to the Milky Way \citep{Poggio2018, Lemasle2022}, we note a warp of the stellar and gaseous disk (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e, respectively).
 
-To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018, Grand2016} while maintaining a sufficiently large sample size we further enforce stars to be younger than $1\,\mathrm{Gyr}$ \SB{Test 500 Myr or maybe even less?}. This selection de-facto limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The strong influence of this age cut on the vertical distribution of stars in the Milky Way analogue can best be appreciated from the difference of vertical density distributions of stars in Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}c. We are applying these cuts for all following analyses of the radial metallicity gradient in Section~\ref{sec:linear_radial_metallicity_gradients}.
+To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018, Grand2016} while maintaining a sufficiently large sample size we further enforce stars to be younger than \nihaoAGEmax, corresponding to roughly the time of four galactic rotations. This selection de-facto limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The strong influence of this age cut on the vertical distribution of stars in the Milky Way analogue can best be appreciated from the difference of vertical density distributions of stars in Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}c. We are applying these cuts for all following analyses of the radial metallicity gradient in Section~\ref{sec:linear_radial_metallicity_gradients}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The linearity of the radial metallicity gradient in NIHAO}
@@ -204,6 +209,25 @@ A quadratic fit (see orange lines in Fig.~\ref{fig:global_r_feh_fit}) results in
     \label{fig:radial_range_impact_quadratic}
 \end{figure}
 
+\SB{Analyse here both quadratic and piecewise linear fit and how to decide which one works better with RSS, AIC, and BIC with number of free parameters $k$ to fit the $n$ datapoints:}
+
+\begin{equation} \label{eq:rss}
+    RSS = \sum_i^n \left( \mathrm{[Fe/H]} - g(R_\mathrm{Gal.}) \right)^2
+\end{equation}
+With maximum likelihood $\ln L$ and assuming $\sigma^2 = RSS / n$, we can find the Akaike Information Criterion (AIC) as
+\begin{equation} \label{eq:aic}
+    AIC = 2 k  - 2 \ln L = 2 k + n \ln (RSS/n).
+\end{equation}
+Similarly, we can also calculate the Bayesian Information Criterion (BIC) as 
+\begin{equation} \label{eq:bic}
+    BIC = k \ln n - 2 \ln L = k \ln n + n \ln (RSS/n).
+\end{equation}
+
+Table~\ref{tab:global_fit_results_comparison}
+
+\input{tables/global_fit_results_comparison}
+
+
 When reproducing the local deviations from the linear global fit (Fig.~\ref{fig:radial_range_impact}) with a quadratic global fit (Fig.~\ref{fig:radial_range_impact_quadratic}), we see that the deviations of the local fits no longer have significant offsets with respect to the horizontal lines, while still showing the increasing slope differences at the local levels (especially on scales below $1\,\mathrm{kpc}$). 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,7 +243,7 @@ When investigating the change of scatter from the innermost radii to the outermo
      \item \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$, the largest $R_\mathrm{Gal.}$.
 \end{description}
 
-When reminding ourselves of the observed significant spread in metallicities of young open cluster at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<1\,\mathrm{Gyr}$) old stars from the simulation, a strong impact of this scatter by radial migration should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
+When reminding ourselves of the observed significant spread in metallicities of young open cluster at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<$\nihaoAGEmax) old stars from the simulation, a strong impact of this scatter by radial migration should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
 
 \begin{figure}
     \centering
@@ -233,7 +257,7 @@ When reminding ourselves of the observed significant spread in metallicities of 
 
 In this section, we are now looking into deviations with respect to the vertical dimension. In Fig.~\ref{fig:overlap_local_variation_gas} we are showing the previously identified gradient deviations (lines following the left axis label) on top of the vertical density distribution ($R-z$) of gas (Fig.~\ref{fig:overlap_local_variation_gas}a) and young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) between $-3 < z < 3\,\mathrm{kpc}$. While the quickly decreasing amount of young stars (Fig.~\ref{fig:overlap_local_variation_gas}b) at outer radii does not show substructure in the density plots for reasonable bin sizes, we see more substructure for the gaseous component in Fig.~\ref{fig:overlap_local_variation_gas}a). In particular, we see rather minor deviations at small radii (where most stars and gas are close to the plane). At increasing radii, we notice an increase in both the vertical distribution of stars, as well as increasing local gradient deviations. In particular, we note a significant deviation of the slope around $R_\mathrm{Gal.} \sim 15\,\mathrm{kpc}$, where the gradient deviation line is steep and blue (indicating a much steeper gradient at this radius), and we notice a significant overdensity of gas around $z \sim 1\,\mathrm{kpc}$.
 
-While such an edge-on view of the galaxy may indeed be the only observable one for extra-galactic targets, for example of the GECKOS survey of edge-on galaxies \citep{GECKOS2023}, we have the luxury of being able to analyse the azimuthal direction of our simulated galaxy, too. This seems especially important, as we have seen a significant warping of the gaseous and stellar disk of our simulated galaxy (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e). While the warp of the stellar disk in Fig.~\ref{fig:stars_and_gas_overview}b is not as clear, we confirm that both the gas disk and the youngest stars below $1\,\mathrm{Gyr}$ are tracing each other across the simulation in both galactocentric radius $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ for different sectors in azimuthal direction.
+While such an edge-on view of the galaxy may indeed be the only observable one for extra-galactic targets, for example of the GECKOS survey of edge-on galaxies \citep{GECKOS2023}, we have the luxury of being able to analyse the azimuthal direction of our simulated galaxy, too. This seems especially important, as we have seen a significant warping of the gaseous and stellar disk of our simulated galaxy (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e). While the warp of the stellar disk in Fig.~\ref{fig:stars_and_gas_overview}b is not as clear, we confirm that both the gas disk and the youngest stars below \nihaoAGEmax are tracing each other across the simulation in both galactocentric radius $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ for different sectors in azimuthal direction.
 
 \begin{figure*}
     \centering
@@ -310,7 +334,7 @@ To analyse the deviations from a global gradient across different azimuthal view
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figures/scatter_with_increasing_age.png}
-    \caption{Density distribution and spread of [Fe/H] across different galactocentric radii with respect to a global linear radial metallicity gradient across different age ranges. Panels a-j) show young stars and exhibit a rather similar trend, whereas the scatter increases significantly for stars above $\input{tex_text/nihao_age_max}$ in panels panels k) and l).}
+    \caption{Density distribution and spread of [Fe/H] across different galactocentric radii with respect to a global linear radial metallicity gradient across different age ranges. Panels a-j) show young stars and exhibit a rather similar trend, whereas the scatter increases significantly for stars above \nihaoAGEmax in panels panels k) and l).}
     \label{fig:scatter_with_increasing_age}
 \end{figure}
 
@@ -365,7 +389,7 @@ To what extent is the radial metallicity gradient of young stars linear? Alterna
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/radial_metallicity_gradients_mw_vs_nihao.png}
-    \caption{Comparison of the Milky Way's radial metallicity trend as traced by Cepheids \citep[black triangles, compiled from literature by][G+14]{Genovali2014} as well as young ($< 1\,\mathrm{Gyr}$) open cluster of the Milky Way as traced by the literature compilation from \citet[][G+14 as squares]{Genovali2014}, APOGEE DR17 from \citet[][M+22 as crosses]{Myers2022}, and GALAH DR3 from \citet[][S+21 as circles]{Spina2021}. The latter two are compiled based on the membership and age catalogue by \citet[][CG+20]{CantatGaudin2020}.
+    \caption{Comparison of the Milky Way's radial metallicity trend as traced by Cepheids \citep[black triangles, compiled from literature by][G+14]{Genovali2014} as well as young ($<$\nihaoAGEmax) open cluster of the Milky Way as traced by the literature compilation from \citet[][G+14 as squares]{Genovali2014}, APOGEE DR17 from \citet[][M+22 as crosses]{Myers2022}, and GALAH DR3 from \citet[][S+21 as circles]{Spina2021}. The latter two are compiled based on the membership and age catalogue by \citet[][CG+20]{CantatGaudin2020}.
     }
     \label{fig:radial_metallicity_gradients_mw_vs_nihao}
 \end{figure*}
