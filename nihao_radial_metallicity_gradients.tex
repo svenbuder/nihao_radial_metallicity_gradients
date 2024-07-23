@@ -107,13 +107,13 @@ Despite extensive observational efforts, several challenges persist:
     \item Methodologies for fitting linear models to scattered data need re-evaluation \citep{Metha2021}.
 \end{itemize}
 
-Understanding these gradients in the Milky Way is also crucial for extragalactic studies, where spatial resolution limits observations. New instruments like the MUSE integral field spectrograph has enabled a plethora of extragalactic studies to contrast the Milky Way to and techniques like the spectroscopy of HII regions and planetary nebulae have helped to infer gas metallicity distributions in external galaxies \citep{Shaver1983, Vilchez1996, Rolleston2000, Bresolin2012}. Recent examples include \citet{Sanchez2014} with CALIFA galaxy observations as well as \citet{Mun2024} and \citet{Chen2024} who use MAGPI galaxy observations to probe for example the effects of spiral arms. Notable is also the scatter that \citet{Chen2023} found for the gas metallicity across galactic radius with TYPHOON observations (see their. Figs. 4-6).
+Understanding these gradients in the Milky Way is also crucial for extragalactic studies, where spatial resolution limits observations. New instruments like the MUSE integral field spectrograph has enabled a plethora of extragalactic studies to contrast the Milky Way to and techniques like the spectroscopy of HII regions and planetary nebulae have helped to infer gas metallicity distributions in external galaxies \citep{Shaver1983, Vilchez1996, Rolleston2000, Bresolin2012}. Recent examples include \citet{Sanchez2014} with CALIFA galaxy observations as well as \citet{Mun2024} and \citet{Chen2024} who use MAGPI galaxy observations to probe for example the effects of spiral arms. Notable is also the scatter that \citet{Chen2023} found for the gas metallicity across galactic radius with TYPHOON observations (see their. Figs. 4-6). \SB{\citet{Grasha2022} suggested that the flattening of the gas metallicity in their TYPHOON galaxies could be caused by changes in the ratio of supernovae II and AGB reflected by a changing ratio of nitrogen to oxygen abundance N/O which also flattens towards a lower plateau below metallicities of $A(O) \sim 8.0$ \citep{Nicholls2017}.}
 
-From a modelling perspective, galactic chemical evolution models can both test understanding of radial metallicity gradients and make predictions beyond the limited volumes and tracers tested by Milky Way and extragalactic studies. Such galactic chemical evolution models include \citet{Chiappini2001, Minchev2014b, Kubryk2015, Stanghellini2015, Matteucci2001b}.
+From a modelling perspective, galactic chemical evolution models can both test understanding of radial metallicity gradients and make predictions beyond the limited volumes and tracers tested by Milky Way and extragalactic studies. Such galactic chemical evolution models include \citet{Chiappini2001, Minchev2014b, Kubryk2015, Stanghellini2015, Matteucci2001b}. \citet{Sharda2021} even presented a model for gas phase metallicity gradients in galaxies and their evolution from first principles.
 
-New suites of large-scale simulations now allow to gain insights into radial metallicity gradients across a range of simulated galaxies - including Milky Way analogues. While \citet{Pilkington2012} found that such gradients are established by inside-out formation in RaDES simulations, whereas \citet{Tissera2019} used EAGLE simulations to study gradients across different galaxy characteristics, such as mergers and stellar mass. \citet{Bellardini2021} and \citet{Bellardini2022, Graf2024} compared the radial metallicity gradient and its azimuthal scatter for different simulations of the FIRE suite for gas and stars, respectively. Focusing on the change of the radial metallicity gradient over time, \citet{Grand2015} assessed the scatter of radial metallicity distribution for different stellar ages. Both \citet[][see their Fig. 6]{Ma2017} with FIRE and \citet[see their Fig. 9][]{Agertz2021} with VINTERGATAN further assessed the evolution of the radial metallicity gradient for gas and stars. \citet{Khoperskov2023e} again focused on the gas and found the scatter of the gas metallicity of $\approx 0.04-0.06\,\mathrm{dex}$ at a given galactocentric distance.
+New suites of large-scale simulations now allow to gain insights into radial metallicity gradients across a range of simulated galaxies - including Milky Way analogues. While \citet{Pilkington2012} found that such gradients are established by inside-out formation in RaDES simulations, whereas \citet{Tissera2019} used EAGLE simulations to study gradients across different galaxy characteristics, such as mergers and stellar mass. \citet{Bellardini2021} and \citet{Bellardini2022, Graf2024} compared the radial metallicity gradient and its azimuthal scatter for different simulations of the FIRE suite for gas and stars, respectively. Focusing on the change of the radial metallicity gradient over time, \citet{Grand2015} assessed the scatter of radial metallicity distribution for different stellar ages. \citet{Grand2016} looked at stars with ages below $3\,\mathrm{Gyr}$ in AURIGA and linked deviations from a global gradient towards slightly lower and higher metallicities with the leading and trailing edges of spiral arms, respectively. \citet{Grand2016} even found significant changes to the metallicity induced during $120\,\mathrm{Myr}$, or roughly one galactic rotation. Both \citet[][see their Fig. 6]{Ma2017} with FIRE and \citet[see their Fig. 9][]{Agertz2021} with VINTERGATAN further assessed the evolution of the radial metallicity gradient for gas and stars. \citet{Khoperskov2023e} again focused on the gas and found the scatter of the gas metallicity of $\approx 0.04-0.06\,\mathrm{dex}$ at a given galactocentric distance. \SB{\citet{Hemler2021} evolution of the gas-phase radial metallicity gradient with redshift and galaxy mass in IllustrisTNG and \citet{Garcia2023} studied the }
 
-This study aims to advance these theoretical insight by addressing four critical scientific questions using a high-resolution simulation of a Milky Way analogue galaxy:
+This study aims to advance these theoretical insight by addressing four critical scientific questions using a high-resolution simulation of a Milky Way analogue galaxy focussing on the inner $R_\mathrm{Gal.} \leq 20\,\mathrm{kpc}$:
 \begin{enumerate}
 \item \textit{Linearity of the gradient:} Assess the extent to which the radial metallicity gradient of young stars is linear.
 \item \textit{Scatter in the gradient:} Quantify the expected scatter in the radial metallicity gradient of young stars.
@@ -121,7 +121,7 @@ This study aims to advance these theoretical insight by addressing four critical
 \item \textit{Coherence of the gradient with age:} Determine the reliability of stars as tracers of the gas disk over different ages.
 \end{enumerate}
 
-The paper is structured as follows: Section~\ref{sec:data} describes the data of our Milky Way analogue NIHAO simulation. Section~\ref{sec:linear_radial_metallicity_gradients} analyses the linearity of the radial metallicity gradients of the simulation under first of our four objectives. Section~\ref{sec:scatter_radial_metallicity_gradients} then analyses both the scatter and local deviations from the gradient as well as the coherence of the gradient with vertical and azimuthal position as well as age (the remaining three objectives). Section~\ref{sec:discussion} discusses them individually and Section~\ref{sec:conc} bundles them into an overarching conclusion.
+The paper is structured as follows: Section~\ref{sec:data} describes the data of our Milky Way analogue NIHAO simulation. Section~\ref{sec:linear_radial_metallicity_gradients} analyses the linearity of the radial metallicity gradients of the simulation under first of our four objectives. Section~\ref{sec:scatter_radial_metallicity_gradients} then analyses both the scatter and local deviations from the gradient as well as the coherence of the gradient with vertical and azimuthal position as well as age (the remaining three objectives). Section~\ref{sec:discussion} discusses them individually. We note that in this research we are mainly interested in the specific shape of the radial metallicity gradient for radii relevant to Galactic observations. However, we also discuss our results in the context of extragalactic results that probe beyond the inner $20\,\mathrm{kpc}$ of a galaxy. Section~\ref{sec:conc} bundles them into an overarching conclusion. 
 
 \section{Data: A NIHAO Milky Way analogue simulation} \label{sec:data}
 
@@ -142,7 +142,7 @@ For this project, we limit the simulation data to the main halo by applying \tex
 
 To achieve a roughly similar selection as the observational data of the Milky Way \citep{Genovali2014} and other galaxies \citep[e.g.][]{Chen2023}, we restrict the simulation data to a galactocentric radius of $R_\mathrm{Gal} \leq 20\,\mathrm{kpc}$, as shown in Fig.~\ref{fig:stars_and_gas_overview}. Similar to the Milky Way \citep{Poggio2018, Lemasle2022}, we note a warp of the stellar and gaseous disk (see Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}e, respectively).
 
-To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018} we further enforce stars to be younger than $1\,\mathrm{Gyr}$. This selection de-facto limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The strong influence of this age cut on the vertical distribution of stars in the Milky Way analogue can best be appreciated from the difference of vertical density distributions of stars in Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}c. We are applying these cuts for all following analyses of the radial metallicity gradient in Section~\ref{sec:linear_radial_metallicity_gradients}.
+To avoid too strong effects of radial migration \citep{Binney2008, Frankel2018, Grand2016} while maintaining a sufficiently large sample size we further enforce stars to be younger than $1\,\mathrm{Gyr}$ \SB{Test 500 Myr or maybe even less?}. This selection de-facto limits the vertical range of 99\% of stars to \input{tex_text/abs_z_young_within_r_max_99perc}. The strong influence of this age cut on the vertical distribution of stars in the Milky Way analogue can best be appreciated from the difference of vertical density distributions of stars in Figs.~\ref{fig:stars_and_gas_overview}b and \ref{fig:stars_and_gas_overview}c. We are applying these cuts for all following analyses of the radial metallicity gradient in Section~\ref{sec:linear_radial_metallicity_gradients}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The linearity of the radial metallicity gradient in NIHAO}
@@ -157,6 +157,13 @@ The completeness and amount of simulated data points on a global scale allows us
 \input{tables/global_fit_results_per_method.tex}
 
 Based on our visual impression of the gradient from Fig.~\ref{fig:global_r_feh_fit}a, we first fit a global linear radial metallicity gradient to the data. We report the gradient when using using the \textsc{LinearRegression} module of \textsc{sklearn.linear\_model} \citep{scikit-learn} in Fig.~\ref{fig:global_r_feh_fit}a as red dashed line, but have confirmed this result within the fitting uncertainties with other fitting methods (see Table~\ref{tab:global_fit_results_per_method}).
+
+\SB{also try fitting all star particles vs. separating them into bins to give equal weighting per bin (and give less importance to the inner/numerous regions)! see e.g. \citet{Hemler2021} who divided IllustrisTNG into bins of $0.1\,\mathrm{kpc}$.}
+
+\begin{equation}
+    \epsilon = \alpha r + \beta,
+\end{equation}
+\SB{"where parameter $\alpha$ is the metallicity gradient and $\beta$ is the extrapolated central metallicity (i.e. the intercept normalization)" \citep{Hemler2021}. See also \citet{Ma2017b}.}
 
 \begin{figure}
     \centering
@@ -371,6 +378,8 @@ How much scatter in the radial metallicity gradient of young stars is expected b
 
 \SB{How well can we resolve the differences of [Fe/H] in a similar regions as for the Milky Way? Fig.~\ref{fig:global_r_feh_fit_gas} shows this for gas and stars, respectively. Clear metallicity decrease in Fig.~\ref{fig:global_r_feh_fit_gas}a towards left (away from galactic centre). Residuals from linear gradient fit are more scattered towards left (away from galactic centre). Low number statistics (typically less than 5 particles per bin)? Gas (Fig.~\ref{fig:global_r_feh_fit_gas}c) also show lower iron abundances with increasing distance from centre. However, it is significantly more nuanced and shows step-like behaviour of [Fe/H] changes around edges of gas overdensities. Significant deviations from global gradient expectation especially in the large void around $-12 < X_\mathrm{Gal} < -10\,\mathrm{kpc}$. Follow-up would be interesting but is beyond scope of this paper.}
 
+\SB{Fig.~\ref{fig:nihao_gas_stars_density_overlay}: put this into context of finding by \citet{Grand2016}: "Owing to the negative radial metallicity gradient, this systematic motion drives, at a given radius, an azimuthal variation in the residual metallicity that is characterized by a metal-rich trailing edge and a metal-poor leading edge."}
+
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/nihao_gas_stars_density_overlay.png}
@@ -395,7 +404,8 @@ Radial migration?
 
 \begin{itemize}
     \item Discuss both Fig.~\ref{fig:tracing_young_stars_and_gas_in_angles} and Fig.~\ref{fig:global_r_feh_fit_gas}
-    \item Gas-phase metallicity break in IllustrisTNG \citep{Garcia2023}?
+    \item Gas-phase metallicity break in IllustrisTNG \citep{Hemler2021, Garcia2023}?
+    \item compare quadratic profiles we find to the flattening profiles in Fig.~4 by \citet{Hemler2021}, which resemble decreasing, flattening quadratic or inverse proportional ($\propto R_\mathrm{Gal.}^{-1}$) shapes. See also Fig.~4 by \citet{Garcia2023}.
     \item Flattening due to N/O \citep{Grasha2022}, constant below $\mathrm{A(O)} \sim 8.0$? -> compare to Fig.~\ref{fig:trace_stars_and_gas_100kpc}d -> in turn compare to young thin disk stars being born with with lower metallicity due to inside-out metallicity enhancement.
 \end{itemize}
 
@@ -418,8 +428,8 @@ Using data from the MaNGA survey, \citet{Belfiore2017} found that many galaxies 
 \subsection{Limitations}
 
 \begin{itemize}
+    \item Outer break radius for Milky Way with stellar mass $\log(M_\star/\mathrm{M_\odot} = 10.7$ \citep{BlandHawthorn_Gerhard2016} at redshift $z \sim 0$ would be expected to be roughly around $25-35\,\mathrm{kpc}$ based on IllustrisTNG simulations \citep[][their Appendix A]{Garcia2023}.
     \item By going beyond the typically traced radii of around $20\,\mathrm{kpc}$, we trace the limitations of our findings for the outskirts of a galaxy. In Fig.~\ref{fig:trace_stars_and_gas_100kpc}, we are tracing all stars, young stars, and all gas out to $R_\mathrm{Gal.} \leq 100\,\mathrm{kpc}$, as done by \citet{Garcia2023} for IllustrisTNG. We also restrict our sample to $\vert z_\mathrm{Gal.} \vert \leq 50\,\mathrm{kpc}$, neglecting a smaller ($M_\star = 1.4\cdot 10^8\,\mathrm{M_\odot}$) galaxy around (X,Y,Z) = $(0,60,190)\,\mathrm{km\,s^{-1}}$, that is, $200\,\mathrm{kpc}$ distance.
-    \item mention the other galaxies around 60kpc and 
 \end{itemize}
 
 \begin{figure}
