@@ -167,8 +167,6 @@ The completeness and amount of simulated data points on a global scale allows us
 
 Based on our visual impression of the gradient from Fig.~\ref{fig:global_r_feh_fit}a, we first fit a global linear radial metallicity gradient to the data. We report the gradient when using the \textsc{LinearRegression} module of \textsc{sklearn.linear\_model} \citep{scikit-learn} in Fig.~\ref{fig:global_r_feh_fit}a as red dashed line, but have confirmed this result within the fitting uncertainties with other fitting methods (see Table~\ref{tab:global_fit_results_per_method}).
 
-\SB{also try fitting all star particles vs. separating them into bins to give equal weighting per bin (and give less importance to the inner/numerous regions)! see e.g. \citet{Hemler2021} who divided IllustrisTNG into bins of $0.1\,\mathrm{kpc}$.}
-
 \begin{equation}
     \epsilon = \alpha r + \beta,
     \label{eq:fit_eq}
@@ -246,14 +244,18 @@ When reproducing the local deviations from the linear global fit (Fig.~\ref{fig:
 
 \subsection{The influence of binning}
 
-Until here, we have fitted all functions to the full distribution of star particles. We are now concerned with the question, how much the fitting in radial bins influences the results. To test this, we have estimated means and standard deviations ($\sigma$) in bins of $\Delta R_\mathrm{Gal.} = 0.5\,\mathrm{kpc}$ for the global data and then applied the same \textsc{scipy.curve\_fit} routine, while assuming that the above mentioned spread of [Fe/H] within a radial bin is the absolute uncertainty per bin\footnote{We note that this $\sigma$ is not comparable with an observational uncertainty.}. Given that more than half of the young star particles of the galaxy are within $R_\mathrm{Gal.} < 4\,\mathrm{kpc}$, this binning - although counteracted by the smaller spread of [Fe/H] in the inner galaxy - is weighing the distribution of inner galaxy significantly less then when weighing all particles equally.
+Until here, we have fitted all functions to the full distribution of star particles. We are now concerned with the question, how much the fitting in radial bins influences the results \citep[see also][who fitted functions to radially binned IllustrisTNG data]{Hemler2021}. To test this, we have estimated means and standard deviations ($\sigma$) in bins of $\Delta R_\mathrm{Gal.} = 0.5\,\mathrm{kpc}$ for the global data and then applied the same \textsc{scipy.curve\_fit} routine, while assuming that the above mentioned spread of [Fe/H] within a radial bin is the absolute uncertainty per bin\footnote{We note that this $\sigma$ is not comparable with an observational uncertainty.}. Given that more than half of the young star particles of the galaxy are within $R_\mathrm{Gal.} < 4\,\mathrm{kpc}$, this binning - although counteracted by the smaller spread of [Fe/H] in the inner galaxy - is weighing the distribution of inner galaxy significantly less then when weighing all particles equally.
 
 To better visualise the differences of the fits, we show the deviation to a default linear fit to the full distribution in Fig.~\ref{fig:linear_quadratic_piecewise}. From this figure and the slope results in Tab.~\ref{tab:global_fit_results_comparison}, we deduct that there is a negligible influence of sample selection on the linear function fit. 
+
+\SB{Influence on quadratic function?}
+\SB{Influence on piecewise linear function?}
+\SB{Statistical importance in general?}
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figures/linear_quadratic_piecewise.png}
-    \caption{Same as Fig.~\ref{fig:global_r_feh_fit}c, but overplotting the different linear/quadratic/piecewise functions estimated from the full distribution (solid lines) or from means and standard deviations in $\Delta R_\mathrm{Gal.} = 0.5\,\mathrm{kpc}$ bins (dashed lines).}
+    \caption{Same as Fig.~\ref{fig:global_r_feh_fit}c, but overplotting the different functions (linear, quadratic, and piecewise linear) estimated from the full distribution (solid lines) or from means and standard deviations in $\Delta R_\mathrm{Gal.} = 0.5\,\mathrm{kpc}$ bins (dashed lines).}
     \label{fig:linear_quadratic_piecewise}
 \end{figure}
 
