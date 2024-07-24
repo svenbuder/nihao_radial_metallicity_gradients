@@ -244,7 +244,7 @@ Again, the quadratic function performs slightly better than the linear or piecew
 
 When reproducing the local deviations from the linear global fit (Fig.~\ref{fig:radial_range_impact}) with a quadratic global fit (Fig.~\ref{fig:radial_range_impact_quadratic}), we see that the deviations of the local fits no longer have significant offsets with respect to the horizontal lines, while still showing the increasing slope differences at the local levels (especially on scales below $1\,\mathrm{kpc}$). 
 
-\subsubection{The influence of binning}
+\subsection{The influence of binning}
 
 Until here, we have fitted all functions to the full distribution of star particles. We are now concerned with the question, how much the fitting in radial bins influences the results. To test this, we have estimated means and standard deviations ($\sigma$) in bins of $\Delta R_\mathrm{Gal.} = 0.5\,\mathrm{kpc}$ for the global data and then applied the same \textsc{scipy.curve\_fit} routine, while assuming that the above mentioned spread of [Fe/H] within a radial bin is the absolute uncertainty per bin\footnote{We note that this $\sigma$ is not comparable with an observational uncertainty.}. Given that more than half of the young star particles of the galaxy are within $R_\mathrm{Gal.} < 4\,\mathrm{kpc}$, this binning - although counteracted by the smaller spread of [Fe/H] in the inner galaxy - is weighing the distribution of inner galaxy significantly less then when weighing all particles equally.
 
