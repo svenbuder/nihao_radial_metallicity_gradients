@@ -15,12 +15,12 @@
 \usepackage{xspace} 
 \usepackage{xcolor}
 \usepackage{upgreek}
-\usepackage{CJK}
 \usepackage{fontawesome}
 \usepackage{gensymb}
 \usepackage{multirow}
 \usepackage{mathtools}
 \usepackage{newtxtext,newtxmath}
+\usepackage{CJK}
 \usepackage{tabularx}
 
 %%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
@@ -42,17 +42,21 @@
 % Keep the title short and informative.
 \title[Radial metallicity gradients in NIHAO-UHD]{More than just a line: Shining light on the flattening radial metallicity gradient of a NIHAO-UHD Milky-Way analogue simulation}
 
+
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
-\author[S. Buder and T. Buck]{
-S. Buder,$^{1,2}$\thanks{E-mail: sven.buder@anu.edu.au} and
-T. Buck,$^{3,4}$
+\author[S. Buder et al.]{
+Sven Buder,$^{1,2,5}$\thanks{E-mail: sven.buder@anu.edu.au} and
+Tobias Buck,$^{3,4}$
+Qian-Hui Chen (陈千惠),$^{1,2}$ and
+Kathryn Grasha$^{1,2,5}$
 \\
 % List of institutions
 $^{1}$Research School of Astronomy \& Astrophysics, Australian National University, ACT 2611, Australia\\
 $^{2}$Center of Excellence for Astrophysics in Three Dimensions (ASTRO-3D), Australia\\
 $^{3}$Universit{\"a}t Heidelberg, Interdisziplin{\"a}res Zentrum f{\"u}r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany\\
-$^{4}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany
+$^{4}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany\\
+$^{5}$Australian Research Council (ARC) Discovery Early Career Researcher Award (DECRA) Fellow
 }
 
 % These dates will be filled out by the publisher
@@ -61,11 +65,14 @@ $^{4}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r T
 % Enter the current year, for the copyright statements etc.
 \pubyear{2024}
 
+
 % Don't change these lines
 \begin{document}
 \label{firstpage}
 \pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\begin{CJK}{UTF8}{gbsn}
 \maketitle
+\end{CJK}
 
 % Abstract of the paper
 \begin{abstract} % XXX words
@@ -237,7 +244,7 @@ Again, the quadratic function performs slightly better than the linear or piecew
 %     \label{fig:radial_range_impact_quadratic}
 % \end{figure}
 
-\paragraph*{Take-Away:} Piecewise linear and quadratic functions perform both better than a linear fit to the radial metallicity relation. However, we see no significant preference between Piecewise and quadratic functions based on our assessments.
+\paragraph*{Take-Away:} Piecewise linear and quadratic functions perform both better than a linear fit to the radial metallicity relation. However, we see no significant preference between piecewise and quadratic functions based on our assessments.
 
 \subsection{The influence of binning}
 \label{sec:binning}
@@ -382,6 +389,7 @@ To analyse the deviations from a global gradient across different azimuthal view
     \item horizontal streaks mentioned in previous Section~\ref{sec:coherence_azimuth_radial_metallicity_gradients} are also born at same time. We see similar colors, that is, stellar ages when tracing the aforementioned streaks at $R_\mathrm{Gal.} \sim 14\,\mathrm{kpc}$ at $\varpi_\mathrm{Gal.} = 180-225\,\mathrm{\degree}$ from Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}f in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}f. We identify them as Groups 1, 2, and 3 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}.
     \item How much of a role can radial migration have played here (e.g. blue streak at $R_\mathrm{Gal.} \sim 14\,\mathrm{kpc}$ with $\mathrm{[Fe/H]} \sim 0.1$ at $\varpi_\mathrm{Gal.} = 180-225\,\mathrm{\degree}$)?
     \item We trace the position of Groups 1, 2, and 3 in the spatial dimension $\varphi_\mathrm{Gal.}-R_\mathrm{Gal.}$ in Fig.~\ref{fig:phi_angle_R_follow_up} and confirm that they are connected.
+    \item Fig.~\ref{fig:phi_angle_R_follow_up} 
 \end{itemize}
 
 \begin{figure*}
@@ -618,45 +626,57 @@ How much scatter in the radial metallicity gradient of young stars is expected b
 
 \subsection{Main Take-Away}
 
+\begin{itemize}
+    \item Piecewise linear and quadratic functions perform both better than a linear fit to the radial metallicity relation. However, we see no significant preference between piecewise and quadratic functions based on our assessments. \SB{Discussion outcome}
+    \item While the specific slopes differ when fitting all points or binned data, they agree within the still rather small fitting uncertainties. \SB{Discussion outcome}
+    \item We find that a piecewise linear function can well mimic a quadratic function across the scales used in Milky Way and extragalactic studies. Local deviations become traceable below are spatial resolution of $\Delta R_\mathrm{Gal.} \leq 2\,\mathrm{kpc}$. \SB{Discussion outcome}
+    \item We see no strong correlations of deviations in the vertical direction across the whole simulation. Such correlations could, however, be blurred by azimuthal effects, like the galactic warp, which needs to be disentangled in the azimuthal dimension. \SB{Discussion outcome}
+    \item We find various deviations from the global trend in azimuthal direction, including gaps as well as isolated streaks of stars with similar [Fe/H] across $\Delta R_\mathrm{Gal.} = 2-6\,\mathrm{kpc}$. These can introduce local over- and under-enhancement of up to $\pm 0.2\,\mathrm{dex}$ in [Fe/H] at a given radius. \SB{Discussion outcome}
+    \item We find significant scatter across the radial metallicity distribution caused by streaks of stars born with similar [Fe/H] at similar times and similar but slightly extended regions of the galaxy. \SB{Discussion outcome}
+    \item \SB{Implications for Milky Way studies}
+    \item \SB{Implications for extragalactic studies}
+\end{itemize}
+
 \subsection{Future Research}
 
 \begin{itemize}
-    \item Can we say what the linear gradient and flattening part is for $R_\text{eff}$ for our NIHAO Milky Way analogue. Can we relate this to the MW effective radius and other galaxies?
+    \item Trace spatial and chemical coherence of over- and underdensities over times. Do this both across a range of stellar ages at redshift zero, but also when looking back at higher redshifts.
+    \item higher mass resolution would help to overcome small sample sizes for comparison with Milky Way.
+    \item We assumed that the modelled chemistry is fully accurate. While previous works are showing that relative trends for several elements agree, we are still missing some of the details on the origin of elements, such as a complete picture of the synthesis sites, environments, and yields for elements. detailed physics?
+    \item our study is making deductions based on a simulated Milky Way analogue, but the reality in both the actual Milky Way and other Milky Way analogues with slightly different nuances like merger history as well as bar and spiral arm strengths might lead to a different slightly or vastly radial metallicity relation.
+    \item Potential Break radius around $R_\mathrm{Gal.} \sim 10\,\mathrm{kpc} \sim 2.5\,\mathrm{R_e}$ is still enigmatic. More studies needed to establish a link to a physical mechanism.
+    \item It has to be seen what functional shape this radial metallicity relation is actually having, but our results are certainly encouraging to not only apply piecewise linear fits to galactic and extragalactic radial metallicity measurements.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgements}
 
-% \begin{CJK}{UTF8}{gbsn}
-% We thank Kathryn Grasha and Qian-Hui Chen (陈千惠) for valuable discussions.
-% \end{CJK}
+We acknowledge the traditional owners of the land on which the ANU stands, the Ngunnawal and Ngambri people. We pay our respects to elders past, and present and are proud to continue their tradition of surveying the night sky and its mysteries to better understand our Universe.
 
-% We acknowledge the traditional owners of the land on which the ANU stands, the Ngunnawal and Ngambri people. We pay our respects to elders past, and present and are proud to continue their tradition of surveying the night sky and its mysteries to better understand our Universe.
-
-% This work was supported by the Australian Research Council Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D), through project number CE170100013. SB acknowledges support from the Australian Research Council under grant number DE240100150 which enabled SB to continue researching at the end of a fixed-term position and finalising this study. TB acknowledges funding from the Carl Zeiss Stiftung and support from the European Research Council under ERC-CoG grant CRAGSMAN-646955. We gratefully acknowledge the Gauss Centre for Supercomputing e.V. (\url{www.gaus s-centre.eu}) for funding this project by providing computing time on the GCS Supercomputer SuperMUC at Leibniz Supercomputing Centre (\url{www.lrz.de}). Simulations were partially computed with High Performance Computing resources at New York University, Abu Dhabi.
+This work was supported by the Australian Research Council Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D), through project number CE170100013. SB acknowledges support from the Australian Research Council under grant number DE240100150 which enabled SB to continue researching at the end of a fixed-term position. TB acknowledges funding from the Carl Zeiss Stiftung and support from the European Research Council under ERC-CoG grant CRAGSMAN-646955. We gratefully acknowledge the Gauss Centre for Supercomputing e.V. (\url{www.gaus s-centre.eu}) for funding this project by providing computing time on the GCS Supercomputer SuperMUC at Leibniz Supercomputing Centre (\url{www.lrz.de}). Simulations were partially computed with High Performance Computing resources at New York University, Abu Dhabi.
 
 \section*{Software}
 
-% The research for this publication was coded in \textsc{python} (version 3.7.4) and included its packages
-% \textsc{astropy} \citep[v. 3.2.2;][]{Robitaille2013,PriceWhelan2018},
-% \textsc{IPython} \citep[v. 7.8.0;][]{ipython},
-% \textsc{matplotlib} \citep[v. 3.1.3;][]{matplotlib},
-% \textsc{NumPy} \citep[v. 1.17.2;][]{numpy},
-% \textsc{pynbody} \citep[v. 1.1.0;][]{pynbody},
-% \textsc{scipy} \citep[v. 1.3.1;][]{Scipy},
-% \textsc{sklearn} \citep[v. 1.5.1][]{scikit-learn}
-% \textsc{statsmodels} \citep[v. 0.14.2][]{statsmodels}
-% We further made use of \textsc{topcat} \citep[version 4.7;][]{Taylor2005};
+The research for this publication was coded in \textsc{python} (version 3.7.4) and included its packages
+\textsc{astropy} \citep[v. 3.2.2;][]{Robitaille2013,PriceWhelan2018},
+\textsc{IPython} \citep[v. 7.8.0;][]{ipython},
+\textsc{matplotlib} \citep[v. 3.1.3;][]{matplotlib},
+\textsc{NumPy} \citep[v. 1.17.2;][]{numpy},
+\textsc{pynbody} \citep[v. 1.1.0;][]{pynbody},
+\textsc{scipy} \citep[v. 1.3.1;][]{Scipy},
+\textsc{sklearn} \citep[v. 1.5.1][]{scikit-learn}
+\textsc{statsmodels} \citep[v. 0.14.2][]{statsmodels}
+We further made use of \textsc{topcat} \citep[version 4.7;][]{Taylor2005};
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Data Availability}
 
 All code and data to reproduce the analysis and figures can be publically accessed via \url{https://github.com/svenbuder/nihao_radial_metallicity_gradients}.
 
-% The repository also includes the chemical and kinematic data of the simulated Milky Way analogue \texttt{g8.26e11} for last snapshot of the simulation for the observable footprint that were used for this study as well as the cleaned catalogue of GALAH DR3. All GALAH DR3 data is also published by \citet{Buder2021} and can be accessed publicly via \url{https://docs.datacentral.org.au/galah/dr3/overview/}. The full simulation data of \texttt{g8.26e11} can be obtained upon reasonable request from the authors. Currently the only limitation in making all data public is limited cloud space to host the data. We encourage interested readers to get in contact with the authors for full data access. Redshift zero snapshots from the original NIHAO-UHD simulations can be found here: \url{https://tobias-buck.de/\#sim_data}.
+The repository also includes the chemical and kinematic data of the simulated Milky Way analogue \texttt{g8.26e11} for last snapshot of the simulation for the observable footprint that were used for this study as well as the cleaned catalogue of GALAH DR3. All GALAH DR3 data is also published by \citet{Buder2021} and can be accessed publicly via \url{https://docs.datacentral.org.au/galah/dr3/overview/}. The full simulation data of \texttt{g8.26e11} can be obtained upon reasonable request from the authors. Currently the only limitation in making all data public is limited cloud space to host the data. We encourage interested readers to get in contact with the authors for full data access. Redshift zero snapshots from the original NIHAO-UHD simulations can be found here: \url{https://tobias-buck.de/\#sim_data}.
 
-% If you are using either of these data to follow up on this research, remember to give appropriate credit to the researchers who created and curated either data set, that is, at least to \citet{Buder2021, Buder2022} and \citet{Buck2020b, Buck2021}.
+If you are using either of these data to follow up on this research, remember to give appropriate credit to the researchers who created and curated either data set, that is, at least to \citet{Buder2021, Buder2022} and \citet{Buck2020b, Buck2021}.
 
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
 
@@ -675,8 +695,6 @@ All code and data to reproduce the analysis and figures can be publically access
 Table~\ref{tab:global_fit_results_per_method}
 
 \input{tables/global_fit_results_per_method.tex}
-
-
 
 \section{Interesting but not main focus of this paper}
 
@@ -713,7 +731,6 @@ Fig.~\ref{fig:quadratic_fit_across_ages}
     \caption{Radial metallicity gradients and quadratic fits for $1\,\mathrm{Gyr}$ age bins.}
     \label{fig:quadratic_fit_across_ages}
 \end{figure}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Don't change these lines
