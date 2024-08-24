@@ -71,11 +71,6 @@
 {Astropy Collaboration} et~al., 2018, \mn@doi [\aj] {10.3847/1538-3881/aabc4f},
   \href {https://ui.adsabs.harvard.edu/abs/2018AJ....156..123A} {156, 123}
 
-\bibitem[\protect\citeauthoryear{{Belfiore} et~al.,}{{Belfiore}
-  et~al.}{2017}]{Belfiore2017}
-{Belfiore} F.,  et~al., 2017, \mn@doi [\mnras] {10.1093/mnras/stx789}, \href
-  {https://ui.adsabs.harvard.edu/abs/2017MNRAS.469..151B} {469, 151}
-
 \bibitem[\protect\citeauthoryear{{Bellardini}, {Wetzel}, {Loebman},
   {Faucher-Gigu{\`e}re}, {Ma}  \& {Feldmann}}{{Bellardini}
   et~al.}{2021}]{Bellardini2021}
@@ -90,6 +85,12 @@
   \mn@doi [\mnras] {10.1093/mnras/stac1637}, \href
   {https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.4270B} {514, 4270}
 
+\bibitem[\protect\citeauthoryear{{Bensby}, {Feltzing}  \& {Oey}}{{Bensby}
+  et~al.}{2014}]{Bensby2014}
+{Bensby} T.,  {Feltzing} S.,   {Oey} M.~S.,  2014, \mn@doi [\aap]
+  {10.1051/0004-6361/201322631}, \href
+  {http://adsabs.harvard.edu/abs/2014A%26A...562A..71B} {562, A71}
+
 \bibitem[\protect\citeauthoryear{{Bergemann} et~al.,}{{Bergemann}
   et~al.}{2014}]{Bergemann2014}
 {Bergemann} M.,  et~al., 2014, \mn@doi [\aap] {10.1051/0004-6361/201423456},
@@ -99,12 +100,6 @@
   {Tremaine}}{2008}]{Binney2008}
 {Binney} J.,  {Tremaine} S.,  2008, {Galactic Dynamics: Second Edition}.
 Princeton University Press
-
-\bibitem[\protect\citeauthoryear{{Bland-Hawthorn} \&
-  {Gerhard}}{{Bland-Hawthorn} \& {Gerhard}}{2016}]{BlandHawthorn_Gerhard2016}
-{Bland-Hawthorn} J.,  {Gerhard} O.,  2016, \mn@doi [\araa]
-  {10.1146/annurev-astro-081915-023441}, \href
-  {http://adsabs.harvard.edu/abs/2016ARA%26A..54..529B} {54, 529}
 
 \bibitem[\protect\citeauthoryear{{Boeche} et~al.,}{{Boeche}
   et~al.}{2013}]{Boeche2013}
@@ -116,10 +111,6 @@ Princeton University Press
 {Bresolin} F.,  {Kennicutt} R.~C.,   {Ryan-Weber} E.,  2012, \mn@doi [\apj]
   {10.1088/0004-637X/750/2/122}, \href
   {https://ui.adsabs.harvard.edu/abs/2012ApJ...750..122B} {750, 122}
-
-\bibitem[\protect\citeauthoryear{{Buck}}{{Buck}}{2020}]{Buck2020}
-{Buck} T.,  2020, \mn@doi [\mnras] {10.1093/mnras/stz3289}, \href
-  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5435B} {491, 5435}
 
 \bibitem[\protect\citeauthoryear{{Buck}, {Macci{\`o}}, {Dutton}, {Obreja}  \&
   {Frings}}{{Buck} et~al.}{2019}]{Buck2019b}
@@ -146,6 +137,21 @@ Princeton University Press
 {Buck} T.,  {Obreja} A.,  {Ratcliffe} B.,  {Lu} Y.,  {Minchev} I.,
   {Macci{\`o}} A.~V.,  2023, \mn@doi [\mnras] {10.1093/mnras/stad1503}, \href
   {https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.1565B} {523, 1565}
+
+\bibitem[\protect\citeauthoryear{{Buder} et~al.,}{{Buder}
+  et~al.}{2019}]{Buder2019}
+{Buder} S.,  et~al., 2019, \mn@doi [\aap] {10.1051/0004-6361/201833218}, \href
+  {http://adsabs.harvard.edu/abs/2019A%26A...624A..19B} {624, A19}
+
+\bibitem[\protect\citeauthoryear{{Buder} et~al.,}{{Buder}
+  et~al.}{2021}]{Buder2021}
+{Buder} S.,  et~al., 2021, \mn@doi [\mnras] {10.1093/mnras/stab1242}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.506..150B} {506, 150}
+
+\bibitem[\protect\citeauthoryear{{Buder} et~al.,}{{Buder}
+  et~al.}{2022}]{Buder2022}
+{Buder} S.,  et~al., 2022, \mn@doi [\mnras] {10.1093/mnras/stab3504}, \href
+  {https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.2407B} {510, 2407}
 
 \bibitem[\protect\citeauthoryear{{Buder}, {Mijnarends}  \& {Buck}}{{Buder}
   et~al.}{2024}]{Buder2024}
@@ -390,18 +396,12 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   {10.1093/mnrasl/slac065}, \href
   {https://ui.adsabs.harvard.edu/abs/2022MNRAS.515L..34L} {515, L34}
 
-\bibitem[\protect\citeauthoryear{{Ma}, {Hopkins}, {Feldmann}, {Torrey},
-  {Faucher-Gigu{\`e}re}  \& {Kere{\v{s}}}}{{Ma} et~al.}{2017a}]{Ma2017b}
-{Ma} X.,  {Hopkins} P.~F.,  {Feldmann} R.,  {Torrey} P.,  {Faucher-Gigu{\`e}re}
-  C.-A.,   {Kere{\v{s}}} D.,  2017a, \mn@doi [\mnras] {10.1093/mnras/stx034},
-  \href {https://ui.adsabs.harvard.edu/abs/2017MNRAS.466.4780M} {466, 4780}
-
 \bibitem[\protect\citeauthoryear{{Ma}, {Hopkins}, {Wetzel}, {Kirby},
   {Angl{\'e}s-Alc{\'a}zar}, {Faucher-Gigu{\`e}re}, {Kere{\v{s}}}  \&
-  {Quataert}}{{Ma} et~al.}{2017b}]{Ma2017}
+  {Quataert}}{{Ma} et~al.}{2017}]{Ma2017}
 {Ma} X.,  {Hopkins} P.~F.,  {Wetzel} A.~R.,  {Kirby} E.~N.,
   {Angl{\'e}s-Alc{\'a}zar} D.,  {Faucher-Gigu{\`e}re} C.-A.,  {Kere{\v{s}}} D.,
-    {Quataert} E.,  2017b, \mn@doi [\mnras] {10.1093/mnras/stx273}, \href
+    {Quataert} E.,  2017, \mn@doi [\mnras] {10.1093/mnras/stx273}, \href
   {https://ui.adsabs.harvard.edu/abs/2017MNRAS.467.2430M} {467, 2430}
 
 \bibitem[\protect\citeauthoryear{{Magrini} et~al.,}{{Magrini}
@@ -623,12 +623,6 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
 Virtanen P.,  et~al., 2020, \mn@doi [Nature Methods]
   {10.1038/s41592-019-0686-2}, \href {https://rdcu.be/b08Wh} {17, 261}
 
-\bibitem[\protect\citeauthoryear{{Vlaji{\'c}}, {Bland-Hawthorn}  \&
-  {Freeman}}{{Vlaji{\'c}} et~al.}{2009}]{Vlajic2009}
-{Vlaji{\'c}} M.,  {Bland-Hawthorn} J.,   {Freeman} K.~C.,  2009, \mn@doi [\apj]
-  {10.1088/0004-637X/697/1/361}, \href
-  {https://ui.adsabs.harvard.edu/abs/2009ApJ...697..361V} {697, 361}
-
 \bibitem[\protect\citeauthoryear{{Wadsley}, {Keller}  \& {Quinn}}{{Wadsley}
   et~al.}{2017}]{Wadsley2017}
 {Wadsley} J.~W.,  {Keller} B.~W.,   {Quinn} T.~R.,  2017, \mn@doi [\mnras]
@@ -669,14 +663,6 @@ Walt S. v.~d.,  Colbert S.~C.,   Varoquaux G.,  2011, \mn@doi [Comput Sci Eng]
 {Zari} E.,  {Rix} H.~W.,  {Frankel} N.,  {Xiang} M.,  {Poggio} E.,  {Drimmel}
   R.,   {Tkachenko} A.,  2021, \mn@doi [\aap] {10.1051/0004-6361/202039726},
   \href {https://ui.adsabs.harvard.edu/abs/2021A&A...650A.112Z} {650, A112}
-
-\bibitem[\protect\citeauthoryear{{van de Sande}, {Fraser-McKelvie}, {Fisher},
-  {Martig}, {Hayden}  \& {the GECKOS Survey collaboration}}{{van de Sande}
-  et~al.}{2023}]{GECKOS2023}
-{van de Sande} J.,  {Fraser-McKelvie} A.,  {Fisher} D.~B.,  {Martig} M.,
-  {Hayden} M.~R.,   {the GECKOS Survey collaboration} 2023, \mn@doi [arXiv
-  e-prints] {10.48550/arXiv.2306.00059}, \href
-  {https://ui.adsabs.harvard.edu/abs/2023arXiv230600059V} {p. arXiv:2306.00059}
 
 \makeatother
 \end{thebibliography}
