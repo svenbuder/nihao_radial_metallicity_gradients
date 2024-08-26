@@ -39,13 +39,12 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Radial metallicity gradients in NIHAO-UHD]{More than just a line: Shining light on the flattening radial metallicity gradient of a NIHAO-UHD Milky-Way analogue simulation}
-
+\title[Radial metallicity gradients in NIHAO-UHD]{More than just a line: Implications of the shape and scatter of the flattening radial metallicity gradient of a NIHAO-UHD Milky Way Analogue for studies of the Milky Way and other galaxies}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
 \author[S. Buder et al.]{
-Sven Buder,$^{1,2,5}$\thanks{E-mail: sven.buder@anu.edu.au} and
+Sven Buder,$^{1,2,5}$\thanks{E-mail: sven.buder@anu.edu.au}
 Tobias Buck,$^{3,4}$
 Qian-Hui Chen (陈千惠),$^{1,2}$ and
 Kathryn Grasha$^{1,2,5}$
@@ -100,6 +99,8 @@ cosmology: observations -- Galaxy: structure -- Galaxy: abundances  -- galaxies:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\SB{Intro by \citet{Moran2012}: "A proper characterization of the ages and metallicities of the stars in spiral galaxies, as well as the radial dependence of the metallicity of stars and gas in these systems, has long been recognized as a key stepping-stone to unraveling disk galaxy formation processes, including the roles of gas accretion, supernovae-driven outflows and the radial migration of stars (Quirk \& Tinsley 1973; Tinsley 1980; Lacey \& Fall 1985; Wyse \& Silk 1989; Kauffmann 1996; Chiappini et al. 1997; Schoenrich \& Binney 2009)."}
+
 Understanding the radial metallicity gradient, defined as the change in heavy element abundance with galactocentric radius, in galaxies provides critical insights into their formation and evolutionary processes. In this study, we analyze a simulated Milky Way analogue, aiming to uncover nuanced details of its radial metallicity gradient that might be obscured by observational limitations in our own galaxy. By leveraging high-resolution simulations, we hope to bridge the gap between the detailed yet spatially confined observations of the Milky Way and the broader, but often less detailed, extragalactic observations. Our aim is to provide unique perspectives from simulations that can enhance the interpretative power of both Milky Way and extragalactic datasets, fostering a deeper understanding of galactic chemical evolution across different environments and epochs.
 
 The decrease in metallicity with increasing distance from the Galactic center is well-established both theoretically \citep{Larson1976, Tinsley1980, Chiosi1980} and observationally in the Milky Way \citep{Searle1971, Janes1979, Twarog1997}. The Milky Way, being the only galaxy where we can resolve millions of stars, provides a unique opportunity to study these gradients in detail. However, the specific shape and characteristics of this gradient remain somewhat unclear. Over two decades ago, \citet{Chiappini2002} highlighted the contradictions in the observed shape, magnitude, and evolution of abundance gradients. Recent advancements, such as the \textit{Gaia} mission \citep{Gaia-Collaboration2016}, have significantly expanded our observational data, allowing for more detailed studies of these gradients.
@@ -118,6 +119,47 @@ Despite extensive observational efforts, several challenges persist for studies 
     \item The impact of spiral arm structures \citep{Poggio2021}, the Galactic warp \citep{Lemasle2022} or bar-driven mixing \citep{DiMatteo2013} on metallicity gradients is not fully understood.
     \item Methodologies for fitting linear models to scattered data need re-evaluation \citep{Metha2021}.
 \end{itemize}
+
+\SB{Possible reasons for a break radius: inside-out galaxy formation, secular evolution and radial migration based on spiral arms and bar influence, outer disk growth during low-metallicity gas inflow, and mergers generally:
+\begin{itemize}
+    \item Star Formation Efficiency Variations: \citep{Sanchez2014} and \citep{Ho2015}
+    % 1. **Star Formation Efficiency Variations**:
+    %    - **Sánchez, S. F., et al. (2014)**: "The dependence of galaxy metallicity on stellar mass and star formation rate: exploring the connections with local and global environment" in *Astronomy & Astrophysics*. This paper discusses how star formation efficiency can vary with radius and influence metallicity gradients.
+    %    - **Ho, I-T., et al. (2015)**: "SDSS-IV MaNGA: A Characteristic Metallicity Gradient in Star-forming Galaxies" in *The Astrophysical Journal*. This study discusses variations in star formation efficiency and its impact on the observed metallicity gradients.
+    \item Gas Accretion and Dilution: \citep{Sanchez2013} and \citep{Belfiore2016}
+    % 2. **Gas Accretion and Dilution**:
+    %    - **Sánchez, S. F., et al. (2013)**: "The discovery of an anti-correlation between the metallicity of galaxies and the amount of gas inflow" in *Astronomy & Astrophysics*. This paper discusses how inflow of metal-poor gas into the outer regions of galaxies can flatten metallicity gradients.
+    %    - **Belfiore, F., et al. (2016)**: "The SDSS-IV MaNGA survey: global and local relations between gas-phase metallicity and stellar mass" in *Monthly Notices of the Royal Astronomical Society*. This study explores how recent gas accretion events can lead to breaks in the metallicity gradient.
+    \item Localized Star Formation Bursts: \citep{SanchezBlazquez2014}
+    % 3. **Localized Star Formation Bursts**:
+    %    - **Sánchez-Blázquez, P., et al. (2014)**: "The CALIFA survey across the Hubble sequence: spatially resolved stellar population properties in galaxies" in *Astronomy & Astrophysics*. This paper discusses the impact of localized star formation bursts on the metallicity gradient.
+    %    - **Pilyugin, L. S., et al. (2014)**: "The radial abundance gradient in M31, the Andromeda galaxy" in *Monthly Notices of the Royal Astronomical Society*. This study investigates localized bursts of star formation and their impact on the radial metallicity gradient.
+    \item Radial Variations in Gas Inflow Rates: \citep{SanchezMenguiano2016} and \citep{Bresolin2012}
+    % 4. **Radial Variations in Gas Inflow Rates**:
+    %    - **Sánchez-Menguiano, L., et al. (2016)**: "Breaks in the abundance gradients of spiral galaxies" in *Astronomy & Astrophysics*. This paper discusses how variations in gas inflow rates at different radii can lead to breaks in the metallicity gradient.
+    %    - **Bresolin, F., et al. (2012)**: "The flattening of galaxy abundance gradients with redshift" in *The Astrophysical Journal*. This paper explores the impact of radial variations in gas inflow rates on metallicity gradients.
+    \item Disk Instabilities: \citep{Grand2016}
+    % 5. **Disk Instabilities**:
+    %    - **Foyle, K., et al. (2010)**: "The effect of spiral arms on star formation in M51" in *The Astrophysical Journal*. This study looks at how disk instabilities associated with spiral arms can lead to variations in metallicity gradients.
+    %    - **Grand, R. J. J., et al. (2016)**: "The importance of radially and temporally varying radial migration for the formation of disc galaxies" in *Monthly Notices of the Royal Astronomical Society*. Although more focused on older stars, this paper discusses how disk instabilities can influence radial distributions.
+    \item Gas Outflows and Feedback: \citep{Lilly2013} and \citep{Ma2017b}
+    % 6. **Gas Outflows and Feedback**:
+    %    - **Lilly, S. J., et al. (2013)**: "Gas Regulation of Galaxies: The Evolution of the Cosmic Specific Star Formation Rate, the Metallicity-Mass-Star-formation Rate Relation, and the Stellar Content of Halos" in *The Astrophysical Journal*. This study discusses the role of feedback and outflows in shaping metallicity gradients.
+    %    - **Ma, X., et al. (2017)**: "The Origin and Evolution of the Galaxy Mass-Metallicity Relation: The Role of Supernova Feedback in Gas-Phase Metallicity" in *Monthly Notices of the Royal Astronomical Society*. This paper looks at the role of supernova feedback in driving outflows and shaping the metallicity gradient.
+\end{itemize}
+}
+
+\SB{Shape:
+\begin{itemize}
+    \item "bends" \citep{Pilyugin2003}
+    \item different shapes and even sequences of shapes: \citep{Pilyugin2017, Pilyugin2024} with isophotal radius $R_g \equiv R_{25}$
+    \item Piecewise Linear Fits: \citep{SanchezMenguiano2016}
+    \item Comparison of Fit Models: \citep{RosalesOrtega2011}, look also at other papers of this series by \citet{Sanchez2011} and \citet{SanchezBlazquez2014b}
+    \item Non-linear Methods: \citep{Scarano2013} - connect it with corotation radius.
+    \item Change Point Detection Algorithms: \citep{Moran2012} - rather flat when plotted with respect to $R_{90}$ (90\% of the galaxy's r-band light).
+    \item Direct Observation of Flattening: \citep{Bresolin2012}, e.g. for M83
+\end{itemize}
+}
 
 Understanding these gradients in the Milky Way is also crucial for extragalactic studies, where spatial resolution limits observations. New instruments like the MUSE integral field spectrograph have enabled a plethora of extragalactic studies to contrast the Milky Way to and techniques like the spectroscopy of HII regions and planetary nebulae have helped to infer gas metallicity distributions in external galaxies \citep{Shaver1983, Vilchez1996, Rolleston2000, Bresolin2012}. Recent examples include \citet{Sanchez2014} with CALIFA galaxy observations as well as \citet{Mun2024} and \citet{Chen2024} who use MAGPI galaxy observations to probe for example the effects of spiral arms. Notable is also the scatter that \citet{Chen2023} found for the gas metallicity across galactic radius with TYPHOON observations (see their. Figs. 4-6). \SB{\citet{Grasha2022} suggested that the flattening of the gas metallicity in their TYPHOON galaxies could be caused by changes in the ratio of supernovae II and AGB reflected by a changing ratio of nitrogen to oxygen abundance N/O which also flattens towards a lower plateau below metallicities of $A(O) \sim 8.0$ \citep{Nicholls2017}.}
 
@@ -176,7 +218,7 @@ In this section, we analyse the functional shape of the radial metallicity gradi
 \subsection{Global gradient fits}
 \label{sec:global_fits}
 
-We fit three different functional forms to the global data of Fig.~\ref{fig:global_r_feh_fit}, that is, a linear function, a piecewise linear with a break radius, and a quadratic function. The coefficients of the functions as fitted with the \textsc{scipy.optimize} function \textsc{curve\_fit} \citep{Scipy} are listed in Table~\ref{tab:global_fit_results_comparison}. We have confirmed the robustness of our fits by applying other fitting routines as outlined in Appendix~\ref{sec:appendix_different_fits}.
+We fit three different functional forms to the global data of Fig.~\ref{fig:global_r_feh_fit}, that is, a linear function, a piecewise linear with a break radius, and a quadratic function. The coefficients of the functions as fitted with the \textsc{scipy.optimize} function \textsc{curve\_fit} \citep{Scipy} are listed in Table~\ref{tab:global_fit_results_comparison}. To estimate the uncertainty of the break radius $R_\mathrm{break}$, we use the profile likelihood method to identify the radii at which the RSS values are increased by $1\sigma$ from the best RSS radius in steps of $\Delta R_\mathrm{break} = 0.1\,\mathrm{kpc}$ and $0.5\,\mathrm{kpc}$ for the full and binned data set, respectively. We have confirmed the robustness of our fits by applying other fitting routines as outlined in Appendix~\ref{sec:appendix_different_fits}.
 
 Having fitted three different models, will use a combination of parameters to judge which model fits better. Firstly, we are computing the residual sum of squares ($RSS$) as 
 \begin{equation} \label{eq:rss}
@@ -377,7 +419,7 @@ To analyse the deviations from a global gradient across different azimuthal view
     \item Section~\ref{sec:global_fits} piecewise linear and quadratic functions clearly performing better than linear -> \citet{Donor2020, Myers2022}. no conclusive results between either.
     \item Section~\ref{sec:binning}: influence of binning not significant in our case
     \item Section~\ref{sec:radial_coverage}: limited radial coverage could mimic quadratic function with two lines
-    \item Break radius $R_\mathrm{break} \sim 10\,\mathrm{kpc}$ hard to fit.
+    \item Break radius $R_\mathrm{break} \sim 10 \pm 0.5\,\mathrm{kpc}$ hard to fit.
     \item What would the break radius mean physically at this distance? -> \citet{Garcia2023} found around $10\,\mathrm{kpc}$ in IllustrisTNG, \citet{Grand2016, Chen2023}, Bar-driven mixing \citep[see their Figs. 5-8][]{DiMatteo2013}? Bar length? Disk length? Co-rotation radius? \SB{Add these quantities as dashed lines in the $R_\mathrm{Gal.}$ diagrams?}
     \item Discuss influence of bar. \ToDo{How strong is the bar of this simulation?}
 \end{itemize}
