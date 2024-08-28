@@ -278,6 +278,11 @@ Chieffi A.,  Limongi M.,  2004, \mn@doi [\apj] {10.1086/392523}, 608, 405
   {https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.4716G} {519, 4716}
 
 \bibitem[\protect\citeauthoryear{{Genovali} et~al.,}{{Genovali}
+  et~al.}{2013}]{Genovali2013}
+{Genovali} K.,  et~al., 2013, \mn@doi [\aap] {10.1051/0004-6361/201321650},
+  \href {https://ui.adsabs.harvard.edu/abs/2013A&A...554A.132G} {554, A132}
+
+\bibitem[\protect\citeauthoryear{{Genovali} et~al.,}{{Genovali}
   et~al.}{2014}]{Genovali2014}
 {Genovali} K.,  et~al., 2014, \mn@doi [\aap] {10.1051/0004-6361/201323198},
   \href {https://ui.adsabs.harvard.edu/abs/2014A&A...566A..37G} {566, A37}
@@ -424,6 +429,12 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Lemasle} B.,  et~al., 2022, \mn@doi [\aap] {10.1051/0004-6361/202243273},
   \href {https://ui.adsabs.harvard.edu/abs/2022A&A...668A..40L} {668, A40}
 
+\bibitem[\protect\citeauthoryear{{L{\'e}pine} et~al.,}{{L{\'e}pine}
+  et~al.}{2011}]{Lepine2011}
+{L{\'e}pine} J.~R.~D.,  et~al., 2011, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2011.19314.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2011MNRAS.417..698L} {417, 698}
+
 \bibitem[\protect\citeauthoryear{{Lilly}, {Carollo}, {Pipino}, {Renzini}  \&
   {Peng}}{{Lilly} et~al.}{2013}]{Lilly2013}
 {Lilly} S.~J.,  {Carollo} C.~M.,  {Pipino} A.,  {Renzini} A.,   {Peng} Y.,
@@ -449,6 +460,12 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   {Angl{\'e}s-Alc{\'a}zar} D.,  {Faucher-Gigu{\`e}re} C.-A.,  {Kere{\v{s}}} D.,
     {Quataert} E.,  2017b, \mn@doi [\mnras] {10.1093/mnras/stx273}, \href
   {https://ui.adsabs.harvard.edu/abs/2017MNRAS.467.2430M} {467, 2430}
+
+\bibitem[\protect\citeauthoryear{{Magrini}, {Sestito}, {Randich}  \&
+  {Galli}}{{Magrini} et~al.}{2009}]{Magrini2009}
+{Magrini} L.,  {Sestito} P.,  {Randich} S.,   {Galli} D.,  2009, \mn@doi [\aap]
+  {10.1051/0004-6361:200810634}, \href
+  {https://ui.adsabs.harvard.edu/abs/2009A&A...494...95M} {494, 95}
 
 \bibitem[\protect\citeauthoryear{{Magrini} et~al.,}{{Magrini}
   et~al.}{2017}]{Magrini2017}
@@ -514,6 +531,11 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Obreja} A.,  {Buck} T.,   {Macci{\`o}} A.~V.,  2022, \mn@doi [\aap]
   {10.1051/0004-6361/202140983}, \href
   {https://ui.adsabs.harvard.edu/abs/2022A&A...657A..15O} {657, A15}
+
+\bibitem[\protect\citeauthoryear{{Pedicelli} et~al.,}{{Pedicelli}
+  et~al.}{2009}]{Pedicelli2009}
+{Pedicelli} S.,  et~al., 2009, \mn@doi [\aap] {10.1051/0004-6361/200912504},
+  \href {https://ui.adsabs.harvard.edu/abs/2009A&A...504...81P} {504, 81}
 
 \bibitem[\protect\citeauthoryear{Pedregosa et~al.,}{Pedregosa
   et~al.}{2011}]{scikit-learn}
