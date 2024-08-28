@@ -124,6 +124,12 @@ Princeton University Press
   {10.1146/annurev-astro-081915-023441}, \href
   {http://adsabs.harvard.edu/abs/2016ARA%26A..54..529B} {54, 529}
 
+\bibitem[\protect\citeauthoryear{{Bland-Hawthorn}, {Tepper-Garcia}, {Agertz}
+  \& {Federrath}}{{Bland-Hawthorn} et~al.}{2024}]{BlandHawthorn2024}
+{Bland-Hawthorn} J.,  {Tepper-Garcia} T.,  {Agertz} O.,   {Federrath} C.,
+  2024, \mn@doi [\apj] {10.3847/1538-4357/ad4118}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024ApJ...968...86B} {968, 86}
+
 \bibitem[\protect\citeauthoryear{{Boeche} et~al.,}{{Boeche}
   et~al.}{2013}]{Boeche2013}
 {Boeche} C.,  et~al., 2013, \mn@doi [\aap] {10.1051/0004-6361/201322085}, \href
@@ -254,6 +260,11 @@ Chieffi A.,  Limongi M.,  2004, \mn@doi [\apj] {10.1086/392523}, 608, 405
 {Donor} J.,  et~al., 2020, \mn@doi [\aj] {10.3847/1538-3881/ab77bc}, \href
   {https://ui.adsabs.harvard.edu/abs/2020AJ....159..199D} {159, 199}
 
+\bibitem[\protect\citeauthoryear{{Foster} et~al.,}{{Foster}
+  et~al.}{2021}]{MAGPI2021}
+{Foster} C.,  et~al., 2021, \mn@doi [\pasa] {10.1017/pasa.2021.25}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021PASA...38...31F} {38, e031}
+
 \bibitem[\protect\citeauthoryear{{Frankel}, {Rix}, {Ting}, {Ness}  \&
   {Hogg}}{{Frankel} et~al.}{2018}]{Frankel2018}
 {Frankel} N.,  {Rix} H.-W.,  {Ting} Y.-S.,  {Ness} M.,   {Hogg} D.~W.,  2018,
@@ -276,11 +287,6 @@ Chieffi A.,  Limongi M.,  2004, \mn@doi [\apj] {10.1086/392523}, 608, 405
   et~al.}{2023}]{Garcia2023}
 {Garcia} A.~M.,  et~al., 2023, \mn@doi [\mnras] {10.1093/mnras/stac3749}, \href
   {https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.4716G} {519, 4716}
-
-\bibitem[\protect\citeauthoryear{{Genovali} et~al.,}{{Genovali}
-  et~al.}{2013}]{Genovali2013}
-{Genovali} K.,  et~al., 2013, \mn@doi [\aap] {10.1051/0004-6361/201321650},
-  \href {https://ui.adsabs.harvard.edu/abs/2013A&A...554A.132G} {554, A132}
 
 \bibitem[\protect\citeauthoryear{{Genovali} et~al.,}{{Genovali}
   et~al.}{2014}]{Genovali2014}
@@ -389,6 +395,21 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Knollmann} S.~R.,  {Knebe} A.,  2009, \mn@doi [\apjs]
   {10.1088/0067-0049/182/2/608}, \href
   {https://ui.adsabs.harvard.edu/abs/2009ApJS..182..608K} {182, 608}
+
+\bibitem[\protect\citeauthoryear{{Kollmeier} et~al.,}{{Kollmeier}
+  et~al.}{2017}]{Kollmeier2017}
+{Kollmeier} J.~A.,  et~al., 2017, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2017arXiv171103234K} {p. arXiv:1711.03234}
+
+\bibitem[\protect\citeauthoryear{{Kreckel} et~al.,}{{Kreckel}
+  et~al.}{2019}]{Kreckel2019}
+{Kreckel} K.,  et~al., 2019, \mn@doi [\apj] {10.3847/1538-4357/ab5115}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019ApJ...887...80K} {887, 80}
+
+\bibitem[\protect\citeauthoryear{{Kreckel} et~al.,}{{Kreckel}
+  et~al.}{2020}]{Kreckel2020}
+{Kreckel} K.,  et~al., 2020, \mn@doi [\mnras] {10.1093/mnras/staa2743}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.499..193K} {499, 193}
 
 \bibitem[\protect\citeauthoryear{{Kubryk}, {Prantzos}  \&
   {Athanassoula}}{{Kubryk} et~al.}{2015}]{Kubryk2015}
@@ -531,11 +552,6 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Obreja} A.,  {Buck} T.,   {Macci{\`o}} A.~V.,  2022, \mn@doi [\aap]
   {10.1051/0004-6361/202140983}, \href
   {https://ui.adsabs.harvard.edu/abs/2022A&A...657A..15O} {657, A15}
-
-\bibitem[\protect\citeauthoryear{{Pedicelli} et~al.,}{{Pedicelli}
-  et~al.}{2009}]{Pedicelli2009}
-{Pedicelli} S.,  et~al., 2009, \mn@doi [\aap] {10.1051/0004-6361/200912504},
-  \href {https://ui.adsabs.harvard.edu/abs/2009A&A...504...81P} {504, 81}
 
 \bibitem[\protect\citeauthoryear{Pedregosa et~al.,}{Pedregosa
   et~al.}{2011}]{scikit-learn}
@@ -719,6 +735,14 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
 \bibitem[\protect\citeauthoryear{{Taylor}}{{Taylor}}{2005}]{Taylor2005}
 {Taylor} M.~B.,  2005, ASPC, \href
   {http://adsabs.harvard.edu/abs/2005ASPC..347...29T} {347, 29}
+
+\bibitem[\protect\citeauthoryear{{Tepper-Garcia}, {Bland-Hawthorn}, {Vasiliev},
+  {Agertz}, {Teyssier}  \& {Federrath}}{{Tepper-Garcia}
+  et~al.}{2024}]{TepperGarcia2024}
+{Tepper-Garcia} T.,  {Bland-Hawthorn} J.,  {Vasiliev} E.,  {Agertz} O.,
+  {Teyssier} R.,   {Federrath} C.,  2024, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2406.00342}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv240600342T} {p. arXiv:2406.00342}
 
 \bibitem[\protect\citeauthoryear{{Tinsley}}{{Tinsley}}{1980}]{Tinsley1980}
 {Tinsley} B.~M.,  1980, \fcp, \href
