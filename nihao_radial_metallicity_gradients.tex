@@ -440,7 +440,7 @@ Finally, while we cannot directly link spiral arms to bar resonances or bar-driv
 
 The insights gained from our analysis of the radial metallicity gradient in a simulated NIHAO-UHD galaxy extend beyond the Milky Way, offering valuable implications for the study of extragalactic systems.
 
-One key observation is that deviations from a purely linear metallicity gradients, as seen in our Milky Way analogue, are common in other galaxies as well. When fitting a piecewise linear fit to our data, we found a break radius at $R_\mathrm{Gal.} = 10.0 \pm 0.5\,kpc$. Converted to effective radii $\mathrm{R_e}$ or radii $\mathrm{R_{25}}$ covering the $25\,\mathrm{mag\,arcsec^{-2}}$ isophote\footnote{We follow \citet{Williams2009, Chen2023} and assume $\mathrm{R_{25}} = 3.6\,\mathrm{R_e}$.}, this corresponds to $R_\mathrm{break} \sim 2.5\,\mathrm{R_e} \equiv 0.7\,\mathrm{R_{25}}$ for our simulation. This would be consistent with the observational results by \citet{Sanchez2014} who found that breaks in metallicity gradients are common in both spiral and barred galaxies, with flattening of the abundance being evident beyond $\sim 2\,\mathrm{R_e}$ \citep[compare also to][]{Belfiore2017}. Similar to our suggestion for Milky Way studies, we suggest to also test a smooth function, such as a quadratic one, on extragalactic observational data \citep[e.g.][]{Chen2023, Bresolin2012} to test the preference of a distinct break radius.
+One key observation is that deviations from a purely linear metallicity gradients, as seen in our Milky Way analogue, are common in other galaxies as well. When fitting a piecewise linear fit to our data, we found a break radius at $R_\mathrm{Gal.} = 10.0 \pm 0.5\,kpc$. Converted to effective radii $\mathrm{R_e}$ or radii $\mathrm{R_{25}}$ covering the $25\,\mathrm{mag\,arcsec^{-2}}$ isophote\footnote{We assume $\mathrm{R_{25}} = 3.6\,\mathrm{R_e}$ \citep{Williams2009, Chen2023}.}, this corresponds to $R_\mathrm{break} \sim 2.5\,\mathrm{R_e} \equiv 0.7\,\mathrm{R_{25}}$ for our simulation. This would be consistent with the observational results by \citet{Sanchez2014} who found that breaks in metallicity gradients are common in both spiral and barred galaxies, with flattening of the abundance being evident beyond $\sim 2\,\mathrm{R_e}$ \citep[compare also to][]{Belfiore2017}. Similar to our suggestion for Milky Way studies, we suggest to also test a smooth function, such as a quadratic one, on extragalactic observational data \citep[e.g.][]{Chen2023, Bresolin2012} to test the preference of a distinct break radius.
 
 \begin{figure}
     \centering
@@ -454,9 +454,6 @@ Although the focus of this research lies on the observable region of the Milky W
 We note though, that the implemented chemical evolution of the NIHAO-UHD simulations are limited to the current incomplete knowledge of evolutionary pathways and yields \citep{Buck2021} in addition to known shortcomings of the limited resolution and imperfect physics of cosmological zoom-in simulations \citep{Buck2020}. Both could contribute to the identified differences in absolute and relative abundances across different scales - including a different scatter of abundances for example of the gas phase metallicity between our NIHAO-UHD of up to $0.1\,\mathrm{dex}$ and the low scatter of $0.03-0.05\,\mathrm{dex}$ (and even lower on local scales) found by PHANGS-MUSE face-on observations \citep{Kreckel2020}. Extending our analysis to other NIHAO simulations and further improving the resolution and physics of the simulations will be key in uniting the observational and theoretical insights into galactic chemical evolution on small and large scales.
 
 Similar to more resolved and higher quality observations in the Milky Way, we also expect more, better, and diverse face-on and edge-on observations and analyses across a range of wavelengths by the PHANGS and GECKOS teams \citep{Kreckel2019, Kreckel2020, GECKOS2023} as well as the SDSS-V and MAGPI collaborations \citep{Kollmeier2017, MAGPI2021, Mun2024, Chen2024}, among many other ongoing efforts.
-
-\cite{Krumholz2005,Krumholz2007,Krumholz2018}
-\cite{Sharda2021,Sharda2024}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -526,54 +523,13 @@ All code to reproduce the analysis and figures can be publicly accessed via \url
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
 
-\clearpage
 \appendix
 
-\section{Testing different fitting routines} \label{sec:appendix_different_fits}
+\section{Additional tables and figures} \label{sec:appendix_different_fits}
 
-Table~\ref{tab:global_fit_results_per_method}
+As supplement to Section~\ref{sec:global_fits}, we list the results of testing fitting routines in Table~\ref{tab:global_fit_results_per_method}. Fig.~\ref{fig:linear_radial_metallicity_gradients_mw_in_angles} provides a residuals-focused version of Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}. To visualise the extend of stars and gas outside of a radius of \nihaoRmax\ (see discussion in Section~\ref{sec:implications_extragalactic}), we supplement Fig.~\ref{fig:stars_and_gas_overview_100kpc} for an extended $R_\mathrm{Gal.} \leq 100\,\mathrm{kpc}$ and $\vert z_\mathrm{Gal.} \vert \leq 50\,\mathrm{kpc}$ (compare to Fig.~\ref{fig:stars_and_gas_overview}). 
 
 \input{tables/global_fit_results_per_method.tex}
-
-\section{Interesting but not main focus of this paper}
-
-Fig.~\ref{fig:stars_and_gas_overview_100kpc} for an extended $R_\mathrm{Gal.} \leq 100\,\mathrm{kpc}$ and $\vert z_\mathrm{Gal.} \vert \leq 50\,\mathrm{kpc}$.
-
-\begin{figure*}
-    \centering
-    \includegraphics[width=\textwidth]{figures/stars_and_gas_overview_100kpc.png}
-    \caption{Same as Fig.~\ref{fig:stars_and_gas_overview}, but for an extended $R_\mathrm{Gal.} \leq 100\,\mathrm{kpc}$ and $\vert z_\mathrm{Gal.} \vert \leq 50\,\mathrm{kpc}$.}
-    \label{fig:stars_and_gas_overview_100kpc}
-\end{figure*}
-
-Figs.~\ref{fig:tracing_fe_h_young_stars_in_angles} and \ref{fig:tracing_fe_h_residuals_young_stars_in_angles}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\columnwidth]{figures/tracing_fe_h_young_stars_in_angles.png}
-    \caption{Tracing young stars' iron abundance [Fe/H] across galactocentric radii $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ across the whole galaxy (panel a) and different azimuthal ranges/sectors (panels b-i).}
-    \label{fig:tracing_fe_h_young_stars_in_angles}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\columnwidth]{figures/tracing_fe_h_residuals_young_stars_in_angles.png}
-    \caption{Tracing young stars' iron abundance [Fe/H] residuals (relative to global gradient) across galactocentric radii $R_\mathrm{Gal.}$ and height $z_\mathrm{Gal.}$ across the whole galaxy (panel a) and different azimuthal ranges/sectors (panels b-i).}
-    \label{fig:tracing_fe_h_residuals_young_stars_in_angles}
-\end{figure}
-
-Fig.~\ref{fig:quadratic_fit_across_ages}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\columnwidth]{figures/quadratic_fit_across_ages.png}
-    \caption{Radial metallicity gradients and quadratic fits for $1\,\mathrm{Gyr}$ age bins.}
-    \label{fig:quadratic_fit_across_ages}
-\end{figure}
-
-\section{Supplementary Material} \label{sec:appendix_supplementary_material}
-
-Fig.~\ref{fig:linear_radial_metallicity_gradients_mw_in_angles}: showing residuals, but not really adding much more than Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles} already did. So take out completely or add as supplementary material?
 
 \begin{figure*}
     \centering
@@ -581,6 +537,12 @@ Fig.~\ref{fig:linear_radial_metallicity_gradients_mw_in_angles}: showing residua
     \caption{Stellar density variation of the radial metallicity gradient $R-\mathrm{[Fe/H]}$ across full stellar disk (panel a) and 8 different sectors (same panel order as for Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}). Linear radial metallicity gradients have been fit globally (red dashed line) and for each sector with colors following the same color code as in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}.}    \label{fig:linear_radial_metallicity_gradients_mw_in_angles}
 \end{figure*}
 
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{figures/stars_and_gas_overview_100kpc.png}
+    \caption{Same as Fig.~\ref{fig:stars_and_gas_overview}, but for an extended $R_\mathrm{Gal.} \leq 100\,\mathrm{kpc}$ and $\vert z_\mathrm{Gal.} \vert \leq 50\,\mathrm{kpc}$.}
+    \label{fig:stars_and_gas_overview_100kpc}
+\end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Don't change these lines

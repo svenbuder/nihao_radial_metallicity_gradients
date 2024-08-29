@@ -176,16 +176,6 @@ Princeton University Press
 {Buder} S.,  et~al., 2019, \mn@doi [\aap] {10.1051/0004-6361/201833218}, \href
   {http://adsabs.harvard.edu/abs/2019A%26A...624A..19B} {624, A19}
 
-\bibitem[\protect\citeauthoryear{{Buder} et~al.,}{{Buder}
-  et~al.}{2021}]{Buder2021}
-{Buder} S.,  et~al., 2021, \mn@doi [\mnras] {10.1093/mnras/stab1242}, \href
-  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.506..150B} {506, 150}
-
-\bibitem[\protect\citeauthoryear{{Buder} et~al.,}{{Buder}
-  et~al.}{2022}]{Buder2022}
-{Buder} S.,  et~al., 2022, \mn@doi [\mnras] {10.1093/mnras/stab3504}, \href
-  {https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.2407B} {510, 2407}
-
 \bibitem[\protect\citeauthoryear{{Buder}, {Mijnarends}  \& {Buck}}{{Buder}
   et~al.}{2024}]{Buder2024}
 {Buder} S.,  {Mijnarends} L.,   {Buck} T.,  2024, \mn@doi [\mnras]
@@ -411,6 +401,12 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Kreckel} K.,  et~al., 2020, \mn@doi [\mnras] {10.1093/mnras/staa2743}, \href
   {https://ui.adsabs.harvard.edu/abs/2020MNRAS.499..193K} {499, 193}
 
+\bibitem[\protect\citeauthoryear{{Krumholz}, {Burkhart}, {Forbes}  \&
+  {Crocker}}{{Krumholz} et~al.}{2018}]{Krumholz2018}
+{Krumholz} M.~R.,  {Burkhart} B.,  {Forbes} J.~C.,   {Crocker} R.~M.,  2018,
+  \mn@doi [\mnras] {10.1093/mnras/sty852}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2716K} {477, 2716}
+
 \bibitem[\protect\citeauthoryear{{Kubryk}, {Prantzos}  \&
   {Athanassoula}}{{Kubryk} et~al.}{2015}]{Kubryk2015}
 {Kubryk} M.,  {Prantzos} N.,   {Athanassoula} E.,  2015, \mn@doi [\aap]
@@ -546,6 +542,11 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Nicholls} D.~C.,  {Sutherland} R.~S.,  {Dopita} M.~A.,  {Kewley} L.~J.,
   {Groves} B.~A.,  2017, \mn@doi [\mnras] {10.1093/mnras/stw3235}, \href
   {http://adsabs.harvard.edu/abs/2017MNRAS.466.4403N} {466, 4403}
+
+\bibitem[\protect\citeauthoryear{{Obreja} et~al.,}{{Obreja}
+  et~al.}{2019}]{Obreja2019}
+{Obreja} A.,  et~al., 2019, \mn@doi [\mnras] {10.1093/mnras/stz1563}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.4424O} {487, 4424}
 
 \bibitem[\protect\citeauthoryear{{Obreja}, {Buck}  \& {Macci{\`o}}}{{Obreja}
   et~al.}{2022}]{Obreja2022}
@@ -755,6 +756,12 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
   Lagos} C.,  {Schaller} M.,  {Schaye} J.,   {Theuns} T.,  2019, \mn@doi
   [\mnras] {10.1093/mnras/sty2817}, \href
   {https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2208T} {482, 2208}
+
+\bibitem[\protect\citeauthoryear{{Tuntipong} et~al.,}{{Tuntipong}
+  et~al.}{2024}]{Tuntipong2024}
+{Tuntipong} S.,  et~al., 2024, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2408.12223}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv240812223T} {p. arXiv:2408.12223}
 
 \bibitem[\protect\citeauthoryear{{Twarog}}{{Twarog}}{1980}]{Twarog1980}
 {Twarog} B.~A.,  1980, \mn@doi [\apj] {10.1086/158460}, \href
