@@ -268,9 +268,9 @@ Chieffi A.,  Limongi M.,  2004, \mn@doi [\apj] {10.1086/392523}, 608, 405
 
 \bibitem[\protect\citeauthoryear{{Frankel}, {Sanders}, {Ting}  \&
   {Rix}}{{Frankel} et~al.}{2020}]{Frankel2020}
-{Frankel} N.,  {Sanders} J.,  {Ting} Y.-S.,   {Rix} H.-W.,  2020, arXiv
-  e-prints, \href {https://ui.adsabs.harvard.edu/abs/2020arXiv200204622F} {p.
-  arXiv:2002.04622}
+{Frankel} N.,  {Sanders} J.,  {Ting} Y.-S.,   {Rix} H.-W.,  2020, \mn@doi
+  [\apj] {10.3847/1538-4357/ab910c}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020ApJ...896...15F} {896, 15}
 
 \bibitem[\protect\citeauthoryear{{Fraser-McKelvie} et~al.,}{{Fraser-McKelvie}
   et~al.}{2022}]{FraserMcKelvie2022}
@@ -585,8 +585,8 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   et~al.}{2024}]{Palla2024}
 {Palla} M.,  {Magrini} L.,  {Spitoni} E.,  {Matteucci} F.,  {Viscasillas
   V{\'a}zquez} C.,  {Franchini} M.,  {Molero} M.,   {Randich} S.,  2024,
-  \mn@doi [arXiv e-prints] {10.48550/arXiv.2408.17395}, \href
-  {https://ui.adsabs.harvard.edu/abs/2024arXiv240817395P} {p. arXiv:2408.17395}
+  \mn@doi [\aap] {10.1051/0004-6361/202451395}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024A&A...690A.334P} {690, A334}
 
 \bibitem[\protect\citeauthoryear{Pedregosa et~al.,}{Pedregosa
   et~al.}{2011}]{scikit-learn}
