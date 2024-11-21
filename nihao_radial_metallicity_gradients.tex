@@ -1,28 +1,30 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Basic setup. Most papers should leave these options alone.
-\documentclass[fleqn,usenatbib]{mnras}
+\documentclass[twocolumn,apj,numberedappendix,appendixfloats]{openjournal}
 
+%%%%% PACKAGES %%%%%
+
+\usepackage{newtxtext,newtxmath,amsmath}
 \usepackage[T1]{fontenc}
-\DeclareRobustCommand{\VAN}[3]{#2}
-\let\VANthebibliography\thebibliography
-\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
-
-%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
-\usepackage{graphicx}	% Including figure files
-\usepackage{amsmath}	% Advanced maths commands
-\usepackage{amssymb}	% Extra maths symbols
-\usepackage{xspace} 
+\usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{upgreek}
-\usepackage{fontawesome}
+\usepackage{hyperref}
 \usepackage{gensymb}
-\usepackage{multirow}
-\usepackage{mathtools}
-\usepackage{newtxtext,newtxmath}
 \usepackage{CJK}
 \usepackage{tabularx}
+\usepackage{orcidlink}
 
-%%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
+\hypersetup{
+    unicode, 
+    colorlinks=true,
+    linkcolor=linkcolor,
+    citecolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+\definecolor{linkcolor}{rgb}{0.0,0.3,0.5}
+
+
+%%%%% COMMANDS %%%%%
+
 \newcommand{\ToDo}[1]{\textbf{\textcolor{blue}{ToDo: #1}}}
 \newcommand{\SB}[1]{{\textcolor{purple}{SB: #1}}}
 \newcommand{\TB}[1]{{\textcolor{orange}{TB: #1}}}
@@ -32,60 +34,38 @@
 \newcommand{\nihaoZmax}{$10\,\mathrm{kpc}$}
 \newcommand{\nihaoAGEmax}{$0.5\,\mathrm{Gyr}$}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%
 
-% Title of the paper, and the short title which is used in the headers.
-% Keep the title short and informative.
-\title[The radial metallicity gradient in NIHAO-UHD]{Local variations of the radial metallicity gradient in a simulated NIHAO-UHD Milky Way analogue and their implications for (extra-)galactic studies}
+\title{Local variations of the radial metallicity gradient in a simulated NIHAO-UHD Milky Way analogue and their implications for (extra-)galactic studies}
 
-% The list of authors, and the short list which is used in the headers.
-% If you need two or more lines of authors, add an extra line using \newauthor
-\author[S. Buder et al.]{
-Sven Buder,$^{1,2,5}$\thanks{E-mail: sven.buder@anu.edu.au}
-Tobias Buck,$^{3,4}$
-Qian-Hui Chen (陈千惠),$^{1,2}$ and
-Kathryn Grasha$^{1,2,5}$
-\\
-% List of institutions
-$^{1}$Research School of Astronomy \& Astrophysics, Australian National University, ACT 2611, Australia\\
-$^{2}$Center of Excellence for Astrophysics in Three Dimensions (ASTRO-3D), Australia\\
-$^{3}$Universit{\"a}t Heidelberg, Interdisziplin{\"a}res Zentrum f{\"u}r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany\\
-$^{4}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany\\
-$^{5}$Australian Research Council (ARC) Discovery Early Career Researcher Award (DECRA) Fellow
-}
+\author{\vspace{-1.25cm}Sven Buder$^{1,2,\dagger,*}$\orcidlink{0000-0002-4031-8553}}
+\author{Tobias Buck$^{3,4}$\orcidlink{0000-0003-2027-399X}}
+\author{Qian-Hui Chen (陈千惠)$^{1,2}$\orcidlink{0000-0002-4382-1090}}
+\author{Kathryn Grasha$^{1,2,\dagger,*}$\orcidlink{0000-0002-3247-5321}}
 
-% These dates will be filled out by the publisher
-\date{Accepted YYYY Month DD. Received YYYY Month DD}
+\affiliation{$^{1}$Research School of Astronomy and Astrophysics, Australian National University, Canberra, ACT 2611, Australia}
+\affiliation{$^{2}$ARC Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D), Australia}
+\affiliation{$^{3}$Universit{\"a}t Heidelberg, Interdisziplin{\"a}res Zentrum f{\"u}r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany}
+\affiliation{$^{4}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany}
 
-% Enter the current year, for the copyright statements etc.
-\pubyear{2024}
+\thanks{$^*$E-mail: \href{mailto:sven.buder@anu.edu.au}{sven.buder@anu.edu.au}},
+\thanks{$\dagger$Australian Research Council DECRA Fellow}
 
-% Don't change these lines
-\begin{document}
-\label{firstpage}
-\pagerange{\pageref{firstpage}--\pageref{lastpage}}
-\begin{CJK}{UTF8}{gbsn}
-\maketitle
-\end{CJK}
-
-% Abstract of the paper
-\begin{abstract} % 250 words
-% Context
+\begin{abstract}
 Radial metallicity gradients are fundamental to understanding galaxy formation and evolution.
-% Method
 In our high-resolution simulation of a NIHAO-UHD Milky Way analogue, we analyze the linearity, scatter, spatial coherence, and age-related variations of metallicity gradients using young stars and gas.
-% Results
 While a global linear model generally captures the gradient, it ever so slightly overestimates metallicity in the inner galaxy and underestimates it in the outer regions of our simulated galaxy. Both a quadratic model, showing an initially steeper gradient that smoothly flattens outward, and a piecewise linear model with a break radius at 10~kpc (2.5 effective radii) fit the data equally better. The spread of [Fe/H] of young stars in the simulation increases by a tenfold from the innermost to the outer galaxy at a radius of 20~kpc. We find that stars born at similar times along radial spirals drive this spread in the outer galaxy, with a chemical under- and over-enhancement of up to 0.1 dex at leading and trailing regions of such spirals, respectively.
-% Conclusions
 This localised chemical variance highlights the need to examine radial and azimuthal selection effects for both Galactic and extragalactic observational studies. The arguably idealised but volume-complete simulations suggest that future studies should not only test linear and piecewise linear gradients, but also non-linear functions such as quadratic ones to test for a smooth gradient rather than one with a break radius. Either finding would help to determine the importance of different enrichment or mixing pathways and thus our understanding of galaxy formation and evolution scenarios.
 \end{abstract}
-% Select between one and six entries from the list of approved keywords.
-% Don't make up new ones.
-\begin{keywords}
-cosmology: observations -- Galaxy: structure -- Galaxy: abundances  -- galaxies: structure -- galaxies: abundances
-\end{keywords}
+
+\keywords{Galaxy: structure -- Galaxy: abundances  -- galaxies: structure -- galaxies: abundances}
+
+\maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
@@ -283,12 +263,10 @@ Now that we are sufficiently satisfied that our flattening gradient function rep
 \subsection{Scatter}
 \label{sec:scatter}
 
-When investigating the change in scatter from the innermost radii to the outermost (see Fig.~\ref{fig:global_r_feh_fit}c), we see a steady increase in $1-\sigma$ spread. This spread increases from
-\begin{description}
-    \item \input{tex_text/fe_h_spread_at_R_0kpc} at $R_\mathrm{Gal.} = 0.25 \pm 0.25\,\mathrm{kpc}$ to
-    \item \input{tex_text/fe_h_spread_at_R_8kpc} at $R_\mathrm{Gal.} = 8.25 \pm 0.25\,\mathrm{kpc}$ and finally reaches 
-     \item \input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$, the largest $R_\mathrm{Gal.}$.
-\end{description}
+When investigating the change in scatter from the innermost radii to the outermost (see Fig.~\ref{fig:global_r_feh_fit}c), we see a steady increase in $1-\sigma$ spread. This spread increases from \\
+\input{tex_text/fe_h_spread_at_R_0kpc} at $R_\mathrm{Gal.} = ~~0.25 \pm 0.25\,\mathrm{kpc}$ to \\
+\input{tex_text/fe_h_spread_at_R_8kpc} at $R_\mathrm{Gal.} = ~~8.25 \pm 0.25\,\mathrm{kpc}$ and reaches \\
+\input{tex_text/fe_h_spread_at_R_19kpc} at $R_\mathrm{Gal.} = 19.75 \pm 0.25\,\mathrm{kpc}$.
 
 When we recall the observed significant spread in metallicities of young open clusters at the solar radius beyond observational uncertainty \citep[e.g.][]{Donor2020, Spina2021} and our selection of only young ($<$\nihaoAGEmax) stars from the simulation, a strong impact of this scatter by radial migration should be excluded. At this point, we can imagine that this chemical diversity might be caused by less well-mixed gas or non-radial effects (such as vertical or azimuthal ones), which we investigate subsequently.
 
@@ -327,7 +305,7 @@ Although such an edge-on view of the galaxy may indeed be the only observable on
 
 To analyse the deviations from a global gradient across different azimuthal viewing angles, we divide the galaxy into 8 sectors with $\Delta \varpi_\mathrm{Gal.} = 45\,\mathrm{deg}$ (see Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}a). This allows us to study the positions around the upturn and downturn of the galactic warp with the median azimuth of young star particles below and above the plane being $\varphi_\mathrm{Gal.} \sim 183\,\mathrm{deg}$ and $\varphi_\mathrm{Gal.} \sim 4\,\mathrm{deg}$, respectively (see Fig.~\ref{fig:stars_and_gas_overview}e), while maintaining a reasonable sample size.
 
-At face value, the distribution of $R_\mathrm{Gal.}-\mathrm{[Fe/H]}$ for each sector follows a similar, rather linear shape with most stars being born in the inner $5\,\mathrm{kpc}$ of the galaxy. However, we find significant deviations in different sectors of the galaxy (Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}). On the one hand, we find non-linear deviations as bumps with slightly increased or decreased iron abundance - up to $0.1-0.2\,\mathrm{dex}$ - in Figs.~\ref{fig:radial_metallicity_gradients_mw_in_angles}c at $R_\mathrm{Gal} \sim 18\,\mathrm{kpc}$, \ref{fig:radial_metallicity_gradients_mw_in_angles}d at $R_\mathrm{Gal} \sim 10\,\mathrm{kpc}$, \ref{fig:radial_metallicity_gradients_mw_in_angles}f at $R_\mathrm{Gal} \sim 14\,\mathrm{kpc}$, and \ref{fig:radial_metallicity_gradients_mw_in_angles}g at $R_\mathrm{Gal} \sim 17\,\mathrm{kpc}$. On the other hand, we find significant gaps in the distribution at similar [Fe/H], most strikingly at the upturn of the galactic warp in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}e ($\varpi_\mathrm{Gal.} = 135-180\,\mathrm{\degree}$) at $\mathrm{[Fe/H]} \sim 0\,\mathrm{dex}$ and $R_\mathrm{Gal.} \sim 8-14\,\mathrm{kpc}$. We note that the sector (e) with the gap is surrounded by two sectors with significant overabundance at the same radius (d and f). This could be indicative of stars having formed as a result of gas moving towards either azimuthal direction, causing a gas overdensity which could in turn lead to higher star formation activity. To establish this observation, we take a closer look at the time-domain, that is, stellar age as well as the spatial domain of $R_\mathrm{Gal.}-\varphi_\mathrm{Gal.}$ in the next section. 
+At face value, the distribution of $R_\mathrm{Gal.}-\mathrm{[Fe/H]}$ for each sector follows a similar, rather linear shape with most stars being born in the inner $5\,\mathrm{kpc}$ of the galaxy. However, we find significant deviations in different sectors of the galaxy (Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}). On the one hand, we find non-linear deviations as bumps with slightly increased or decreased iron abundance - up to $0.1-0.2\,\mathrm{dex}$ - in Figs.~\ref{fig:radial_metallicity_gradients_mw_in_angles}c at $R_\mathrm{Gal} \sim 18\,\mathrm{kpc}$, \ref{fig:radial_metallicity_gradients_mw_in_angles}d at $R_\mathrm{Gal} \sim 10\,\mathrm{kpc}$, \ref{fig:radial_metallicity_gradients_mw_in_angles}f at $R_\mathrm{Gal} \sim 14\,\mathrm{kpc}$, and \ref{fig:radial_metallicity_gradients_mw_in_angles}g at $R_\mathrm{Gal} \sim 17\,\mathrm{kpc}$. On the other hand, we find significant gaps in the distribution at similar [Fe/H], most strikingly at the upturn of the galactic warp in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles}e ($\varpi_\mathrm{Gal.} = 135-180\,\mathrm{deg}$) at $\mathrm{[Fe/H]} \sim 0\,\mathrm{dex}$ and $R_\mathrm{Gal.} \sim 8-14\,\mathrm{kpc}$. We note that the sector (e) with the gap is surrounded by two sectors with significant overabundance at the same radius (d and f). This could be indicative of stars having formed as a result of gas moving towards either azimuthal direction, causing a gas overdensity which could in turn lead to higher star formation activity. To establish this observation, we take a closer look at the time-domain, that is, stellar age as well as the spatial domain of $R_\mathrm{Gal.}-\varphi_\mathrm{Gal.}$ in the next section. 
 
 \paragraph*{Take-Away:} We find various deviations from the global trend in the azimuthal direction, including gaps and isolated streaks of stars with similar [Fe/H] throughout $\Delta R_\mathrm{Gal.} = 2-6\,\mathrm{kpc}$. These can introduce local over- and under-enhancement of up to $\pm 0.2\,\mathrm{dex}$ in [Fe/H] at a given radius. In the next section, we analyse whether the stars of these streaks have been born at the same or different time.
 
@@ -341,7 +319,7 @@ At face value, the distribution of $R_\mathrm{Gal.}-\mathrm{[Fe/H]}$ for each se
     \label{fig:phi_angle_R_follow_up}
 \end{figure}
 
-In this section, we examine the radial metallicity gradient in a small age range less than \nihaoAGEmax. To do so, we color Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles} by the median stellar age rather than the logarithmic density in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}. We find an overall significant scatter across time, suggesting a good mix of star formation across all sectors for stars born within less than \nihaoAGEmax. For stars within this restricted age range, we do not see a strong correlation with radius, such as older stars being born further inside, but a larger amount of stars being born closer to the galactic centre. We note that stars with similar [Fe/H] in each sector tend to be formed at similar times (within $50\,\mathrm{Myr}$), that is, as flat lines with the same color (age) in Figs.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}b-i. To guide the eye, we have identified Group 1 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}e (around $R_\mathrm{Gal.} \sim 14\,\mathrm{kpc}$ at $\varpi_\mathrm{Gal.} = 180-225\,\mathrm{\degree}$). We further note that the enriched bumps identified earlier are born at similar times, see, for example, Group 2 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}f. The coloring by age also reveals that stars with lower [Fe/H] than expected (see Group 3 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}h) are born at similar times. In some cases, these extend to $\Delta R_\mathrm{Gal.} = 2-6\,\mathrm{kpc}$, see Groups 1, 2, and 3 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}. At a given radius $R_\mathrm{Gal.}$, these streaks cause a significant spread in local [Fe/H] of up to $\pm 0.2\,\mathrm{dex}$ (see Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}).
+In this section, we examine the radial metallicity gradient in a small age range less than \nihaoAGEmax. To do so, we color Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles} by the median stellar age rather than the logarithmic density in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}. We find an overall significant scatter across time, suggesting a good mix of star formation across all sectors for stars born within less than \nihaoAGEmax. For stars within this restricted age range, we do not see a strong correlation with radius, such as older stars being born further inside, but a larger amount of stars being born closer to the galactic centre. We note that stars with similar [Fe/H] in each sector tend to be formed at similar times (within $50\,\mathrm{Myr}$), that is, as flat lines with the same color (age) in Figs.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}b-i. To guide the eye, we have identified Group 1 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}e (around $R_\mathrm{Gal.} \sim 14\,\mathrm{kpc}$ at $\varpi_\mathrm{Gal.} = 180-225\,\mathrm{deg}$). We further note that the enriched bumps identified earlier are born at similar times, see, for example, Group 2 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}f. The coloring by age also reveals that stars with lower [Fe/H] than expected (see Group 3 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}h) are born at similar times. In some cases, these extend to $\Delta R_\mathrm{Gal.} = 2-6\,\mathrm{kpc}$, see Groups 1, 2, and 3 in Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}. At a given radius $R_\mathrm{Gal.}$, these streaks cause a significant spread in local [Fe/H] of up to $\pm 0.2\,\mathrm{dex}$ (see Fig.~\ref{fig:radial_metallicity_gradients_mw_in_angles_age}).
 
 \begin{figure*}
     \centering
@@ -539,6 +517,7 @@ We further made use of \textsc{topcat} \citep[version 4.7;][]{Taylor2005};
 
 All code to reproduce the analysis and figures can be publicly accessed via \url{https://github.com/svenbuder/nihao_radial_metallicity_gradients}. The repository also includes a link to the used snapshot data of the simulated Milky Way analogue. This data can also be obtained on request from the authors. Currently the only limitation in making all data public is limited cloud space to host the data. We encourage interested readers to get in contact with the authors for full data access. If you are using these data to follow up on this research, please give appropriate credit to \citet{Buck2020b, Buck2021} as well as this manuscript.
 
+\end{CJK*}
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
 
 % The best way to enter references is to use BibTeX:
@@ -558,7 +537,7 @@ As a supplement to Section~\ref{sec:global_fits}, we list the results of testing
 
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{figures/fe_h_vs_a_o_gas}
+    \includegraphics[width=0.5\columnwidth]{figures/fe_h_vs_a_o_gas}
     \caption{Comparison of gas abundances for oxygen and iron. shown are absolute oxygen abundances A(O) and the comparison of relative iron and oxygen abundances [Fe/H] - [O/H]. The top panel shows values at face values, whereas the bottom panel shows the comparison for a linear approximation of [Fe/H] from [O/H].}    \label{fig:fe_h_vs_a_o_gas}
 \end{figure}
 
@@ -576,7 +555,4 @@ As a supplement to Section~\ref{sec:global_fits}, we list the results of testing
 \end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Don't change these lines
-\bsp	% typesetting comment
-\label{lastpage}
 \end{document}
