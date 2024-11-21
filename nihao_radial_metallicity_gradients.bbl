@@ -205,9 +205,14 @@ Princeton University Press
   {https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.4801C} {519, 4801}
 
 \bibitem[\protect\citeauthoryear{{Chen} et~al.,}{{Chen}
-  et~al.}{2024}]{Chen2024}
-{Chen} Q.-H.,  et~al., 2024, \mn@doi [\mnras] {10.1093/mnras/stad3348}, \href
+  et~al.}{2024a}]{Chen2024}
+{Chen} Q.-H.,  et~al., 2024a, \mn@doi [\mnras] {10.1093/mnras/stad3348}, \href
   {https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.2991C} {527, 2991}
+
+\bibitem[\protect\citeauthoryear{{Chen} et~al.,}{{Chen}
+  et~al.}{2024b}]{Chen2024b}
+{Chen} Q.-H.,  et~al., 2024b, \mn@doi [\mnras] {10.1093/mnras/stae2119}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024MNRAS.534..883C} {534, 883}
 
 \bibitem[\protect\citeauthoryear{{Chiappini}}{{Chiappini}}{2002}]{Chiappini2002}
 {Chiappini} C.,  2002, \mn@doi [\apss] {10.1023/A:1019575123561}, \href
@@ -266,6 +271,11 @@ Chieffi A.,  Limongi M.,  2004, \mn@doi [\apj] {10.1086/392523}, 608, 405
 {Frankel} N.,  {Sanders} J.,  {Ting} Y.-S.,   {Rix} H.-W.,  2020, arXiv
   e-prints, \href {https://ui.adsabs.harvard.edu/abs/2020arXiv200204622F} {p.
   arXiv:2002.04622}
+
+\bibitem[\protect\citeauthoryear{{Fraser-McKelvie} et~al.,}{{Fraser-McKelvie}
+  et~al.}{2022}]{FraserMcKelvie2022}
+{Fraser-McKelvie} A.,  et~al., 2022, \mn@doi [\mnras] {10.1093/mnras/stab3430},
+  \href {https://ui.adsabs.harvard.edu/abs/2022MNRAS.510..320F} {510, 320}
 
 \bibitem[\protect\citeauthoryear{{Gaia Collaboration} et~al.,}{{Gaia
   Collaboration} et~al.}{2016}]{Gaia-Collaboration2016}
@@ -356,6 +366,12 @@ Hunter J.~D.,  2007, \mn@doi [Comput Sci Eng] {10.1109/MCSE.2007.55}, 9, 90
 {Janes} K.~A.,  1979, \mn@doi [\apjs] {10.1086/190568}, \href
   {https://ui.adsabs.harvard.edu/abs/1979ApJS...39..135J} {39, 135}
 
+\bibitem[\protect\citeauthoryear{{Johnson} et~al.,}{{Johnson}
+  et~al.}{2024}]{Johnson2024}
+{Johnson} J.~W.,  et~al., 2024, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2410.13256}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv241013256J} {p. arXiv:2410.13256}
+
 \bibitem[\protect\citeauthoryear{Karakas \& Lugaro}{Karakas \&
   Lugaro}{2016}]{Karakas2016}
 Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
@@ -400,6 +416,12 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   et~al.}{2020}]{Kreckel2020}
 {Kreckel} K.,  et~al., 2020, \mn@doi [\mnras] {10.1093/mnras/staa2743}, \href
   {https://ui.adsabs.harvard.edu/abs/2020MNRAS.499..193K} {499, 193}
+
+\bibitem[\protect\citeauthoryear{{Krumholz} \& {Ting}}{{Krumholz} \&
+  {Ting}}{2018}]{Krumholz2018b}
+{Krumholz} M.~R.,  {Ting} Y.-S.,  2018, \mn@doi [\mnras]
+  {10.1093/mnras/stx3286}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018MNRAS.475.2236K} {475, 2236}
 
 \bibitem[\protect\citeauthoryear{{Krumholz}, {Burkhart}, {Forbes}  \&
   {Crocker}}{{Krumholz} et~al.}{2018}]{Krumholz2018}
@@ -451,6 +473,10 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {L{\'e}pine} J.~R.~D.,  et~al., 2011, \mn@doi [\mnras]
   {10.1111/j.1365-2966.2011.19314.x}, \href
   {https://ui.adsabs.harvard.edu/abs/2011MNRAS.417..698L} {417, 698}
+
+\bibitem[\protect\citeauthoryear{{Li} et~al.,}{{Li} et~al.}{2024}]{Li2024b}
+{Li} Z.,  et~al., 2024, \mn@doi [\mnras] {10.1093/mnras/stae480}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.7103L} {528, 7103}
 
 \bibitem[\protect\citeauthoryear{{Lilly}, {Carollo}, {Pipino}, {Renzini}  \&
   {Peng}}{{Lilly} et~al.}{2013}]{Lilly2013}
@@ -554,6 +580,14 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   {10.1051/0004-6361/202140983}, \href
   {https://ui.adsabs.harvard.edu/abs/2022A&A...657A..15O} {657, A15}
 
+\bibitem[\protect\citeauthoryear{{Palla}, {Magrini}, {Spitoni}, {Matteucci},
+  {Viscasillas V{\'a}zquez}, {Franchini}, {Molero}  \& {Randich}}{{Palla}
+  et~al.}{2024}]{Palla2024}
+{Palla} M.,  {Magrini} L.,  {Spitoni} E.,  {Matteucci} F.,  {Viscasillas
+  V{\'a}zquez} C.,  {Franchini} M.,  {Molero} M.,   {Randich} S.,  2024,
+  \mn@doi [arXiv e-prints] {10.48550/arXiv.2408.17395}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv240817395P} {p. arXiv:2408.17395}
+
 \bibitem[\protect\citeauthoryear{Pedregosa et~al.,}{Pedregosa
   et~al.}{2011}]{scikit-learn}
 Pedregosa F.,  et~al., 2011, J Mach Learn Res, 12, 2825
@@ -634,6 +668,21 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
   et~al.}{2023}]{Ratcliffe2023}
 {Ratcliffe} B.,  et~al., 2023, \mn@doi [\mnras] {10.1093/mnras/stad1573}, \href
   {https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.2208R} {525, 2208}
+
+\bibitem[\protect\citeauthoryear{{Ratcliffe}, {Khoperskov}, {Minchev}, {Lee},
+  {Buck}, {Marques}, {Lu}  \& {Steinmetz}}{{Ratcliffe}
+  et~al.}{2024}]{Ratcliffe2024b}
+{Ratcliffe} B.,  {Khoperskov} S.,  {Minchev} I.,  {Lee} N.~D.,  {Buck} T.,
+  {Marques} L.,  {Lu} L.,   {Steinmetz} M.,  2024, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2410.17326}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv241017326R} {p. arXiv:2410.17326}
+
+\bibitem[\protect\citeauthoryear{{Renaud}, {Ratcliffe}, {Minchev}, {Haywood},
+  {Di Matteo}, {Agertz}  \& {Romeo}}{{Renaud} et~al.}{2024}]{Renaud2024}
+{Renaud} F.,  {Ratcliffe} B.,  {Minchev} I.,  {Haywood} M.,  {Di Matteo} P.,
+  {Agertz} O.,   {Romeo} A.~B.,  2024, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2409.10598}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv240910598R} {p. arXiv:2409.10598}
 
 \bibitem[\protect\citeauthoryear{{Rolleston}, {Smartt}, {Dufton}  \&
   {Ryans}}{{Rolleston} et~al.}{2000}]{Rolleston2000}
@@ -732,6 +781,11 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
 {Stinson} G.~S.,  {Brook} C.,  {Macci{\`o}} A.~V.,  {Wadsley} J.,  {Quinn}
   T.~R.,   {Couchman} H.~M.~P.,  2013, \mn@doi [\mnras] {10.1093/mnras/sts028},
   \href {https://ui.adsabs.harvard.edu/abs/2013MNRAS.428..129S} {428, 129}
+
+\bibitem[\protect\citeauthoryear{{Sun} et~al.,}{{Sun} et~al.}{2024}]{Sun2024}
+{Sun} X.,  et~al., 2024, \mn@doi [arXiv e-prints] {10.48550/arXiv.2409.09290},
+  \href {https://ui.adsabs.harvard.edu/abs/2024arXiv240909290S} {p.
+  arXiv:2409.09290}
 
 \bibitem[\protect\citeauthoryear{{Taylor}}{{Taylor}}{2005}]{Taylor2005}
 {Taylor} M.~B.,  2005, ASPC, \href
