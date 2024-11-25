@@ -1,8 +1,8 @@
-
 \begin{table}
+\centering
 \caption{Global linear gradient fit results with different methods. \textsc{LinearRegression} is part of the \textsc{sklearn} package.}
 \label{tab:global_fit_results_per_method}
-\begin{tabularx}{\columnwidth}{lCC}
+\begin{tabular}{ccc}
 \hline
 Method & Intercept ($a_0 \pm \sigma_{a_0}$) & Slope ($a_1 \pm \sigma_{a_1}$) \\
 \hline
@@ -12,5 +12,5 @@ Method & Intercept ($a_0 \pm \sigma_{a_0}$) & Slope ($a_1 \pm \sigma_{a_1}$) \\
 \textsc{LinearRegression} & $0.46250 \pm 0.00029$ & $-0.04106 \pm 0.00006$ \\
 \textsc{scipy.curve\_fit} & $0.46266 \pm 0.00039$ & $-0.04109 \pm 0.00005$ \\
 \hline
-\end{tabularx}
+\end{tabular}
 \end{table}
