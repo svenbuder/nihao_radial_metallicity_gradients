@@ -2,15 +2,15 @@
 \centering
 \caption{Global linear gradient fit results with different methods. \textsc{LinearRegression} is part of the \textsc{sklearn} package.}
 \label{tab:global_fit_results_per_method}
-\begin{tabular}{ccc}
+\begin{tabularx}{\columnwidth}{lCC}
 \hline
 Method & Intercept ($a_0 \pm \sigma_{a_0}$) & Slope ($a_1 \pm \sigma_{a_1}$) \\
 \hline
 \textsc{statsmodels.api.ODR} & $0.46266 \pm 0.00039$ & $-0.04109 \pm 0.00005$ \\
 \textsc{scipy.odr} & $0.46268 \pm 0.00039$ & $-0.04109 \pm 0.00005$ \\
 \textsc{np.polyfit} & $0.46266 \pm 0.00039$ & $-0.04109 \pm 0.00005$ \\
-\textsc{LinearRegression} & $0.46250 \pm 0.00029$ & $-0.04106 \pm 0.00006$ \\
+\textsc{LinearRegression} & $0.46273 \pm 0.00026$ & $-0.04111 \pm 0.00007$ \\
 \textsc{scipy.curve\_fit} & $0.46266 \pm 0.00039$ & $-0.04109 \pm 0.00005$ \\
 \hline
-\end{tabular}
+\end{tabularx}
 \end{table}
