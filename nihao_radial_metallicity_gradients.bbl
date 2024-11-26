@@ -377,13 +377,6 @@ Hunter J.~D.,  2007, \mn@doi [Comput Sci Eng] {10.1109/MCSE.2007.55}, 9, 90
 Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   825, 26
 
-\bibitem[\protect\citeauthoryear{{Katz}, {Soubiran}, {Cayrel}, {Barbuy},
-  {Friel}, {Bienaym{\'e}}  \& {Perrin}}{{Katz} et~al.}{2011}]{Katz2011}
-{Katz} D.,  {Soubiran} C.,  {Cayrel} R.,  {Barbuy} B.,  {Friel} E.,
-  {Bienaym{\'e}} O.,   {Perrin} M.~N.,  2011, \mn@doi [\aap]
-  {10.1051/0004-6361/201014840}, \href
-  {https://ui.adsabs.harvard.edu/abs/2011A&A...525A..90K} {525, A90}
-
 \bibitem[\protect\citeauthoryear{{Kauffmann}}{{Kauffmann}}{1996}]{Kauffman1996}
 {Kauffmann} G.,  1996, \mn@doi [\mnras] {10.1093/mnras/281.2.475}, \href
   {https://ui.adsabs.harvard.edu/abs/1996MNRAS.281..475K} {281, 475}
@@ -515,10 +508,10 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
 {Magrini} L.,  et~al., 2017, \mn@doi [\aap] {10.1051/0004-6361/201630294},
   \href {https://ui.adsabs.harvard.edu/abs/2017A&A...603A...2M} {603, A2}
 
-\bibitem[\protect\citeauthoryear{{Matteucci}}{{Matteucci}}{2001}]{Matteucci2001b}
-{Matteucci} F.,  ed. 2001, {The chemical evolution of the Galaxy}  Astrophysics
-  and Space Science Library Vol. 253, \mn@doi{10.1007/978-94-010-0967-6.
-}
+\bibitem[\protect\citeauthoryear{{Matteucci} \& {Recchi}}{{Matteucci} \&
+  {Recchi}}{2001}]{Matteucci2001}
+{Matteucci} F.,  {Recchi} S.,  2001, \mn@doi [\apj] {10.1086/322472}, \href
+  {http://adsabs.harvard.edu/abs/2001ApJ...558..351M} {558, 351}
 
 \bibitem[\protect\citeauthoryear{{Metha}, {Trenti}  \& {Chu}}{{Metha}
   et~al.}{2021}]{Metha2021}
