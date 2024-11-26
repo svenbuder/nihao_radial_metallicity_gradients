@@ -2,10 +2,7 @@
 
 ## Authors
 
-Sven Buder (ANU & ASTRO 3D, sven.buder@anu.edu.au),  
-Tobias Buck (IWR, ITA),  
-Qian-Hui Chen (ANU & ASTRO 3D), and  
-Kathryn Grasha (ANU & ASTRO 3D)
+Sven Buder (ANU & ASTRO 3D, sven.buder@anu.edu.au), Tobias Buck (IWR, ITA), Qian-Hui Chen (ANU & ASTRO 3D), and Kathryn Grasha (ANU & ASTRO 3D)
 
 ## Abstract
 
