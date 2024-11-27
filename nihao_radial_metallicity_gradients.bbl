@@ -71,6 +71,14 @@
 {Astropy Collaboration} et~al., 2018, \mn@doi [\aj] {10.3847/1538-3881/aabc4f},
   \href {https://ui.adsabs.harvard.edu/abs/2018AJ....156..123A} {156, 123}
 
+\bibitem[\protect\citeauthoryear{{Barbillon}, {Recio-Blanco}, {Poggio},
+  {Palicio}, {Spitoni}, {de Laverny}  \& {Cescutti}}{{Barbillon}
+  et~al.}{2024}]{Barbillon2024}
+{Barbillon} M.,  {Recio-Blanco} A.,  {Poggio} E.,  {Palicio} P.~A.,  {Spitoni}
+  E.,  {de Laverny} P.,   {Cescutti} G.,  2024, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2411.10007}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv241110007B} {p. arXiv:2411.10007}
+
 \bibitem[\protect\citeauthoryear{{Belfiore} et~al.,}{{Belfiore}
   et~al.}{2016}]{Belfiore2016}
 {Belfiore} F.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stw1234}, \href
@@ -756,6 +764,11 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
   et~al.}{2021}]{Spina2021}
 {Spina} L.,  et~al., 2021, \mn@doi [\mnras] {10.1093/mnras/stab471}, \href
   {https://ui.adsabs.harvard.edu/abs/2021MNRAS.503.3279S} {503, 3279}
+
+\bibitem[\protect\citeauthoryear{{Spitoni} et~al.,}{{Spitoni}
+  et~al.}{2023}]{Spitoni2023}
+{Spitoni} E.,  et~al., 2023, \mn@doi [\aap] {10.1051/0004-6361/202347325},
+  \href {https://ui.adsabs.harvard.edu/abs/2023A&A...680A..85S} {680, A85}
 
 \bibitem[\protect\citeauthoryear{{Stanghellini}, {Magrini}  \&
   {Casasola}}{{Stanghellini} et~al.}{2015}]{Stanghellini2015}
