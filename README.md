@@ -22,15 +22,15 @@ Please cite this work as follows:
     author = {{Buder}, Sven and {Buck}, Tobias and {Chen}, Qian-Hui and {Grasha}, Kathryn},
     title = {Local variations of the radial metallicity gradient in a simulated NIHAO-UHD Milky Way analogue and their implications for (extra-)galactic studies},
     journal = {arXiv e-prints},
-    volume = {abs/2411.XXXXX)},
-    month = nov,
-    pages = {arXiv:2411.XXXXX},
+    volume = {abs/2412.01157},
+    month = dec,
+    pages = {arXiv:2412.01157},
     year = {2024},
     archivePrefix = {arXiv},
-    eprint = {2411.XXXXX},
+    eprint = {2412.01157},
     keywords = {Galaxy: structure -- Galaxy: abundances  -- galaxies: structure -- galaxies: abundances},
-    doi = {10.48550/arXiv.2411.XXXXX},
+    doi = {10.48550/arXiv.2412.01157},
     primaryClass = {astro-ph.GA},
-    adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv2411XXXXXB},
+    adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv241201157B}
 }
 ```
