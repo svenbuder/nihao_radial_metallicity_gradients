@@ -184,9 +184,15 @@ Princeton University Press
 {Buder} S.,  et~al., 2019, \mn@doi [\aap] {10.1051/0004-6361/201833218}, \href
   {http://adsabs.harvard.edu/abs/2019A%26A...624A..19B} {624, A19}
 
+\bibitem[\protect\citeauthoryear{{Buder} et~al.,}{{Buder}
+  et~al.}{2024a}]{Buder2024b}
+{Buder} S.,  et~al., 2024a, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2409.19858}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024arXiv240919858B} {p. arXiv:2409.19858}
+
 \bibitem[\protect\citeauthoryear{{Buder}, {Mijnarends}  \& {Buck}}{{Buder}
-  et~al.}{2024}]{Buder2024}
-{Buder} S.,  {Mijnarends} L.,   {Buck} T.,  2024, \mn@doi [\mnras]
+  et~al.}{2024b}]{Buder2024}
+{Buder} S.,  {Mijnarends} L.,   {Buck} T.,  2024b, \mn@doi [\mnras]
   {10.1093/mnras/stae1552}, \href
   {https://ui.adsabs.harvard.edu/abs/2024MNRAS.532.1010B} {532, 1010}
 
@@ -581,6 +587,15 @@ Karakas A.~I.,  Lugaro M.,  2016, \mn@doi [ApJ] {10.3847/0004-637X/825/1/26},
   {10.1051/0004-6361/202140983}, \href
   {https://ui.adsabs.harvard.edu/abs/2022A&A...657A..15O} {657, A15}
 
+\bibitem[\protect\citeauthoryear{{Orr} et~al.,}{{Orr} et~al.}{2023}]{Orr2023}
+{Orr} M.~E.,  et~al., 2023, \mn@doi [\mnras] {10.1093/mnras/stad676}, \href
+  {https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.3708O} {521, 3708}
+
+\bibitem[\protect\citeauthoryear{{Osterbrock}}{{Osterbrock}}{1989}]{Osterbrock1989}
+{Osterbrock} D.~E.,  1989, {Astrophysics of gaseous nebulae and active galactic
+  nuclei}.
+University Science Books
+
 \bibitem[\protect\citeauthoryear{{Palla}, {Magrini}, {Spitoni}, {Matteucci},
   {Viscasillas V{\'a}zquez}, {Franchini}, {Molero}  \& {Randich}}{{Palla}
   et~al.}{2024}]{Palla2024}
@@ -844,6 +859,12 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
 {Vilchez} J.~M.,  {Esteban} C.,  1996, \mn@doi [\mnras]
   {10.1093/mnras/280.3.720}, \href
   {https://ui.adsabs.harvard.edu/abs/1996MNRAS.280..720V} {280, 720}
+
+\bibitem[\protect\citeauthoryear{{Vincenzo}, {Matteucci}, {Belfiore}  \&
+  {Maiolino}}{{Vincenzo} et~al.}{2016}]{Vincenzo2016a}
+{Vincenzo} F.,  {Matteucci} F.,  {Belfiore} F.,   {Maiolino} R.,  2016, \mn@doi
+  [\mnras] {10.1093/mnras/stv2598}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.4183V} {455, 4183}
 
 \bibitem[\protect\citeauthoryear{Virtanen et~al.,}{Virtanen
   et~al.}{2020}]{Scipy}
