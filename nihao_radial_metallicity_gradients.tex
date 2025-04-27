@@ -25,10 +25,10 @@
 
 %%%%% COMMANDS %%%%%
 
-\newcommand{\ToDo}[1]{\textbf{\textcolor{blue}{ToDo: #1}}}
-\newcommand{\SB}[1]{{\textcolor{purple}{SB: #1}}}
-\newcommand{\adjusted}[1]{\textbf{\textcolor{purple}{#1}}}
-\newcommand{\TB}[1]{{\textcolor{orange}{TB: #1}}}
+% \newcommand{\ToDo}[1]{\textbf{\textcolor{blue}{ToDo: #1}}}
+% \newcommand{\SB}[1]{{\textcolor{purple}{SB: #1}}}
+\newcommand{\adjusted}[1]{#1}
+% \newcommand{\TB}[1]{{\textcolor{orange}{TB: #1}}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 \newcommand{\nihaoRmax}{$20\,\mathrm{kpc}$}
@@ -275,7 +275,7 @@ When we recall the observed significant spread in metallicities of young open cl
 
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{figures/overlap_local_variation_gas.png}
+    \includegraphics[width=0.96\columnwidth]{figures/overlap_local_variation_gas.png}
     \caption{Local gradient deviations (red-blue lines) similar to the second lowest row of Fig.~\ref{fig:radial_range_impact} for radial gradients in $0.5\,\mathrm{kpc}$ steps (but compared to a global quadratic function) overlapped on top of the logarithmic density distribution in $R-z$ for $\vert z \vert < 3\,\mathrm{kpc}$ of gas (panel a) and stars (panel b). We see no strong correlation between local gradient slopes (red-blue lines) and star or gas density in this projection.}
     \label{fig:overlap_local_variation_gas}
 \end{figure}
@@ -418,7 +418,7 @@ Our first test in Fig.~\ref{fig:scatter_with_increasing_age} shows that the devi
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\columnwidth]{figures/quadratic_fit_across_maximum_ages.png}
+    \includegraphics[width=\columnwidth]{figures/quadratic_fit_across_maximum_ages.png}
     \caption{Radial metallicity gradients and quadratic fits for different maximum age ranges. The quadratic fit to stars below $0.5\,\mathrm{Gyr}$ is shown as a dashed red line for reference and the quadratic fit to each shown distribution is overlaid as a solid red line with the functional form given as inset text. At $R_\mathrm{Gal.}=8.21\,\mathrm{kpc}$, spread increases from $\sigma \mathrm{[Fe/H]} = 0.05$ for youngest stars to 0.09 and 0.11 for stars below 4 and $8\,\mathrm{Gyr}$, respectively.}
     \label{fig:quadratic_fit_across_maximum_ages}
 \end{figure}
